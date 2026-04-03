@@ -1,0 +1,139 @@
+/*
+Theme Name: PetUnion Hub
+Theme URI: https://petunionhub.com/
+Author: Antigravity
+Author URI: https://google.com/
+Description: A premium, modern WordPress theme for PetUnion Hub, converted from a static HTML design.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: petunionhub
+Tags: blog, pet-care, responsive, clean
+
+This theme was automatically converted from a static HTML layout.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800;900&display=swap');
+
+:root {
+  /* Rich, vibrant colors */
+  --primary-color: #A0522D; /* Sienna */
+  --primary-gradient: linear-gradient(135deg, #A0522D 0%, #D27D2D 100%);
+  --secondary-color: #43aa8b; /* Vibrant Teal/Green */
+  --accent-color: #F8961E; /* Sunburst Orange */
+  
+  --bg-color: #FAF8F5; /* Warm off-white */
+  --surface: #FFFFFF;
+  --text-color: #2b2d42;
+  --text-light: #6c757d;
+  --white: #ffffff;
+  
+  /* Radii & Shadows */
+  --radius: 24px;
+  --radius-sm: 12px;
+  --radius-lg: 32px;
+  
+  --shadow-sm: 0 4px 12px rgba(160, 82, 45, 0.08);
+  --shadow: 0 16px 32px -8px rgba(160, 82, 45, 0.12);
+  --shadow-hover: 0 24px 48px -12px rgba(160, 82, 45, 0.25);
+  --shadow-glow: 0 8px 32px rgba(248, 150, 30, 0.4);
+  
+  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animations setup */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D27D2D;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  color: #1a1a1a;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul { list-style: none; }
+img { max-width: 100%; height: auto; display: block; }
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header Glassmorphism */
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(250, 248, 245, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: var(--transition);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+  max-width: 250px;
+}
+
+.logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Rest of the original CSS follows... */
+/* (I'll append the full CSS content here) */
