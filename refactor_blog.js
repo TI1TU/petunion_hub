@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Articles | PetUnion Hub</title>
-    <meta name="description" content="Browse our extensive collection of pet care, training, and health guides.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container nav">
-            <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-            <nav class="nav-links">
-                <a href="index.html" >Home</a>
-                <a href="blog.html" class="active">Blog</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
-        </div>
-    </header>
+const fs = require('fs');
 
-        <main>
+const mainHtml = `    <main>
         <section class="container section">
             <div class="blog-header">
                 <h1>Real Stories. Real Love. Real Pets 🐾</h1>
@@ -214,7 +192,7 @@
             <div class="story-banner">
                 <div class="story-banner-content">
                     <h2>Have a story to share? Let the world hear it ❤️</h2>
-                    <p>Your pet's story could inspire, comfort, or bring a smile to someone today. We publish community stories every week.</p>
+                    <p>Your pet\'s story could inspire, comfort, or bring a smile to someone today. We publish community stories every week.</p>
                     <a href="#submit-story" class="btn btn-primary">Submit Your Story</a>
                 </div>
             </div>
@@ -228,57 +206,9 @@
                 </div>
             </section>
         </section>
-    </main>
+    </main>`;
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-                    <p>Where every pet has a story. We believe in the power of storytelling and community to bring pet owners together in a loving, supportive space.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="#submit-story">Submit Story</a>
-                        <a href="about.html">About Community</a>
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="terms-conditions.html">Terms & Conditions</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Story Topics</h4>
-                    <div class="footer-links">
-                        <a href="#">Rescue Stories</a>
-                        <a href="#">Funny Moments</a>
-                        <a href="#">Emotional Connections</a>
-                        <a href="#">Heroic Pets</a>
-                        <a href="#">Crossing the Rainbow Bridge</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Connect</h4>
-                    <div class="footer-links">
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--primary-color);"></i> stories@petunionhub.com</p>
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-users" style="margin-right: 10px; color: var(--primary-color);"></i> PetUnion Community Hub</p>
-                        <a href="contact.html" class="read-more" style="margin-top: 10px;">Reach Out <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 PetUnion Hub Community. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+let content = fs.readFileSync('blog.html', 'utf8');
+content = content.replace(/<main>[\s\S]*?<\/main>/, mainHtml);
+fs.writeFileSync('blog.html', content);
+console.log('Successfully updated blog.html');

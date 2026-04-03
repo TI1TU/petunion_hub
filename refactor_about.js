@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | PetUnion Hub</title>
-    <meta name="description" content="Learn about PetUnion Hub's mission to help pet owners with useful guides and real stories.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .about-hero { text-align: center; max-width: 800px; margin: 0 auto; padding-bottom: 40px; }
-        .about-hero h1 { font-size: 3.5rem; margin-bottom: 24px; }
-        .about-hero p { font-size: 1.2rem; color: var(--text-light); }
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 40px; }
-        @media(max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
-        .about-image { border-radius: 30px; box-shadow: var(--shadow); width: 100%; }
-        .mission-points { display: flex; flex-direction: column; gap: 24px; margin-top: 32px; }
-        .mission-point { display: flex; gap: 16px; }
-        .mission-icon { width: 48px; height: 48px; min-width: 48px; background: rgba(163, 201, 168, 0.2); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
-        .mission-point h3 { margin-bottom: 8px; font-size: 1.2rem; }
-        .mission-point p { color: var(--text-light); }
-    </style>
-</head>
-<body>
-    <header class="header">
-        <div class="container nav">
-            <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-            <nav class="nav-links">
-                <a href="index.html" >Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="about.html" class="active">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
-        </div>
-    </header>
+const fs = require('fs');
 
-        <main>
+const mainHtml = `    <main>
         <section class="container section">
             <!-- Hero Section -->
             <div class="about-hero" style="margin-bottom: 60px;">
@@ -114,57 +79,9 @@
             
             <div style="height: 60px;"></div>
         </section>
-    </main>
+    </main>`;
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-                    <p>Where every pet has a story. We believe in the power of storytelling and community to bring pet owners together in a loving, supportive space.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="#submit-story">Submit Story</a>
-                        <a href="about.html">About Community</a>
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="terms-conditions.html">Terms & Conditions</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Story Topics</h4>
-                    <div class="footer-links">
-                        <a href="#">Rescue Stories</a>
-                        <a href="#">Funny Moments</a>
-                        <a href="#">Emotional Connections</a>
-                        <a href="#">Heroic Pets</a>
-                        <a href="#">Crossing the Rainbow Bridge</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Connect</h4>
-                    <div class="footer-links">
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--primary-color);"></i> stories@petunionhub.com</p>
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-users" style="margin-right: 10px; color: var(--primary-color);"></i> PetUnion Community Hub</p>
-                        <a href="contact.html" class="read-more" style="margin-top: 10px;">Reach Out <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 PetUnion Hub Community. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+let content = fs.readFileSync('about.html', 'utf8');
+content = content.replace(/<main>[\s\S]*?<\/main>/, mainHtml);
+fs.writeFileSync('about.html', content);
+console.log('Successfully updated about.html');
