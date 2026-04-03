@@ -24,110 +24,200 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="container hero">
+        <section class="hero-full">
             <div class="hero-content">
-                <span class="hero-badge">Welcome to PetUnion Hub 🐾</span>
-                <h1>Your Ultimate Guide to Pet Care, Health & Training</h1>
-                <p>Expert tips on pet care, training, nutrition, and health to help your furry friends live their best lives.</p>
+                <h1>Give Your Pet the Love They Deserve 🐾</h1>
+                <p>Premium food, toys, and care for happy, healthy pets</p>
                 <div class="hero-actions">
-                    <a href="blog.html" class="btn btn-primary">Explore Blogs</a>
-                    <a href="about.html" class="btn btn-outline">Learn More</a>
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero-pets.jpg" alt="Happy dog and cat together">
             </div>
         </section>
 
         <!-- Categories Section -->
         <section class="container section">
-            <div class="section-header">
-                <h2 class="section-title">Blog Categories</h2>
+            <div class="categories-grid-new">
+                <a href="blog.html?category=dogs" class="category-card-new">
+                    <div class="category-icon-new"><i class="fas fa-dog"></i></div>
+                    <div class="category-title">Dogs</div>
+                </a>
+                <a href="blog.html?category=cats" class="category-card-new">
+                    <div class="category-icon-new"><i class="fas fa-cat"></i></div>
+                    <div class="category-title">Cats</div>
+                </a>
+                <a href="blog.html?category=food" class="category-card-new">
+                    <div class="category-icon-new"><i class="fas fa-bone"></i></div>
+                    <div class="category-title">Food</div>
+                </a>
+                <a href="blog.html?category=toys" class="category-card-new">
+                    <div class="category-icon-new"><i class="fas fa-volleyball-ball"></i></div>
+                    <div class="category-title">Toys</div>
+                </a>
+                <a href="blog.html?category=accessories" class="category-card-new">
+                    <div class="category-icon-new"><i class="fas fa-shopping-bag"></i></div>
+                    <div class="category-title">Accessories</div>
+                </a>
             </div>
-            <div class="categories-grid">
-                <a href="blog.html?category=care" class="category-card">
-                    <div class="category-icon"><i class="fas fa-heartbeat"></i></div>
-                    <div class="category-title">Pet Care Tips</div>
-                </a>
-                <a href="blog.html?category=training" class="category-card">
-                    <div class="category-icon"><i class="fas fa-bone"></i></div>
-                    <div class="category-title">Dog Training</div>
-                </a>
-                <a href="blog.html?category=nutrition" class="category-card">
-                    <div class="category-icon"><i class="fas fa-drumstick-bite"></i></div>
-                    <div class="category-title">Pet Food & Nutrition</div>
-                </a>
-                <a href="blog.html?category=health" class="category-card">
-                    <div class="category-icon"><i class="fas fa-stethoscope"></i></div>
-                    <div class="category-title">Pet Health</div>
-                </a>
-                <a href="blog.html?category=grooming" class="category-card">
-                    <div class="category-icon"><i class="fas fa-cut"></i></div>
-                    <div class="category-title">Grooming Guide</div>
-                </a>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#products" class="btn btn-outline">Explore Categories</a>
             </div>
         </section>
 
-        <!-- Featured Blogs -->
-        <section class="container section">
+        <!-- Featured Products -->
+        <section id="products" class="container section">
             <div class="section-header">
-                <h2 class="section-title">Featured Articles</h2>
-                <a href="blog.html" class="btn btn-outline">View All Posts</a>
+                <h2 class="section-title">Featured Products</h2>
+                <a href="#" class="btn btn-outline">View All</a>
             </div>
-            <div class="grid-3">
-                <!-- Blog Card 1 -->
-                <article class="blog-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/puppy-care.jpg" alt="Puppies running" class="blog-card-img">
+            <div class="grid-4">
+                <article class="blog-card product-card">
+                    <div class="blog-card-img-wrapper" style="height: 220px;">
+                        <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=600&q=80" alt="Dog Food" class="blog-card-img">
                     </div>
-                    <div class="blog-card-content">
+                    <div class="blog-card-content" style="padding: 24px;">
                         <div class="blog-meta">
-                            <span class="blog-category">Puppy Care</span>
-                            <span>• 5 min read</span>
+                            <span class="blog-category">Food</span>
                         </div>
-                        <h3 class="blog-card-title"><a href="post-1.html">The Ultimate Puppy Care Guide for New Owners</a></h3>
-                        <p class="blog-card-excerpt">Bringing home a new puppy is exciting! Discover the essential tips for the first 30 days of puppy parenthood.</p>
+                        <h3 class="blog-card-title"><a href="#">Premium Kibble Blend</a></h3>
+                        <p class="blog-card-excerpt">High-protein, grain-free kibble for optimal health.</p>
                         <div class="blog-card-footer">
-                            <a href="post-1.html" class="read-more">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                            <span style="font-size: 1.25rem; font-weight: 700; color: var(--text-color);">$34.99</span>
+                            <a href="#" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.95rem;">Buy Now</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Blog Card 2 -->
-                <article class="blog-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/dog-treats.jpg" alt="Dog looking at treats" class="blog-card-img">
+                <article class="blog-card product-card">
+                    <div class="blog-card-img-wrapper" style="height: 220px;">
+                        <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&w=600&q=80" alt="Cat Toy" class="blog-card-img">
                     </div>
-                    <div class="blog-card-content">
+                    <div class="blog-card-content" style="padding: 24px;">
                         <div class="blog-meta">
-                            <span class="blog-category">Best Food</span>
-                            <span>• 4 min read</span>
+                            <span class="blog-category">Toys</span>
                         </div>
-                        <h3 class="blog-card-title"><a href="post-2.html">Top 10 Nutritious Foods Your Dog Will Love</a></h3>
-                        <p class="blog-card-excerpt">Not all dog food is created equal. Learn what ingredients to look for to ensure your furry friend lives a long, healthy life.</p>
+                        <h3 class="blog-card-title"><a href="#">Feather Teaser Wand</a></h3>
+                        <p class="blog-card-excerpt">Keep your feline friend active and entertained.</p>
                         <div class="blog-card-footer">
-                            <a href="post-2.html" class="read-more">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                            <span style="font-size: 1.25rem; font-weight: 700; color: var(--text-color);">$12.99</span>
+                            <a href="#" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.95rem;">Buy Now</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Blog Card 3 -->
-                <article class="blog-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/dog-commands.jpg" alt="Owner petting dog" class="blog-card-img">
+                <article class="blog-card product-card">
+                    <div class="blog-card-img-wrapper" style="height: 220px;">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Dog Bed" class="blog-card-img">
                     </div>
-                    <div class="blog-card-content">
+                    <div class="blog-card-content" style="padding: 24px;">
                         <div class="blog-meta">
-                            <span class="blog-category">Training</span>
-                            <span>• 6 min read</span>
+                            <span class="blog-category">Accessories</span>
                         </div>
-                        <h3 class="blog-card-title"><a href="post-3.html">5 Basic Commands Every Dog Should Know</a></h3>
-                        <p class="blog-card-excerpt">Start your dog's training journey with these five essential commands that ensure safety and good behavior.</p>
+                        <h3 class="blog-card-title"><a href="#">Orthopedic Pet Bed</a></h3>
+                        <p class="blog-card-excerpt">Memory foam support for deep, restorative sleep.</p>
                         <div class="blog-card-footer">
-                            <a href="post-3.html" class="read-more">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                            <span style="font-size: 1.25rem; font-weight: 700; color: var(--text-color);">$49.99</span>
+                            <a href="#" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.95rem;">Buy Now</a>
                         </div>
                     </div>
                 </article>
+
+                <article class="blog-card product-card">
+                    <div class="blog-card-img-wrapper" style="height: 220px;">
+                        <img src="https://images.unsplash.com/photo-1623387641177-ce7a70a5c737?auto=format&fit=crop&w=600&q=80" alt="Pet Shampoo" class="blog-card-img">
+                    </div>
+                    <div class="blog-card-content" style="padding: 24px;">
+                        <div class="blog-meta">
+                            <span class="blog-category">Care</span>
+                        </div>
+                        <h3 class="blog-card-title"><a href="#">Oatmeal Shampoo</a></h3>
+                        <p class="blog-card-excerpt">Gentle and soothing for sensitive skin and coats.</p>
+                        <div class="blog-card-footer">
+                            <span style="font-size: 1.25rem; font-weight: 700; color: var(--text-color);">$18.50</span>
+                            <a href="#" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.95rem;">Buy Now</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="section" style="background-color: var(--surface);">
+            <div class="container">
+                <div class="section-header" style="justify-content: center; text-align: center;">
+                    <h2 class="section-title">Why Choose Us</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-medal"></i></div>
+                        <h3>High Quality Products</h3>
+                        <p>We source only the best, vetted products for your furry family members.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Trusted by Pet Owners</h3>
+                        <p>Thousands of 5-star reviews from happy pets and their humans.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-tag"></i></div>
+                        <h3>Affordable Prices</h3>
+                        <p>Premium care shouldn't break the bank. Competitive pricing everyday.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h3>Fast Delivery</h3>
+                        <p>Quick, reliable shipping so you never run out of essentials.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px; padding-bottom: 40px;">
+                <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="container section">
+            <div class="section-header" style="justify-content: center; text-align: center;">
+                <h2 class="section-title">What Pet Parents Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="testimonial-text">"The orthopedic bed changed my senior dog's life. He sleeps so much better now. Fast delivery and amazing quality!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Sarah" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Sarah Jenkins</h4>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="testimonial-text">"I couldn't find a toy my Pitbull wouldn't destroy in 5 minutes until I shopped here. Highly recommend the durable toy section!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>David L.</h4>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="testimonial-text">"Premium kibble that actually makes my cat's coat shiny. The customer service team is also incredibly helpful and sweet."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Emily" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Emily R.</h4>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="about.html" class="btn btn-outline">Read All Reviews</a>
             </div>
         </section>
 
@@ -145,7 +235,6 @@
                     <div class="blog-card-content">
                         <div class="blog-meta">
                             <span class="blog-category">Pet Care</span>
-                            <span>• 3 min read</span>
                         </div>
                         <h3 class="blog-card-title"><a href="#">Understanding Your Cat's Body Language</a></h3>
                         <p class="blog-card-excerpt">Is your cat happy or just hungry? Learn to decode those tail twitches and purrs with our expert guide.</p>
@@ -161,7 +250,6 @@
                     <div class="blog-card-content">
                         <div class="blog-meta">
                             <span class="blog-category">Nutrition</span>
-                            <span>• 5 min read</span>
                         </div>
                         <h3 class="blog-card-title"><a href="#">Healthy Homemade Treats for Active Dogs</a></h3>
                         <p class="blog-card-excerpt">Simple, 3-ingredient recipes for treats your dog will absolutely love. No preservatives, just pure joy.</p>
@@ -177,7 +265,6 @@
                     <div class="blog-card-content">
                         <div class="blog-meta">
                             <span class="blog-category">Grooming</span>
-                            <span>• 4 min read</span>
                         </div>
                         <h3 class="blog-card-title"><a href="#">Essential Grooming Tools for Every Pet Owner</a></h3>
                         <p class="blog-card-excerpt">Keep your pet's coat shiny and healthy with these must-have grooming tools for home use.</p>
@@ -187,19 +274,8 @@
                     </div>
                 </article>
             </div>
-        </section>
-
-        <!-- About Preview Section -->
-        <section class="about-preview section">
-            <div class="container about-preview-content">
-                <div class="about-preview-text">
-                    <h2 class="section-title">About PetUnion Hub</h2>
-                    <p>At PetUnion Hub, we share trusted tips and guides to help you take better care of your pets. Our mission is to empower pet owners with expert advice and a loving community.</p>
-                    <a href="about.html" class="btn btn-outline">Read More</a>
-                </div>
-                <div class="about-preview-image">
-                    <img src="images/about-original-style.jpg" alt="PetUnion Hub Community">
-                </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="blog.html" class="btn btn-secondary">Explore All Blogs</a>
             </div>
         </section>
 
@@ -207,79 +283,59 @@
         <section class="container">
             <div class="cta-section">
                 <div class="cta-content">
-                    <h2 class="cta-title">Want to give your pet the best life?</h2>
-                    <p class="cta-desc">Join thousands of pet lovers who trust PetUnion Hub for the best care and training advice.</p>
-                    <a href="blog.html" class="btn btn-secondary">Start Reading</a>
+                    <h2 class="cta-title">Join thousands of happy pet owners today</h2>
+                    <p class="cta-desc">Discover the best products and care guides recommended by experts and driven by love.</p>
+                    <a href="#products" class="btn btn-primary" style="background: var(--white); color: var(--primary-color);">Explore Products</a>
                 </div>
             </div>
         </section>
 
-        <!-- Newsletter Section -->
-        <section class="newsletter-section">
-            <div class="container newsletter-content">
-                <div class="newsletter-text">
-                    <h2>Get weekly pet care tips & guides</h2>
-                    <p>Stay updated with the latest in pet health, nutrition, and training.</p>
-                </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </section>
         <!-- FAQ Section -->
         <section id="faq" class="section container faq-section">
-            <h2 class="section-title">Frequently Asked Questions About Pet Care</h2>
+            <h2 class="section-title" style="text-align: center; display: block; margin-bottom: 40px;">Frequently Asked Questions</h2>
             <div class="faq-container">
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>What is the best food for dogs?</span>
+                        <span>What is your return policy for pet food?</span>
                         <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>The best dog food depends on your dog’s age, breed, and health. High-quality commercial dog food or a vet-approved homemade diet is recommended.</p>
+                        <p>We offer a 30-day money-back guarantee on all unopened pet food. If your pet doesn't love the taste, contact our support team to arrange a return or exchange.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>How often should I feed my pet?</span>
+                        <span>How fast is your free delivery?</span>
                         <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Most adult dogs should be fed twice a day, while puppies may need 3–4 meals daily.</p>
+                        <p>Orders placed before 2 PM local time generally arrive within 2-3 business days. Expedited shipping is available at checkout.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>How can I train my dog at home?</span>
+                        <span>Are your toys safe for aggressive chewers?</span>
                         <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Start with basic commands like sit, stay, and come. Use positive reinforcement and consistency.</p>
+                        <p>Yes! We have a specific collection dedicated to durable, indestructible toys specifically tested for power chewers like Pitbulls and Mastiffs.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>What are basic pet care tips?</span>
+                        <span>Do you offer a subscription for regular food delivery?</span>
                         <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Provide proper food, regular exercise, grooming, and routine vet checkups to keep your pet healthy.</p>
+                        <p>Absolutely. You can subscribe and save 10% on every order. Choose delivery frequencies from 2 weeks up to 2 months.</p>
                     </div>
                 </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>How do I keep my pet healthy?</span>
-                        <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Maintain a balanced diet, regular vaccinations, exercise, and hygiene.</p>
-                    </div>
-                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="contact.html" class="btn btn-outline">Visit Support Center</a>
             </div>
         </section>
     </main>

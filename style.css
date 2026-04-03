@@ -2,27 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800;900&display=swap');
 
 :root {
-  /* Rich, vibrant colors */
-  --primary-color: #A0522D; /* Sienna */
-  --primary-gradient: linear-gradient(135deg, #A0522D 0%, #D27D2D 100%);
-  --secondary-color: #43aa8b; /* Vibrant Teal/Green */
-  --accent-color: #F8961E; /* Sunburst Orange */
+  /* Soft, pet-friendly colors */
+  --primary-color: #81B29A; /* Light Green */
+  --primary-gradient: linear-gradient(135deg, #81B29A 0%, #A3C4B8 100%);
+  --secondary-color: #E07A5F; /* Deeper subtle orange/coral */
+  --accent-color: #F4A261; /* Soft Orange */
   
-  --bg-color: #FAF8F5; /* Warm off-white */
+  --bg-color: #FFFDF9; /* Cream background */
   --surface: #FFFFFF;
-  --text-color: #2b2d42;
-  --text-light: #6c757d;
+  --text-color: #3D405B; /* Soft dark blue/gray */
+  --text-light: #8D99AE;
   --white: #ffffff;
   
   /* Radii & Shadows */
-  --radius: 24px;
-  --radius-sm: 12px;
-  --radius-lg: 32px;
+  --radius: 20px;
+  --radius-sm: 10px;
+  --radius-lg: 30px;
   
-  --shadow-sm: 0 4px 12px rgba(160, 82, 45, 0.08);
-  --shadow: 0 16px 32px -8px rgba(160, 82, 45, 0.12);
-  --shadow-hover: 0 24px 48px -12px rgba(160, 82, 45, 0.25);
-  --shadow-glow: 0 8px 32px rgba(248, 150, 30, 0.4);
+  --shadow-sm: 0 4px 15px rgba(61, 64, 91, 0.05);
+  --shadow: 0 10px 30px rgba(61, 64, 91, 0.08);
+  --shadow-hover: 0 20px 40px rgba(61, 64, 91, 0.12);
+  --shadow-glow: 0 8px 30px rgba(244, 162, 97, 0.3);
   
   --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -1352,3 +1352,206 @@ section {
     }
 }
 
+/* --- NEW PREMIUM HOMEPAGE STYLES --- */
+
+/* Full Background Hero */
+.hero-full {
+  padding: 180px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1920&q=80'); /* Dog and owner premium shot */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--white);
+}
+
+.hero-full::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(61, 64, 91, 0.6); /* Dark blue overlay */
+  z-index: 1;
+}
+
+.hero-full .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-full h1 {
+  color: var(--white);
+  font-size: 4.5rem;
+  margin-bottom: 24px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.hero-full p {
+  color: #F8F9FA;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero-full .hero-actions {
+  justify-content: center;
+}
+
+/* Categories Overhaul */
+.categories-grid-new {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.category-card-new {
+  background: var(--surface);
+  padding: 32px 24px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 180px;
+  border: 1px solid rgba(129, 178, 154, 0.1);
+}
+
+.category-card-new:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-color);
+}
+
+.category-icon-new {
+  width: 80px;
+  height: 80px;
+  background: rgba(129, 178, 154, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.category-card-new:hover .category-icon-new {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.category-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+/* Grid 4 for Products */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+/* Why Choose Us Features */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 40px 24px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.feature-item p {
+  color: var(--text-light);
+}
+
+/* Testimonials */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.testimonial-card {
+    background: var(--surface);
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border-top: 5px solid var(--primary-color);
+    position: relative;
+}
+
+.testimonial-card i.fa-quote-left {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 3rem;
+    color: rgba(129, 178, 154, 0.1);
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: var(--text-color);
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--bg-color);
+}
+
+.testimonial-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.rating {
+    color: #FFD166; /* Star yellow */
+    font-size: 0.9rem;
+}
