@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Premium Reveal Animations
     const observerOptions = {
         root: null,
-        rootMargin: '0px 0px -100px 0px',
-        threshold: 0.15
+        rootMargin: '0px 0px -50px 0px',
+        threshold: 0.1
     };
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    const revealElements = document.querySelectorAll('.reveal');
+    const revealElements = document.querySelectorAll('.reveal, .section, .blog-card, .product-card');
     revealElements.forEach(el => revealObserver.observe(el));
 
     // 2. Stagger Grid Item Animations
@@ -59,9 +59,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const icon = mobileMenuBtn.querySelector('i');
             if (navLinks.classList.contains('active')) {
                 icon.classList.replace('fa-bars', 'fa-times');
+                document.body.style.overflow = 'hidden';
             } else {
                 icon.classList.replace('fa-times', 'fa-bars');
+                document.body.style.overflow = '';
             }
+        });
+
+        // Close menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+                document.body.style.overflow = '';
+            });
         });
     }
 
@@ -133,4 +144,21 @@ document.addEventListener('DOMContentLoaded', () => {
             searchDebounce = setTimeout(updateDisplay, 300);
         });
     }
+
+    // 7. Smooth Scroll for Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+            
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
 });
