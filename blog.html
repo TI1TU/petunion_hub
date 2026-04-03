@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Articles | PetUnion Hub</title>
+    <meta name="description" content="Browse our extensive collection of pet care, training, and health guides.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section">
+            <div class="blog-header">
+                <h1>Pet Care Blog – Tips, Training & Guides</h1>
+                <p>Explore expert advice on pet care, dog training, nutrition, grooming, and health.</p>
+                
+                <div class="search-container">
+                    <form action="#" class="search-form">
+                        <input type="text" placeholder="Search pet care articles..." class="search-input">
+                        <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-tags">
+                <div class="filter-tag active" data-category="all">All</div>
+                <div class="filter-tag" data-category="pet-care">Pet Care</div>
+                <div class="filter-tag" data-category="training">Dog Training</div>
+                <div class="filter-tag" data-category="nutrition">Nutrition</div>
+                <div class="filter-tag" data-category="health">Health</div>
+                <div class="filter-tag" data-category="grooming">Grooming</div>
+            </div>
+
+
+            <!-- Featured Section -->
+            <div class="featured-blogs">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">Featured Articles</h2>
+                </div>
+                <div class="featured-grid">
+                    <!-- Featured Card 1 -->
+                    <article class="featured-card" data-category="pet-care">
+                        <div class="featured-card-img-wrapper">
+                            <img src="images/puppy-care.jpg" alt="Puppies running" class="featured-card-img">
+                        </div>
+                        <div class="featured-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Puppy Care</span>
+                                <span>• 5 min read</span>
+                            </div>
+                            <h2 class="blog-card-title"><a href="post-1.html">The Ultimate Puppy Care Guide for New Owners</a></h2>
+                            <p class="blog-card-excerpt">Bringing home a new puppy is exciting! Discover the essential tips for the first 30 days of puppy parenthood.</p>
+                            <div class="blog-card-footer">
+                                <span class="author"><i class="fas fa-user"></i> Emma Wilson</span>
+                                <span class="date"><i class="fas fa-calendar-alt"></i> March 15, 2026</span>
+                                <a href="post-1.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Featured Card 2 -->
+                    <article class="featured-card" data-category="nutrition">
+                        <div class="featured-card-img-wrapper">
+                            <img src="images/dog-treats.jpg" alt="Dog looking at treats" class="featured-card-img">
+                        </div>
+                        <div class="featured-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Nutrition</span>
+                                <span>• 4 min read</span>
+                            </div>
+                            <h2 class="blog-card-title"><a href="post-2.html">Top 10 Nutritious Foods Your Dog Will Love</a></h2>
+                            <p class="blog-card-excerpt">Not all dog food is created equal. Learn what ingredients to look for to ensure your furry friend lives a long, healthy life.</p>
+                            <div class="blog-card-footer">
+                                <span class="author"><i class="fas fa-user"></i> David Miller</span>
+                                <span class="date"><i class="fas fa-calendar-alt"></i> March 12, 2026</span>
+                                <a href="post-2.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Blog Layout (Grid + Sidebar) -->
+            <div class="blog-layout">
+                <div class="main-content">
+                    <div class="grid-2">
+                        <!-- Blog Card 1 -->
+                        <article class="blog-card" data-category="training">
+                            <div class="blog-card-img-wrapper">
+                                <img src="images/dog-commands.jpg" alt="Owner petting dog" class="blog-card-img">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-meta">
+                                    <span class="blog-category">Training</span>
+                                    <span>• 6 min read</span>
+                                </div>
+                                <h3 class="blog-card-title"><a href="post-3.html">5 Basic Commands Every Dog Should Know</a></h3>
+                                <p class="blog-card-excerpt">Start your dog's training journey with these five essential commands that ensure safety and good behavior.</p>
+                                <div class="blog-card-author-info">
+                                    <span class="author">Sarah Jones</span>
+                                    <span class="date">March 10, 2026</span>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <a href="post-3.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Card 2 -->
+                        <article class="blog-card" data-category="health">
+                            <div class="blog-card-img-wrapper">
+                                <img src="images/dog-vet.jpg" alt="Dog at the vet" class="blog-card-img">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-meta">
+                                    <span class="blog-category">Health</span>
+                                    <span>• 7 min read</span>
+                                </div>
+                                <h3 class="blog-card-title"><a href="#">Signs Your Pet Needs to See a Vet</a></h3>
+                                <p class="blog-card-excerpt">Don't ignore the warning signs. Learn how to identify when your furry friend is feeling under the weather.</p>
+                                <div class="blog-card-author-info">
+                                    <span class="author">Dr. Emily White</span>
+                                    <span class="date">March 8, 2026</span>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Card 3 -->
+                        <article class="blog-card" data-category="grooming">
+                            <div class="blog-card-img-wrapper">
+                                <img src="images/grooming-tools.jpg" alt="Dog being groomed" class="blog-card-img">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-meta">
+                                    <span class="blog-category">Grooming</span>
+                                    <span>• 10 min read</span>
+                                </div>
+                                <h3 class="blog-card-title"><a href="post-4.html">How to Groom Your Dog at Home: A Complete Guide</a></h3>
+                                <p class="blog-card-excerpt">Master the art of home grooming. From bathing to nail trimming, we cover everything you need to know.</p>
+                                <div class="blog-card-author-info">
+                                    <span class="author">David Miller</span>
+                                    <span class="date">March 12, 2026</span>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <a href="post-4.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Card 4 -->
+                        <article class="blog-card" data-category="pet-care">
+                            <div class="blog-card-img-wrapper">
+                                <img src="images/dog-routine.jpg" alt="Dog on walk" class="blog-card-img">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-meta">
+                                    <span class="blog-category">Pet Care</span>
+                                    <span>• 5 min read</span>
+                                </div>
+                                <h3 class="blog-card-title"><a href="#">How to Establish a Daily Routine</a></h3>
+                                <p class="blog-card-excerpt">Pets thrive on routine. Discover how to create a schedule that balances play, rest, and feeding times.</p>
+                                <div class="blog-card-author-info">
+                                    <span class="author">Chris Miller</span>
+                                    <span class="date">March 2, 2026</span>
+                                </div>
+                                <div class="blog-card-footer">
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="load-more-container">
+                        <button class="btn btn-outline" id="loadMore">Load More Articles</button>
+                    </div>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Popular Posts</h4>
+                        <div class="popular-posts">
+                            <div class="popular-post-item">
+                                <img src="images/puppy-care.jpg" alt="Popular post">
+                                <div class="popular-post-info">
+                                    <h5><a href="post-1.html">The Ultimate Puppy Care Guide</a></h5>
+                                    <span class="date">March 15, 2026</span>
+                                </div>
+                            </div>
+                            <div class="popular-post-item">
+                                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=100" alt="Popular post">
+                                <div class="popular-post-info">
+                                    <h5><a href="post-2.html">Top 10 Nutritious Foods</a></h5>
+                                    <span class="date">March 12, 2026</span>
+                                </div>
+                            </div>
+                            <div class="popular-post-item">
+                                <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=100" alt="Popular post">
+                                <div class="popular-post-info">
+                                    <h5><a href="post-4.html">Home Dog Grooming Guide</a></h5>
+                                    <span class="date">March 12, 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Categories</h4>
+                        <ul class="sidebar-categories">
+                            <li><a href="#">Pet Care <span>(12)</span></a></li>
+                            <li><a href="#">Dog Training <span>(8)</span></a></li>
+                            <li><a href="#">Nutrition <span>(15)</span></a></li>
+                            <li><a href="#">Health <span>(10)</span></a></li>
+                            <li><a href="#">Grooming <span>(6)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget sidebar-newsletter">
+                        <h4 class="widget-title">Stay Updated</h4>
+                        <p>Get the latest pet care tips delivered to your inbox.</p>
+                        <form class="sidebar-newsletter-form">
+                            <input type="email" placeholder="Your Email Address">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Call to Action Section -->
+            <section class="cta-section blog-cta">
+                <div class="cta-content">
+                    <h2 class="cta-title">Want to take better care of your pet?</h2>
+                    <p class="cta-desc">Discover our comprehensive guides and expert tips to ensure your furry friend lives their best life.</p>
+                    <a href="about.html" class="btn btn-secondary">Explore More Guides</a>
+                </div>
+            </section>
+
+            <!-- Main Newsletter Section -->
+            <section class="newsletter-section">
+                <div class="newsletter-content container">
+                    <div class="newsletter-text">
+                        <h2>Join Our Community</h2>
+                        <p>Get weekly pet care tips directly to your inbox and never miss an update.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required title="Email Address">
+                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
+                    <p>We believe every pet deserves a happy, healthy life. Our mission is to empower pet owners with expert advice, helpful guides, and a loving community.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="blog.html">All Articles</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Categories</h4>
+                    <div class="footer-links">
+                        <a href="blog.html">Pet Care Tips</a>
+                        <a href="blog.html">Dog Training Tips</a>
+                        <a href="blog.html">Best Food for Pets</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Legal</h4>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PetUnion Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | PetUnion Hub</title>
+    <meta name="description" content="Learn about PetUnion Hub's mission to help pet owners with useful guides and real stories.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-hero { text-align: center; max-width: 800px; margin: 0 auto; padding-bottom: 40px; }
+        .about-hero h1 { font-size: 3.5rem; margin-bottom: 24px; }
+        .about-hero p { font-size: 1.2rem; color: var(--text-light); }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 40px; }
+        @media(max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
+        .about-image { border-radius: 30px; box-shadow: var(--shadow); width: 100%; }
+        .mission-points { display: flex; flex-direction: column; gap: 24px; margin-top: 32px; }
+        .mission-point { display: flex; gap: 16px; }
+        .mission-icon { width: 48px; height: 48px; min-width: 48px; background: rgba(163, 201, 168, 0.2); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+        .mission-point h3 { margin-bottom: 8px; font-size: 1.2rem; }
+        .mission-point p { color: var(--text-light); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section">
+            <div class="about-hero">
+                <span class="hero-badge">Our Story</span>
+                <h1>Helping Pet Owners, One Guide at a Time</h1>
+                <p>We are a passionate team of pet lovers dedicated to providing you with the best, science-backed, and practical information to help you raise happy, healthy pets.</p>
+            </div>
+
+            <div class="about-grid">
+                <div>
+                    <img src="images/about-pet.jpg" alt="Person hugging dog" class="about-image">
+                </div>
+                <div>
+                    <h2>Our Mission</h2>
+                    <p style="color: var(--text-light); margin-top: 16px;">At PetUnion Hub, we believe that informed pet owners make for happier pets. Our goal is to simplify pet care, provide actionable training tips, and build a supportive community where pets bring us together.</p>
+                    
+                    <div class="mission-points">
+                        <div class="mission-point">
+                            <div class="mission-icon"><i class="fas fa-book-open"></i></div>
+                            <div>
+                                <h3>Educational Guides</h3>
+                                <p>Comprehensive, easy-to-understand guides tailored for beginners and experienced owners alike.</p>
+                            </div>
+                        </div>
+                        <div class="mission-point">
+                            <div class="mission-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h3>Trusted Advice</h3>
+                                <p>We research thoroughly so you don't have to, bringing you safe, reliable pet care practices.</p>
+                            </div>
+                        </div>
+                        <div class="mission-point">
+                            <div class="mission-icon"><i class="fas fa-users"></i></div>
+                            <div>
+                                <h3>Community Focused</h3>
+                                <p>Connecting pet lovers through shared stories, struggles, and triumphs in pet parenthood.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2 class="cta-title">Join Our Pet Loving Community</h2>
+                    <p class="cta-desc">Get the latest pet care tips, adorable stories, and exclusive guides delivered straight to your inbox.</p>
+                    <a href="contact.html" class="btn btn-secondary">Subscribe Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
+                    <p>We believe every pet deserves a happy, healthy life. Our mission is to empower pet owners with expert advice, helpful guides, and a loving community.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="blog.html">All Articles</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Categories</h4>
+                    <div class="footer-links">
+                        <a href="blog.html">Pet Care Tips</a>
+                        <a href="blog.html">Dog Training Tips</a>
+                        <a href="blog.html">Best Food for Pets</a>
+                        <a href="blog.html">Pet Health Tips</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Legal</h4>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PetUnion Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
