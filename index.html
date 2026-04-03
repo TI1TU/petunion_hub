@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetUnion Hub | Where Pets Bring Us Together</title>
-    <meta name="description" content="Discover high-quality pet care tips, dog training guides, and the best pet food recommendations at PetUnion Hub.">
+    <title>PetUnion Hub | Every Pet Has a Story</title>
+    <meta name="description" content="Read real pet stories, explore helpful blogs, and share your own journey with our pet-loving community.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,7 +15,8 @@
             <nav class="nav-links">
                 <a href="index.html" class="active">Home</a>
                 <a href="blog.html">Blog</a>
-                <a href="about.html">About Us</a>
+                <a href="#submit-story">Share Story</a>
+                <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
@@ -27,11 +28,11 @@
         <section class="container hero">
             <div class="hero-content">
                 <span class="hero-badge">Welcome to PetUnion Hub 🐾</span>
-                <h1>Your Ultimate Guide to Pet Care, Health & Training</h1>
-                <p>Expert tips on pet care, training, nutrition, and health to help your furry friends live their best lives.</p>
+                <h1>Every Pet Has a Story 🐾</h1>
+                <p>Read real pet stories, explore helpful blogs, and share your own journey with our supportive and loving community.</p>
                 <div class="hero-actions">
-                    <a href="blog.html" class="btn btn-primary">Explore Blogs</a>
-                    <a href="about.html" class="btn btn-outline">Learn More</a>
+                    <a href="#featured-stories" class="btn btn-primary">Read Stories</a>
+                    <a href="#submit-story" class="btn btn-outline">Share Your Story</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -39,95 +40,122 @@
             </div>
         </section>
 
-        <!-- Categories Section -->
+        <!-- Story Categories Section -->
         <section class="container section">
             <div class="section-header">
-                <h2 class="section-title">Blog Categories</h2>
+                <h2 class="section-title">Explore Stories</h2>
             </div>
             <div class="categories-grid">
-                <a href="blog.html?category=care" class="category-card">
-                    <div class="category-icon"><i class="fas fa-heartbeat"></i></div>
-                    <div class="category-title">Pet Care Tips</div>
+                <a href="#" class="category-card">
+                    <div class="category-icon"><i class="fas fa-dog"></i></div>
+                    <div class="category-title">Dogs</div>
                 </a>
-                <a href="blog.html?category=training" class="category-card">
-                    <div class="category-icon"><i class="fas fa-bone"></i></div>
-                    <div class="category-title">Dog Training</div>
+                <a href="#" class="category-card">
+                    <div class="category-icon"><i class="fas fa-cat"></i></div>
+                    <div class="category-title">Cats</div>
                 </a>
-                <a href="blog.html?category=nutrition" class="category-card">
-                    <div class="category-icon"><i class="fas fa-drumstick-bite"></i></div>
-                    <div class="category-title">Pet Food & Nutrition</div>
+                <a href="#" class="category-card">
+                    <div class="category-icon"><i class="fas fa-home"></i></div>
+                    <div class="category-title">Rescue Stories</div>
                 </a>
-                <a href="blog.html?category=health" class="category-card">
-                    <div class="category-icon"><i class="fas fa-stethoscope"></i></div>
-                    <div class="category-title">Pet Health</div>
+                <a href="#" class="category-card">
+                    <div class="category-icon"><i class="fas fa-heart"></i></div>
+                    <div class="category-title">Emotional Stories</div>
                 </a>
-                <a href="blog.html?category=grooming" class="category-card">
-                    <div class="category-icon"><i class="fas fa-cut"></i></div>
-                    <div class="category-title">Grooming Guide</div>
+                <a href="#" class="category-card">
+                    <div class="category-icon"><i class="fas fa-laugh"></i></div>
+                    <div class="category-title">Funny Moments</div>
                 </a>
             </div>
         </section>
 
-        <!-- Featured Blogs -->
-        <section class="container section">
+        <!-- Featured Stories Section -->
+        <section id="featured-stories" class="container section">
             <div class="section-header">
-                <h2 class="section-title">Featured Articles</h2>
-                <a href="blog.html" class="btn btn-outline">View All Posts</a>
+                <h2 class="section-title">Featured Stories</h2>
+                <a href="#" class="btn btn-outline">View All Stories</a>
             </div>
             <div class="grid-3">
-                <!-- Blog Card 1 -->
                 <article class="blog-card">
                     <div class="blog-card-img-wrapper">
-                        <img src="images/puppy-care.jpg" alt="Puppies running" class="blog-card-img">
+                        <img src="images/puppy-care.jpg" alt="Golden retriever puppy">
                     </div>
                     <div class="blog-card-content">
                         <div class="blog-meta">
-                            <span class="blog-category">Puppy Care</span>
-                            <span>• 5 min read</span>
+                            <span class="blog-category">Rescue Stories</span>
+                            <span>• By Sarah M.</span>
                         </div>
-                        <h3 class="blog-card-title"><a href="post-1.html">The Ultimate Puppy Care Guide for New Owners</a></h3>
-                        <p class="blog-card-excerpt">Bringing home a new puppy is exciting! Discover the essential tips for the first 30 days of puppy parenthood.</p>
+                        <h3 class="blog-card-title"><a href="#">How Max Found His Forever Home</a></h3>
+                        <p class="blog-card-excerpt">After 2 years in the shelter, Max finally found a family who understood him. This is his story of resilience and trust.</p>
                         <div class="blog-card-footer">
-                            <a href="post-1.html" class="read-more">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Blog Card 2 -->
                 <article class="blog-card">
                     <div class="blog-card-img-wrapper">
-                        <img src="images/dog-treats.jpg" alt="Dog looking at treats" class="blog-card-img">
+                        <img src="images/cat-body-language.jpg" alt="Tabby cat">
                     </div>
                     <div class="blog-card-content">
                         <div class="blog-meta">
-                            <span class="blog-category">Best Food</span>
-                            <span>• 4 min read</span>
+                            <span class="blog-category">Funny Moments</span>
+                            <span>• By John D.</span>
                         </div>
-                        <h3 class="blog-card-title"><a href="post-2.html">Top 10 Nutritious Foods Your Dog Will Love</a></h3>
-                        <p class="blog-card-excerpt">Not all dog food is created equal. Learn what ingredients to look for to ensure your furry friend lives a long, healthy life.</p>
+                        <h3 class="blog-card-title"><a href="#">Luna's Midnight Zoomies</a></h3>
+                        <p class="blog-card-excerpt">Every night at 2 AM, Luna decides it's time for the feline Olympics. Here are some of her funniest nocturnal antics.</p>
                         <div class="blog-card-footer">
-                            <a href="post-2.html" class="read-more">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Blog Card 3 -->
                 <article class="blog-card">
                     <div class="blog-card-img-wrapper">
-                        <img src="images/dog-commands.jpg" alt="Owner petting dog" class="blog-card-img">
+                        <img src="images/dog-commands.jpg" alt="Owner and dog">
                     </div>
                     <div class="blog-card-content">
                         <div class="blog-meta">
-                            <span class="blog-category">Training</span>
-                            <span>• 6 min read</span>
+                            <span class="blog-category">Emotional Stories</span>
+                            <span>• By Emily R.</span>
                         </div>
-                        <h3 class="blog-card-title"><a href="post-3.html">5 Basic Commands Every Dog Should Know</a></h3>
-                        <p class="blog-card-excerpt">Start your dog's training journey with these five essential commands that ensure safety and good behavior.</p>
+                        <h3 class="blog-card-title"><a href="#">Healing Together</a></h3>
+                        <p class="blog-card-excerpt">When I was going through a tough time, my golden retriever Charlie was my absolute anchor. A story about the healing power of pets.</p>
                         <div class="blog-card-footer">
-                            <a href="post-3.html" class="read-more">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </article>
+            </div>
+        </section>
+
+        <!-- Submit Your Story Section -->
+        <section id="submit-story" class="container section">
+            <div class="submit-story-container" style="background: var(--surface); padding: 60px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.03);">
+                <div class="section-header" style="text-align: center; justify-content: center; margin-bottom: 40px; display: block;">
+                    <h2 class="section-title">Submit Your Story</h2>
+                    <p style="color: var(--text-light); margin-top: 15px; font-size: 1.1rem;">Have a special bond with your pet? Share your story with our community!</p>
+                </div>
+                <form class="story-form" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label for="owner-name" style="display: block; margin-bottom: 8px; font-weight: 500;">Your Name</label>
+                        <input type="text" id="owner-name" placeholder="E.g. Sarah Mitchell" style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid #e0dfdc; background: #faf9f6; font-family: 'Inter', sans-serif;" required>
+                    </div>
+                    <div>
+                        <label for="pet-name" style="display: block; margin-bottom: 8px; font-weight: 500;">Pet's Name</label>
+                        <input type="text" id="pet-name" placeholder="E.g. Charlie" style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid #e0dfdc; background: #faf9f6; font-family: 'Inter', sans-serif;" required>
+                    </div>
+                    <div>
+                        <label for="story-text" style="display: block; margin-bottom: 8px; font-weight: 500;">Your Story</label>
+                        <textarea id="story-text" rows="6" placeholder="Tell us about your pet's journey..." style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid #e0dfdc; background: #faf9f6; font-family: 'Inter', sans-serif; resize: vertical;" required></textarea>
+                    </div>
+                    <div>
+                        <label for="story-img" style="display: block; margin-bottom: 8px; font-weight: 500;">Upload an Image</label>
+                        <input type="file" id="story-img" accept="image/*" style="width: 100%; padding: 12px; border-radius: 12px; border: 1px dashed #c4c2c0; background: #fdfbf7; cursor: pointer;">
+                    </div>
+                    <button type="button" class="btn btn-primary" style="margin-top: 10px; width: 100%;" onclick="alert('Thank you for sharing your story! It will be reviewed by our community team.')">Submit Your Story</button>
+                    <p style="text-align: center; color: var(--text-light); font-size: 0.9rem; margin-top: 10px;">By clicking submit, your story will be sent for review to be featured on our blog.</p>
+                </form>
             </div>
         </section>
 
@@ -140,23 +168,7 @@
             <div class="grid-3">
                 <article class="blog-card latest-card">
                     <div class="blog-card-img-wrapper">
-                        <img src="images/cat-body-language.jpg" alt="Kitten playing" class="blog-card-img">
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Pet Care</span>
-                            <span>• 3 min read</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="#">Understanding Your Cat's Body Language</a></h3>
-                        <p class="blog-card-excerpt">Is your cat happy or just hungry? Learn to decode those tail twitches and purrs with our expert guide.</p>
-                        <div class="blog-card-footer">
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="blog-card latest-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/dog-treats.jpg" alt="Dog eating" class="blog-card-img">
+                        <img src="images/dog-treats.jpg" alt="Dog eating">
                     </div>
                     <div class="blog-card-content">
                         <div class="blog-meta">
@@ -172,7 +184,7 @@
                 </article>
                 <article class="blog-card latest-card">
                     <div class="blog-card-img-wrapper">
-                        <img src="images/grooming-tools.jpg" alt="Grooming dog" class="blog-card-img">
+                        <img src="images/grooming-tools.jpg" alt="Grooming dog">
                     </div>
                     <div class="blog-card-content">
                         <div class="blog-meta">
@@ -186,19 +198,68 @@
                         </div>
                     </div>
                 </article>
+                <article class="blog-card latest-card">
+                    <div class="blog-card-img-wrapper">
+                        <img src="images/about-original-style.jpg" alt="Training tools">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Training</span>
+                            <span>• 6 min read</span>
+                        </div>
+                        <h3 class="blog-card-title"><a href="#">Basic Puppy Training Timeline</a></h3>
+                        <p class="blog-card-excerpt">A week-by-week guide to potty training, crate training, and basic commands for your new companion.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <!-- About Preview Section -->
-        <section class="about-preview section">
+        <!-- Why Join Our Community -->
+        <section class="about-preview section" style="background: rgba(160, 120, 85, 0.05);">
             <div class="container about-preview-content">
                 <div class="about-preview-text">
-                    <h2 class="section-title">About PetUnion Hub</h2>
-                    <p>At PetUnion Hub, we share trusted tips and guides to help you take better care of your pets. Our mission is to empower pet owners with expert advice and a loving community.</p>
-                    <a href="about.html" class="btn btn-outline">Read More</a>
+                    <h2 class="section-title">Why Join Our Community?</h2>
+                    <p>At PetUnion Hub, we believe that the best advice comes from real experiences. Join thousands of pet lovers and create meaningful connections.</p>
+                    <ul style="margin-bottom: 30px; padding-left: 20px; font-size: 1.1rem; color: var(--text-color);">
+                        <li style="margin-bottom: 15px;"><i class="fas fa-heart" style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Share your emotions:</strong> Find an empathetic audience that understands the deep bond with pets.</li>
+                        <li style="margin-bottom: 15px;"><i class="fas fa-star" style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Inspire other pet lovers:</strong> Your story might be exactly what a struggling pet parent needs to hear.</li>
+                        <li style="margin-bottom: 15px;"><i class="fas fa-users" style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Connect:</strong> Meet like-minded people dedicated to pet welfare.</li>
+                        <li style="margin-bottom: 15px;"><i class="fas fa-paw" style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Celebrate pet life:</strong> Rejoice in every funny, chaotic, and beautiful moment.</li>
+                    </ul>
+                    <a href="#submit-story" class="btn btn-primary">Join the Community</a>
                 </div>
                 <div class="about-preview-image">
-                    <img src="images/about-original-style.jpg" alt="PetUnion Hub Community">
+                    <img src="images/hero-pets.jpg" alt="PetUnion Hub Community" style="border-radius: var(--radius-lg); border: 10px solid var(--white);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Voices (Testimonials) -->
+        <section class="container section">
+            <div class="section-header" style="justify-content: center; text-align: center;">
+                <h2 class="section-title">Community Voices</h2>
+            </div>
+            <div class="grid-3">
+                <div style="background: var(--surface); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.03); text-align: center;">
+                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 20px;"><i class="fas fa-quote-left"></i></div>
+                    <p style="font-size: 1.1rem; font-style: italic; color: var(--text-color); margin-bottom: 30px;">"Reading the rescue stories on PetUnion gave me the courage to adopt a senior dog. It was the best decision I've ever made. The community is incredibly supportive!"</p>
+                    <div style="font-weight: bold; color: var(--primary-color);">— Jessica T.</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light);">Pet Parent of Buster</div>
+                </div>
+                <div style="background: var(--surface); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.03); text-align: center;">
+                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 20px;"><i class="fas fa-quote-left"></i></div>
+                    <p style="font-size: 1.1rem; font-style: italic; color: var(--text-color); margin-bottom: 30px;">"I shared the story of my cat's battle with illness here. The outpouring of love and advice from other members helped me get through the toughest weeks."</p>
+                    <div style="font-weight: bold; color: var(--primary-color);">— Michael B.</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light);">Pet Parent of Oliver</div>
+                </div>
+                <div style="background: var(--surface); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.03); text-align: center;">
+                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 20px;"><i class="fas fa-quote-left"></i></div>
+                    <p style="font-size: 1.1rem; font-style: italic; color: var(--text-color); margin-bottom: 30px;">"It's not just a blog; it feels like a family. Every story submitted here is authentic, heartwarming, and full of raw emotion. Highly recommend joining."</p>
+                    <div style="font-weight: bold; color: var(--primary-color);">— Amanda L.</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light);">Veterinary Tech</div>
                 </div>
             </div>
         </section>
@@ -207,77 +268,54 @@
         <section class="container">
             <div class="cta-section">
                 <div class="cta-content">
-                    <h2 class="cta-title">Want to give your pet the best life?</h2>
-                    <p class="cta-desc">Join thousands of pet lovers who trust PetUnion Hub for the best care and training advice.</p>
-                    <a href="blog.html" class="btn btn-secondary">Start Reading</a>
+                    <h2 class="cta-title">Ready to inspire others?</h2>
+                    <p class="cta-desc">Join our pet-loving community today. Share the joy, the chaos, and the unconditional love that pets bring into our lives.</p>
+                    <a href="#submit-story" class="btn btn-secondary" style="background: var(--white); color: var(--primary-color);">Share Your Story</a>
                 </div>
             </div>
         </section>
 
-        <!-- Newsletter Section -->
-        <section class="newsletter-section">
-            <div class="container newsletter-content">
-                <div class="newsletter-text">
-                    <h2>Get weekly pet care tips & guides</h2>
-                    <p>Stay updated with the latest in pet health, nutrition, and training.</p>
-                </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </section>
         <!-- FAQ Section -->
         <section id="faq" class="section container faq-section">
-            <h2 class="section-title">Frequently Asked Questions About Pet Care</h2>
+            <h2 class="section-title">Community FAQ</h2>
             <div class="faq-container">
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>What is the best food for dogs?</span>
+                        <span>How to submit a story?</span>
                         <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>The best dog food depends on your dog’s age, breed, and health. High-quality commercial dog food or a vet-approved homemade diet is recommended.</p>
+                        <p>Simply use the "Submit Your Story" form on this page! Include your name, your pet's name, a heartfelt story, and an optional image. Our team will review it before publishing.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>How often should I feed my pet?</span>
+                        <span>Is it free to join the community?</span>
                         <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Most adult dogs should be fed twice a day, while puppies may need 3–4 meals daily.</p>
+                        <p>Yes! PetUnion Hub is a completely free, community-driven platform dedicated purely to sharing stories and advice.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>How can I train my dog at home?</span>
+                        <span>Can I edit my story after submitting?</span>
                         <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Start with basic commands like sit, stay, and come. Use positive reinforcement and consistency.</p>
+                        <p>Currently, once a story is submitted and published, you cannot edit it directly. However, you can always reach out to us via our Contact page, and our editing team will help make any adjustments.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>What are basic pet care tips?</span>
+                        <span>Will my full name be shown?</span>
                         <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
                     </button>
                     <div class="faq-answer">
-                        <p>Provide proper food, regular exercise, grooming, and routine vet checkups to keep your pet healthy.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>How do I keep my pet healthy?</span>
-                        <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Maintain a balanced diet, regular vaccinations, exercise, and hygiene.</p>
+                        <p>By default, we just use your first name and last initial (e.g., Sarah M.) to respect your privacy while keeping the community feeling personal.</p>
                     </div>
                 </div>
             </div>
@@ -289,7 +327,7 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-                    <p>We believe every pet deserves a happy, healthy life. Our mission is to empower pet owners with expert advice, helpful guides, and a loving community.</p>
+                    <p>Where every pet has a story. We believe in the power of storytelling and community to bring pet owners together in a loving, supportive space.</p>
                     <div class="social-links">
                         <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -302,31 +340,31 @@
                     <div class="footer-links">
                         <a href="index.html">Home</a>
                         <a href="blog.html">Blog</a>
-                        <a href="about.html">About Us</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="#submit-story">Submit Story</a>
+                        <a href="about.html">About Community</a>
                     </div>
                 </div>
                 <div>
-                    <h4 class="footer-title">Categories</h4>
+                    <h4 class="footer-title">Story Topics</h4>
                     <div class="footer-links">
-                        <a href="blog.html?category=care">Pet Care Tips</a>
-                        <a href="blog.html?category=training">Dog Training</a>
-                        <a href="blog.html?category=nutrition">Pet Food & Nutrition</a>
-                        <a href="blog.html?category=health">Pet Health</a>
-                        <a href="blog.html?category=grooming">Grooming Guide</a>
+                        <a href="#">Rescue Stories</a>
+                        <a href="#">Funny Moments</a>
+                        <a href="#">Emotional Connections</a>
+                        <a href="#">Heroic Pets</a>
+                        <a href="#">Crossing the Rainbow Bridge</a>
                     </div>
                 </div>
                 <div>
-                    <h4 class="footer-title">Contact Us</h4>
+                    <h4 class="footer-title">Connect</h4>
                     <div class="footer-links">
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--primary-color);"></i> hello@petunionhub.com</p>
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--primary-color);"></i> 123 Pet Lane, Pawsome City</p>
-                        <a href="contact.html" class="read-more" style="margin-top: 10px;">Send a Message <i class="fas fa-arrow-right"></i></a>
+                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--primary-color);"></i> stories@petunionhub.com</p>
+                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-users" style="margin-right: 10px; color: var(--primary-color);"></i> PetUnion Community Hub</p>
+                        <a href="contact.html" class="read-more" style="margin-top: 10px;">Reach Out <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 PetUnion Hub. All rights reserved.</p>
+                <p>&copy; 2026 PetUnion Hub Community. All rights reserved.</p>
             </div>
         </div>
     </footer>
