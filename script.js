@@ -86,7 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- CONSOLIDATED BLOG FILTERING & SEARCH ---
     const filterTags = document.querySelectorAll('.filter-tag');
-    const blogCards = document.querySelectorAll('.blog-card, .featured-card');
+    const blogCards = document.querySelectorAll('.blog-card, .featured-story-large, .latest-card');
+
     const featuredSection = document.querySelector('.featured-blogs');
     const searchForm = document.querySelector('.search-form');
     const searchInput = document.querySelector('.search-input');
@@ -100,8 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let gridVisibleCount = 0;
 
         blogCards.forEach(card => {
-            const titleEl = card.querySelector('.blog-card-title');
-            const excerptEl = card.querySelector('.blog-card-excerpt');
+            const titleEl = card.querySelector('.blog-card-title, .featured-story-large h2');
+            const excerptEl = card.querySelector('.blog-card-excerpt, .featured-story-large p');
             const title = titleEl ? titleEl.textContent.toLowerCase() : '';
             const excerpt = excerptEl ? excerptEl.textContent.toLowerCase() : '';
             const cardCat = card.getAttribute('data-category');
@@ -111,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (matchesSearch && matchesCategory) {
                 card.style.display = 'flex';
-                if (card.classList.contains('featured-card')) {
+                if (card.classList.contains('featured-story-large')) {
                     featuredVisibleCount++;
                 } else {
                     gridVisibleCount++;
@@ -166,24 +167,25 @@ document.addEventListener('DOMContentLoaded', () => {
             searchDebounce = setTimeout(updateBlogGrid, 300);
         });
     }
-});
 
     // FAQ Accordion Logic
     const faqItems = document.querySelectorAll('.faq-item');
     if (faqItems.length > 0) {
         faqItems.forEach(item => {
             const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                
-                // Close other items for a cleaner accordion feel
-                faqItems.forEach(other => other.classList.remove('active'));
-                
-                // Toggle current item
-                if (!isActive) {
-                    item.classList.add('active');
-                }
-            });
+            if (question) {
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close other items for a cleaner accordion feel
+                    faqItems.forEach(other => other.classList.remove('active'));
+                    
+                    // Toggle current item
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            }
         });
     }
-
+});
