@@ -27,7 +27,7 @@
         .post-content blockquote { border-left: 4px solid var(--accent-color); padding: 10px 0 10px 30px; font-style: italic; color: var(--text-color); margin: 40px 0; font-size: 1.4rem; font-family: 'Outfit', sans-serif; background: rgba(160, 120, 85, 0.03); border-radius: 0 20px 20px 0; }
         
         .final-message-box { 
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); 
+            background: var(--primary-gradient); 
             color: var(--white); 
             padding: 40px; 
             border-radius: 24px; 
@@ -35,8 +35,8 @@
             text-align: center;
             box-shadow: 0 15px 35px rgba(111, 78, 55, 0.2);
         }
-        .final-message-box h3 { font-size: 1.8rem; margin-bottom: 15px; font-family: 'Outfit', sans-serif; }
-        .final-message-box p { font-size: 1.2rem; line-height: 1.6; opacity: 0.95; margin-bottom: 0; }
+        .final-message-box h3 { font-size: 1.8rem; margin-bottom: 15px; font-family: 'Outfit', sans-serif; color: var(--white); }
+        .final-message-box p { font-size: 1.2rem; line-height: 1.6; opacity: 0.95; margin-bottom: 0; color: var(--white); }
         .final-message-box .heart-icon { font-size: 2.5rem; margin-bottom: 20px; display: block; }
         
         .share-bar { display: flex; gap: 12px; align-items: center; margin-top: 60px; padding-top: 32px; border-top: 1px solid rgba(0,0,0,0.1); }
@@ -113,7 +113,7 @@
                 <p><strong>He was finally home.</strong></p>
 
                 <div class="final-message-box">
-                    <span class="heart-icon">❤️</span>
+                    <i class="fas fa-heart heart-icon"></i>
                     <h3>Final Message</h3>
                     <p>Sometimes, the dog who waits the longest… is the one who loves the deepest. Adopt, don’t shop. Give them the life they’ve been waiting for.</p>
                 </div>
