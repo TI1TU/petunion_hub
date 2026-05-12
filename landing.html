@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Union Hub | Your Trusted Pet Care & Training Hub</title>
+    <meta name="description" content="Get expert pet care tips, dog training guides, cat care advice, and helpful pet parenting content. Join our premium pet community today.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Modern Pet Landing Page Styles */
+        :root {
+            --cream: #FAF8F5;
+            --white: #FFFFFF;
+            --brown: #A0522D;
+            --soft-orange: #F8961E;
+            --text-dark: #2b2d42;
+            --text-muted: #6c757d;
+            --shadow-soft: 0 16px 40px rgba(160, 82, 45, 0.08);
+            --shadow-hover: 0 24px 48px rgba(160, 82, 45, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+        }
+
+        /* Subtle Paw Background Pattern */
+        .bg-paws {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 22c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm14-6c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm14 6c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zM29 46c-7.7 0-14-5.4-14-12 0-3 3-5 6-5 3.3 0 5 1.5 8 1.5s4.7-1.5 8-1.5c3 0 6 2 6 5 0 6.6-6.3 12-14 12z' fill='%23A0522D' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        /* 1. Hero Section */
+        .landing-hero {
+            padding: 120px 24px 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 40px;
+            box-shadow: var(--shadow-soft);
+            border: 12px solid var(--white);
+        }
+
+        /* Floating decoration */
+        .float-badge {
+            position: absolute;
+            bottom: -20px;
+            left: -30px;
+            background: var(--white);
+            padding: 16px 24px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-hover);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* 2. Contact / Lead Form Section */
+        .form-section {
+            padding: 100px 24px;
+            background: var(--white);
+            position: relative;
+        }
+
+        .form-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            border-radius: 32px;
+            box-shadow: var(--shadow-hover);
+            border: 1px solid rgba(160, 82, 45, 0.1);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        .form-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .lead-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .lead-form label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+
+        .lead-form input, .lead-form select, .lead-form textarea {
+            padding: 16px 20px;
+            border-radius: 16px;
+            border: 2px solid #EAE6DF;
+            background: var(--cream);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .lead-form input:focus, .lead-form select:focus, .lead-form textarea:focus {
+            outline: none;
+            border-color: var(--brown);
+            background: var(--white);
+            box-shadow: 0 0 0 4px rgba(160, 82, 45, 0.1);
+        }
+
+        .lead-form button {
+            grid-column: 1 / -1;
+            padding: 18px;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            border-radius: 16px;
+        }
+
+        /* 3. Features Section */
+        .features-section {
+            padding: 100px 24px;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px 24px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(160, 82, 45, 0.2);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(248, 150, 30, 0.15);
+            color: var(--soft-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 24px auto;
+            transition: all 0.4s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+            background: var(--soft-orange);
+            color: var(--white);
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        /* 4. About Section */
+        .about-section {
+            padding: 100px 24px;
+            background: var(--white);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            border-radius: 32px;
+            box-shadow: var(--shadow-hover);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+        }
+
+        .about-text p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* 5. Testimonials Section */
+        .testimonials-section {
+            padding: 100px 24px;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .review-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .review-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .reviewer-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--brown);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* 6. Newsletter Section */
+        .newsletter-section {
+            background: linear-gradient(135deg, #A0522D 0%, #D27D2D 100%);
+            padding: 100px 24px;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .newsletter-inner {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-inner h2 {
+            color: var(--white);
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .newsletter-box {
+            display: flex;
+            gap: 16px;
+            margin-top: 40px;
+            flex-direction: row;
+        }
+
+        .newsletter-box input {
+            flex: 1;
+            padding: 18px 24px;
+            border-radius: 50px;
+            border: none;
+            font-size: 1.1rem;
+            font-family: 'Inter', sans-serif;
+            min-width: 0; /* Prevents flex blowout */
+        }
+
+        .newsletter-box input:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(255,255,255,0.3);
+        }
+
+        .btn-news {
+            background: var(--text-dark);
+            color: var(--white);
+            border: none;
+            padding: 0 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-news:hover {
+            background: #1a1a1a;
+            transform: translateY(-2px);
+        }
+
+        /* Header Navigation */
+        .landing-nav {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            padding: 24px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        
+        .landing-nav img {
+            height: 45px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 900px) {
+            .landing-hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 140px;
+            }
+            .hero-text h1 {
+                font-size: 2.8rem;
+            }
+            .hero-text p {
+                margin: 0 auto 30px auto;
+            }
+            .lead-form {
+                grid-template-columns: 1fr;
+            }
+            .about-content {
+                flex-direction: column;
+            }
+            .newsletter-box {
+                flex-direction: column;
+            }
+            .btn-news {
+                padding: 18px 32px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-paws">
+
+    <header class="landing-nav">
+        <a href="index.html"><img src="logo.png" alt="PetUnion Hub"></a>
+        <a href="#contact-form" class="btn btn-outline" style="border-radius: 50px; border-width: 2px;">Contact Us</a>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="landing-hero fade-up visible">
+            <div class="hero-text">
+                <h1>Your Trusted Pet Care & Training Hub</h1>
+                <p>Get expert pet care tips, dog training guides, cat care advice, and helpful pet parenting content.</p>
+                <a href="#contact-form" class="btn btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">Join Pet Community <i class="fas fa-paw" style="margin-left: 10px;"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-pets.jpg" alt="Happy pets">
+                <div class="float-badge">
+                    <div style="background: rgba(160, 82, 45, 0.1); color: var(--brown); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div>
+                        <div style="font-weight: 700; color: var(--text-dark);">50,000+</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Happy Pet Parents</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Contact / Lead Form Section -->
+        <section id="contact-form" class="form-section">
+            <div class="bg-paws" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity:0.5; z-index:0;"></div>
+            <div class="form-card" style="position: relative; z-index: 1;">
+                <div class="form-header">
+                    <h2>Connect With Pet Union Hub</h2>
+                    <p>Join our pet-loving community and receive helpful pet care tips and updates.</p>
+                </div>
+                <form class="lead-form" onsubmit="event.preventDefault(); alert('Thank you for connecting with us! We will be in touch soon.');">
+                    <div class="form-group">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="femail">Email Address</label>
+                        <input type="email" id="femail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fphone">Phone Number</label>
+                        <input type="tel" id="fphone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="fpet">Pet Type</label>
+                        <select id="fpet" required>
+                            <option value="" disabled selected>Select pet type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="fmessage">Message Box</label>
+                        <textarea id="fmessage" rows="4" placeholder="How can we help you and your pet?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Form</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- 3. Features Section -->
+        <section class="features-section fade-up visible">
+            <h2 class="section-title">Everything You Need for Your Pet</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-book-medical"></i></div>
+                    <h3>Easy Pet Care Guides</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Step-by-step health and wellness routines for a happy pet.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-dog"></i></div>
+                    <h3>Dog Training Tips</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Master obedience and tricks with positive reinforcement techniques.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-cat"></i></div>
+                    <h3>Cat Parenting Advice</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Understand feline behavior and create a purr-fect home environment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Beginner Friendly Content</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Simple, jargon-free advice perfect for first-time pet owners.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Helpful Pet Stories</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Real-life experiences from community members to inspire your journey.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. About Section -->
+        <section class="about-section">
+            <div class="about-content fade-up visible">
+                <div class="about-image">
+                    <img src="images/max-story.png" alt="Happy rescue dog">
+                </div>
+                <div class="about-text">
+                    <div style="color: var(--soft-orange); font-weight: 600; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Our Mission</div>
+                    <h2>Empowering Pet Parents Everywhere</h2>
+                    <p>At Pet Union Hub, we believe that every pet deserves the absolute best care. Our mission is to empower pet parents with educational, easy-to-understand content that builds stronger, healthier bonds between humans and their animal companions.</p>
+                    <p>Whether you're dealing with puppy teething, a finicky feline, or just looking for the best nutrition advice, our community of experts and passionate owners is here to guide you every step of the way.</p>
+                    <div style="margin-top: 30px; display: flex; gap: 20px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-check-circle" style="color: var(--soft-orange); font-size: 1.2rem;"></i>
+                            <span style="font-weight: 500;">Expert Verified</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-check-circle" style="color: var(--soft-orange); font-size: 1.2rem;"></i>
+                            <span style="font-weight: 500;">Community Driven</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Testimonials Section -->
+        <section class="testimonials-section bg-paws">
+            <h2 class="section-title">Loved by Pet Parents</h2>
+            <div class="reviews-grid fade-up visible">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The training tips completely changed how my rescue pup behaves on walks. The guides are so easy to follow and incredibly effective!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-img">E</div>
+                        <div>
+                            <div style="font-weight: 600; font-family: 'Poppins', sans-serif;">Emily R.</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Dog Parent</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"I was struggling to understand my new kitten's behavior, but Pet Union's cat care advice was a lifesaver. Highly recommend this community!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-img" style="background: var(--soft-orange);">M</div>
+                        <div>
+                            <div style="font-weight: 600; font-family: 'Poppins', sans-serif;">Michael T.</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Cat Parent</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"It's so refreshing to find an educational site that doesn't use confusing jargon. Everything is beginner-friendly and actionable."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-img" style="background: #43aa8b;">S</div>
+                        <div>
+                            <div style="font-weight: 600; font-family: 'Poppins', sans-serif;">Sarah J.</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">First-time Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="newsletter-inner fade-up visible">
+                <h2>Join the Pack</h2>
+                <p style="font-size: 1.15rem; opacity: 0.9;">Never miss an update. Join thousands of subscribers receiving our top stories and guides.</p>
+                <form class="newsletter-box" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-news">Get Weekly Pet Care Tips</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. Footer -->
+    <footer style="background: var(--white); padding: 80px 24px 40px; border-top: 1px solid rgba(0,0,0,0.05);">
+        <div style="max-width: 1240px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 60px;">
+                <!-- Brand Info -->
+                <div>
+                    <img src="logo.png" alt="PetUnion Hub" style="height: 40px; margin-bottom: 20px;">
+                    <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 24px;">Your trusted hub for premium pet care guides, training tips, and heartwarming community stories.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="width: 40px; height: 40px; border-radius: 50%; background: var(--cream); display: flex; align-items: center; justify-content: center; color: var(--brown); transition: 0.3s;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="width: 40px; height: 40px; border-radius: 50%; background: var(--cream); display: flex; align-items: center; justify-content: center; color: var(--brown); transition: 0.3s;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="width: 40px; height: 40px; border-radius: 50%; background: var(--cream); display: flex; align-items: center; justify-content: center; color: var(--brown); transition: 0.3s;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 24px;">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="index.html" style="color: var(--text-muted); text-decoration: none; transition: 0.3s;">Home</a></li>
+                        <li><a href="about.html" style="color: var(--text-muted); text-decoration: none; transition: 0.3s;">About Us</a></li>
+                        <li><a href="blog.html" style="color: var(--text-muted); text-decoration: none; transition: 0.3s;">Pet Care Blog</a></li>
+                        <li><a href="#contact-form" style="color: var(--text-muted); text-decoration: none; transition: 0.3s;">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 24px;">Contact Us</h4>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px; color: var(--text-muted);">
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <i class="fas fa-envelope" style="color: var(--soft-orange); margin-top: 4px;"></i>
+                            <span>hello@petunionhub.com</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <i class="fas fa-phone-alt" style="color: var(--soft-orange); margin-top: 4px;"></i>
+                            <span>1-800-PET-LOVE</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--soft-orange); margin-top: 4px;"></i>
+                            <span>123 Community Lane,<br>Pet City, PC 90210</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div style="text-align: center; padding-top: 30px; border-top: 1px solid rgba(0,0,0,0.05); color: var(--text-muted); font-size: 0.9rem;">
+                <p>&copy; 2026 Pet Union Hub. All rights reserved.</p>
+                <div style="margin-top: 10px; display: flex; justify-content: center; gap: 20px;">
+                    <a href="privacy-policy.html" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+                    <a href="terms-conditions.html" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animations Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
