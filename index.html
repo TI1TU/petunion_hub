@@ -1,375 +1,893 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetUnion Hub | Every Pet Has a Story</title>
-    <meta name="description" content="Read real pet stories, explore helpful blogs, and share your own journey with our pet-loving community.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAEL / ATELIER — Collection 08: Monolith & Silk</title>
+  <meta name="description" content="An avant-garde exploration of tension between monumental architectural tailoring and weightless silk drape. Paris — Kyoto — New York.">
+  <meta name="theme-color" content="#080809">
+
+  <!-- Google Fonts: Syne, Italiana, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Italiana&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/fashion.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container nav">
-            <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-            <nav class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+
+  <!-- Subtle Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements (Desktop Only) -->
+  <div class="custom-cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" id="cursor-ring" aria-hidden="true">
+    <span class="cursor-label" id="cursor-label">VIEW</span>
+  </div>
+
+  <!-- Preloader Screen -->
+  <div class="preloader" id="preloader" aria-label="Loading VAEL Atelier">
+    <div class="preloader-header">
+      <span>Édition Limitée 08</span>
+      <span>Automne / Hiver 2026</span>
+    </div>
+
+    <div class="preloader-center">
+      <h1 class="preloader-brand">VAEL / ATELIER</h1>
+      <p class="preloader-season">Monolith & Silk</p>
+    </div>
+
+    <div class="preloader-footer">
+      <div class="preloader-progress-wrap">
+        <div class="preloader-progress-bar">
+          <div class="preloader-progress-fill" id="preloader-fill"></div>
         </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="container hero">
-            <div class="hero-content">
-                <span class="hero-badge">Welcome to PetUnion Hub 🐾</span>
-                <h1>Every Pet Has a Story 🐾</h1>
-                <p>Read real pet stories, explore helpful blogs, and share your own journey with our supportive and loving community.</p>
-                <div class="hero-actions">
-                    <a href="#featured-stories" class="btn btn-primary">Read Stories</a>
-                    <a href="#submit-story" class="btn btn-outline">Share Your Story</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero-pets.jpg" alt="Happy dog and cat together">
-            </div>
-        </section>
-
-        <!-- Story Categories Section -->
-        <section class="container section">
-            <div class="section-header">
-                <h2 class="section-title">Explore Stories</h2>
-            </div>
-            <div class="categories-grid">
-                <a href="#" class="category-card">
-                    <div class="category-icon"><i class="fas fa-dog"></i></div>
-                    <div class="category-title">Dogs</div>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="category-icon"><i class="fas fa-cat"></i></div>
-                    <div class="category-title">Cats</div>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="category-icon"><i class="fas fa-home"></i></div>
-                    <div class="category-title">Rescue Stories</div>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="category-icon"><i class="fas fa-heart"></i></div>
-                    <div class="category-title">Emotional Stories</div>
-                </a>
-                <a href="#" class="category-card">
-                    <div class="category-icon"><i class="fas fa-laugh"></i></div>
-                    <div class="category-title">Funny Moments</div>
-                </a>
-            </div>
-        </section>
-
-        <!-- Featured Stories Section -->
-        <section id="featured-stories" class="container section">
-            <div class="section-header">
-                <h2 class="section-title">Featured Stories</h2>
-                <a href="#" class="btn btn-outline">View All Stories</a>
-            </div>
-            <div class="grid-3">
-                <article class="blog-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/max-story.png" alt="A happy rescue dog running free in a field">
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Rescue Stories</span>
-                            <span>• By Sarah M.</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="post-max.html">How Max Found His Forever Home</a></h3>
-                        <p class="blog-card-excerpt">After 2 years in the shelter, Max finally found a family who understood him. This is his story of resilience and trust.</p>
-                        <div class="blog-card-footer">
-                            <a href="post-max.html" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/cat-body-language.jpg" alt="Tabby cat">
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Funny Moments</span>
-                            <span>• By John D.</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="#">Luna's Midnight Zoomies</a></h3>
-                        <p class="blog-card-excerpt">Every night at 2 AM, Luna decides it's time for the feline Olympics. Here are some of her funniest nocturnal antics.</p>
-                        <div class="blog-card-footer">
-                            <a href="#" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/dog-commands.jpg" alt="Owner and dog">
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Emotional Stories</span>
-                            <span>• By Emily R.</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="#">Healing Together</a></h3>
-                        <p class="blog-card-excerpt">When I was going through a tough time, my golden retriever Charlie was my absolute anchor. A story about the healing power of pets.</p>
-                        <div class="blog-card-footer">
-                            <a href="#" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Submit Your Story Section -->
-        <section id="submit-story" class="container section">
-            <div class="submit-story-container" style="background: var(--surface); padding: 60px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.03);">
-                <div class="section-header" style="text-align: center; justify-content: center; margin-bottom: 40px; display: block;">
-                    <h2 class="section-title">Submit Your Story</h2>
-                    <p style="color: var(--text-light); margin-top: 15px; font-size: 1.1rem;">Have a special bond with your pet? Share your story with our community!</p>
-                </div>
-                <form class="story-form" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
-                    <div>
-                        <label for="owner-name" style="display: block; margin-bottom: 8px; font-weight: 500;">Your Name</label>
-                        <input type="text" id="owner-name" placeholder="E.g. Sarah Mitchell" style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid #e0dfdc; background: #faf9f6; font-family: 'Inter', sans-serif;" required>
-                    </div>
-                    <div>
-                        <label for="pet-name" style="display: block; margin-bottom: 8px; font-weight: 500;">Pet's Name</label>
-                        <input type="text" id="pet-name" placeholder="E.g. Charlie" style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid #e0dfdc; background: #faf9f6; font-family: 'Inter', sans-serif;" required>
-                    </div>
-                    <div>
-                        <label for="story-text" style="display: block; margin-bottom: 8px; font-weight: 500;">Your Story</label>
-                        <textarea id="story-text" rows="6" placeholder="Tell us about your pet's journey..." style="width: 100%; padding: 14px 20px; border-radius: 12px; border: 1px solid #e0dfdc; background: #faf9f6; font-family: 'Inter', sans-serif; resize: vertical;" required></textarea>
-                    </div>
-                    <div>
-                        <label for="story-img" style="display: block; margin-bottom: 8px; font-weight: 500;">Upload an Image</label>
-                        <input type="file" id="story-img" accept="image/*" style="width: 100%; padding: 12px; border-radius: 12px; border: 1px dashed #c4c2c0; background: #fdfbf7; cursor: pointer;">
-                    </div>
-                    <button type="button" class="btn btn-primary" style="margin-top: 10px; width: 100%;" onclick="alert('Thank you for sharing your story! It will be reviewed by our community team.')">Submit Your Story</button>
-                    <p style="text-align: center; color: var(--text-light); font-size: 0.9rem; margin-top: 10px;">By clicking submit, your story will be sent for review to be featured on our blog.</p>
-                </form>
-            </div>
-        </section>
-
-        <!-- Latest Blog Posts -->
-        <section class="container section">
-            <div class="section-header">
-                <h2 class="section-title">Latest Blog Posts</h2>
-                <a href="blog.html" class="btn btn-outline">View All Posts</a>
-            </div>
-            <div class="grid-3">
-                <article class="blog-card latest-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/dog-treats.jpg" alt="Dog eating">
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Nutrition</span>
-                            <span>• 5 min read</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="#">Healthy Homemade Treats for Active Dogs</a></h3>
-                        <p class="blog-card-excerpt">Simple, 3-ingredient recipes for treats your dog will absolutely love. No preservatives, just pure joy.</p>
-                        <div class="blog-card-footer">
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="blog-card latest-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/grooming-tools.jpg" alt="Grooming dog">
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Grooming</span>
-                            <span>• 4 min read</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="#">Essential Grooming Tools for Every Pet Owner</a></h3>
-                        <p class="blog-card-excerpt">Keep your pet's coat shiny and healthy with these must-have grooming tools for home use.</p>
-                        <div class="blog-card-footer">
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-                <article class="blog-card latest-card">
-                    <div class="blog-card-img-wrapper">
-                        <img src="images/about-original-style.jpg" alt="Training tools">
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-meta">
-                            <span class="blog-category">Training</span>
-                            <span>• 6 min read</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="#">Basic Puppy Training Timeline</a></h3>
-                        <p class="blog-card-excerpt">A week-by-week guide to potty training, crate training, and basic commands for your new companion.</p>
-                        <div class="blog-card-footer">
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Why Join Our Community -->
-        <section class="about-preview section" style="background: rgba(160, 120, 85, 0.05);">
-            <div class="container about-preview-content">
-                <div class="about-preview-text">
-                    <h2 class="section-title">Why Join Our Community?</h2>
-                    <p>At PetUnion Hub, we believe that the best advice comes from real experiences. Join thousands of pet lovers and create meaningful connections.</p>
-                    <ul style="margin-bottom: 30px; padding-left: 20px; font-size: 1.1rem; color: var(--text-color);">
-                        <li style="margin-bottom: 15px;"><i class="fas fa-heart" style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Share your emotions:</strong> Find an empathetic audience that understands the deep bond with pets.</li>
-                        <li style="margin-bottom: 15px;"><i class="fas fa-star" style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Inspire other pet lovers:</strong> Your story might be exactly what a struggling pet parent needs to hear.</li>
-                        <li style="margin-bottom: 15px;"><i class="fas fa-users" style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Connect:</strong> Meet like-minded people dedicated to pet welfare.</li>
-                        <li style="margin-bottom: 15px;"><i class="fas fa-paw" style="color: var(--primary-color); margin-right: 10px;"></i> <strong>Celebrate pet life:</strong> Rejoice in every funny, chaotic, and beautiful moment.</li>
-                    </ul>
-                    <a href="#submit-story" class="btn btn-primary">Join the Community</a>
-                </div>
-                <div class="about-preview-image">
-                    <img src="images/hero-pets.jpg" alt="PetUnion Hub Community" style="border-radius: var(--radius-lg); border: 10px solid var(--white);">
-                </div>
-            </div>
-        </section>
-
-        <!-- Community Voices (Testimonials) -->
-        <section class="container section">
-            <div class="section-header" style="justify-content: center; text-align: center;">
-                <h2 class="section-title">Community Voices</h2>
-            </div>
-            <div class="grid-3">
-                <div style="background: var(--surface); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.03); text-align: center;">
-                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 20px;"><i class="fas fa-quote-left"></i></div>
-                    <p style="font-size: 1.1rem; font-style: italic; color: var(--text-color); margin-bottom: 30px;">"Reading the rescue stories on PetUnion gave me the courage to adopt a senior dog. It was the best decision I've ever made. The community is incredibly supportive!"</p>
-                    <div style="font-weight: bold; color: var(--primary-color);">— Jessica T.</div>
-                    <div style="font-size: 0.9rem; color: var(--text-light);">Pet Parent of Buster</div>
-                </div>
-                <div style="background: var(--surface); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.03); text-align: center;">
-                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 20px;"><i class="fas fa-quote-left"></i></div>
-                    <p style="font-size: 1.1rem; font-style: italic; color: var(--text-color); margin-bottom: 30px;">"I shared the story of my cat's battle with illness here. The outpouring of love and advice from other members helped me get through the toughest weeks."</p>
-                    <div style="font-weight: bold; color: var(--primary-color);">— Michael B.</div>
-                    <div style="font-size: 0.9rem; color: var(--text-light);">Pet Parent of Oliver</div>
-                </div>
-                <div style="background: var(--surface); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.03); text-align: center;">
-                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 20px;"><i class="fas fa-quote-left"></i></div>
-                    <p style="font-size: 1.1rem; font-style: italic; color: var(--text-color); margin-bottom: 30px;">"It's not just a blog; it feels like a family. Every story submitted here is authentic, heartwarming, and full of raw emotion. Highly recommend joining."</p>
-                    <div style="font-weight: bold; color: var(--primary-color);">— Amanda L.</div>
-                    <div style="font-size: 0.9rem; color: var(--text-light);">Veterinary Tech</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="container">
-            <div class="cta-section">
-                <div class="cta-content">
-                    <h2 class="cta-title">Ready to inspire others?</h2>
-                    <p class="cta-desc">Join our pet-loving community today. Share the joy, the chaos, and the unconditional love that pets bring into our lives.</p>
-                    <a href="#submit-story" class="btn btn-secondary" style="background: var(--white); color: var(--primary-color);">Share Your Story</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="section container faq-section">
-            <h2 class="section-title">Community FAQ</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>How to submit a story?</span>
-                        <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Simply use the "Submit Your Story" form on this page! Include your name, your pet's name, a heartfelt story, and an optional image. Our team will review it before publishing.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Is it free to join the community?</span>
-                        <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! PetUnion Hub is a completely free, community-driven platform dedicated purely to sharing stories and advice.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Can I edit my story after submitting?</span>
-                        <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Currently, once a story is submitted and published, you cannot edit it directly. However, you can always reach out to us via our Contact page, and our editing team will help make any adjustments.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Will my full name be shown?</span>
-                        <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>By default, we just use your first name and last initial (e.g., Sarah M.) to respect your privacy while keeping the community feeling personal.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-                    <p>Where every pet has a story. We believe in the power of storytelling and community to bring pet owners together in a loving, supportive space.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="#submit-story">Submit Story</a>
-                        <a href="about.html">About Community</a>
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="terms-conditions.html">Terms & Conditions</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Story Topics</h4>
-                    <div class="footer-links">
-                        <a href="#">Rescue Stories</a>
-                        <a href="#">Funny Moments</a>
-                        <a href="#">Emotional Connections</a>
-                        <a href="#">Heroic Pets</a>
-                        <a href="#">Crossing the Rainbow Bridge</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Connect</h4>
-                    <div class="footer-links">
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--primary-color);"></i> stories@petunionhub.com</p>
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-users" style="margin-right: 10px; color: var(--primary-color);"></i> PetUnion Community Hub</p>
-                        <a href="contact.html" class="read-more" style="margin-top: 10px;">Reach Out <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 PetUnion Hub Community. All rights reserved.</p>
-            </div>
+        <div style="font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted);">
+          Paris • Kyoto • New York
         </div>
+      </div>
+      <div class="preloader-counter" id="preloader-counter">00</div>
+    </div>
+  </div>
+
+  <!-- Minimal Navigation Bar -->
+  <header class="site-nav" id="site-nav">
+    <div class="nav-brand">
+      <a href="#hero-section" class="brand-logo">VAEL</a>
+      <span class="brand-badge">ATELIER 08</span>
+    </div>
+
+    <!-- Center/Right Links (Desktop) -->
+    <nav class="nav-links-desktop" aria-label="Primary Navigation">
+      <a href="#collection-section" class="nav-link">
+        <span class="nav-link-inner">
+          <span>COLLECTIONS</span>
+          <span>COLLECTIONS</span>
+        </span>
+      </a>
+      <a href="#runway-section-wrapper" class="nav-link">
+        <span class="nav-link-inner">
+          <span>RUNWAY ARCHIVE</span>
+          <span>RUNWAY ARCHIVE</span>
+        </span>
+      </a>
+      <a href="#editorial-stories" class="nav-link">
+        <span class="nav-link-inner">
+          <span>EDITORIAL</span>
+          <span>EDITORIAL</span>
+        </span>
+      </a>
+      <a href="#craftsmanship-section" class="nav-link">
+        <span class="nav-link-inner">
+          <span>SAVOIR-FAIRE</span>
+          <span>SAVOIR-FAIRE</span>
+        </span>
+      </a>
+    </nav>
+
+    <!-- Actions: Sound, Bag, Menu -->
+    <div class="nav-actions">
+      <button class="nav-action-btn sound-toggle" id="sound-toggle" aria-label="Toggle Atelier Soundscape">
+        <span class="sound-indicator"></span>
+        <span class="sound-label">SOUND: OFF</span>
+      </button>
+
+      <button class="nav-action-btn cart-btn" id="cart-btn" aria-label="Open Shopping Bag">
+        <span>BAG</span>
+        <span class="cart-count" id="cart-count">(0)</span>
+      </button>
+
+      <button class="menu-trigger" id="menu-trigger" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen Navigation Drawer (Menu Modal) -->
+  <div class="menu-drawer" id="menu-drawer" aria-hidden="true">
+    <div class="menu-drawer-top">
+      <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-gold);">Index de Navigation</span>
+      <button id="menu-drawer-close" style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); cursor: pointer;">FERMER [ESC]</button>
+    </div>
+
+    <div class="menu-drawer-center">
+      <ul class="menu-nav-list">
+        <li class="menu-nav-item">
+          <span class="menu-nav-idx">01</span>
+          <a href="#collection-section" class="menu-nav-anchor" data-category="COLLECTION">Collection 08</a>
+        </li>
+        <li class="menu-nav-item">
+          <span class="menu-nav-idx">02</span>
+          <a href="#runway-section-wrapper" class="menu-nav-anchor" data-category="RUNWAY">Runway Film</a>
+        </li>
+        <li class="menu-nav-item">
+          <span class="menu-nav-idx">03</span>
+          <a href="#editorial-stories" class="menu-nav-anchor" data-category="EDITORIAL">Editorial Spread</a>
+        </li>
+        <li class="menu-nav-item">
+          <span class="menu-nav-idx">04</span>
+          <a href="#craftsmanship-section" class="menu-nav-anchor" data-category="ATELIER">Savoir-Faire</a>
+        </li>
+        <li class="menu-nav-item">
+          <span class="menu-nav-idx">05</span>
+          <a href="#site-footer" class="menu-nav-anchor" data-category="ARCHIVE">Atelier Vault</a>
+        </li>
+      </ul>
+
+      <div class="menu-preview-box">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Collection Preview" class="menu-preview-img" id="menu-preview-img" />
+      </div>
+    </div>
+
+    <div class="menu-drawer-bottom">
+      <span>Paris Rive Gauche • Rue de Grenelle</span>
+      <span>contact@vael-atelier.com</span>
+    </div>
+  </div>
+
+  <!-- MAIN SCROLL CONTAINER -->
+  <main id="smooth-content">
+
+    <!-- HERO SECTION (Cinematic, Fullscreen, Oversized Typography) -->
+    <section class="hero" id="hero-section">
+      <div class="hero-bg-container">
+        <img 
+          src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=2200&q=85" 
+          alt="VAEL Atelier Monolith Silhouette" 
+          class="hero-bg-image" 
+          fetchpriority="high"
+        />
+        <div class="hero-overlay-gradient"></div>
+      </div>
+
+      <div class="hero-content">
+        <!-- Top Metadata Row -->
+        <div class="hero-meta-strip">
+          <div class="hero-meta-item">
+            <span>RUNWAY DÉFILÉ</span>
+            <span style="opacity: 0.4;">/</span>
+            <span>PARIS HAUTE COUTURE</span>
+          </div>
+          <div class="hero-meta-item">
+            <span>AUTOMNE — HIVER 2026</span>
+          </div>
+        </div>
+
+        <!-- Oversized Headline with Staggered Entrance -->
+        <div class="hero-title-wrap">
+          <h1 class="hero-title">
+            <span>MONOLITH</span><br>
+            <span>&amp;&nbsp;SILK</span>
+          </h1>
+        </div>
+
+        <!-- Supporting Text & Magnetic CTA Cluster -->
+        <div class="hero-bottom-row">
+          <p class="hero-description">
+            A radical tension between brutalist architectural volume and weightless fluidity. Constructed with unrefined virgin wool, raw Kyoto silks, and hand-finished selvedges.
+          </p>
+
+          <div class="hero-actions-cluster">
+            <a href="#collection-section" class="btn-primary-magnetic">
+              <span>EXPLORE LOOKS</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#runway-section-wrapper" class="btn-secondary-link">
+              <span>RUNWAY ARCHIVE</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator Cue -->
+      <div class="hero-scroll-cue">
+        <span>SCROLL TO DISCOVER</span>
+        <div class="scroll-cue-line"></div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL TICKER / MARQUEE -->
+    <div class="marquee-band" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item">VAEL ATELIER <span class="marquee-dot"></span></div>
+        <div class="marquee-item">COLLECTION 08 <span class="marquee-dot"></span></div>
+        <div class="marquee-item">HAUTE ARCHITECTURE <span class="marquee-dot"></span></div>
+        <div class="marquee-item">PARIS — KYOTO — NEW YORK <span class="marquee-dot"></span></div>
+        <div class="marquee-item">LIMITED RUN OF 100 PIECES <span class="marquee-dot"></span></div>
+        <div class="marquee-item">VAEL ATELIER <span class="marquee-dot"></span></div>
+        <div class="marquee-item">COLLECTION 08 <span class="marquee-dot"></span></div>
+        <div class="marquee-item">HAUTE ARCHITECTURE <span class="marquee-dot"></span></div>
+      </div>
+    </div>
+
+    <!-- HORIZONTAL RUNWAY ARCHIVE (Pinned ScrollTrigger Experience) -->
+    <div class="runway-section-wrapper" id="runway-section-wrapper">
+      <div class="runway-pinned-container">
+        
+        <div class="runway-header-strip">
+          <div>
+            <span class="section-label">Archive Défilé 08</span>
+            <h2 class="section-title-huge" style="font-size: clamp(2rem, 4.5vw, 4.5rem);">RUNWAY MOTION</h2>
+          </div>
+          <div style="font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted);">
+            PARIS HAUTE SÉLECTION [01 — 05]
+          </div>
+        </div>
+
+        <!-- Horizontal Scroll Cards Track -->
+        <div class="runway-horizontal-track" id="runway-horizontal-track">
+          
+          <!-- Runway Look 01 -->
+          <div class="runway-card" data-product-id="look-01">
+            <div class="runway-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&q=85" alt="Runway Look 01" class="runway-card-img" />
+              <div class="runway-card-overlay">
+                <span class="runway-look-number">01</span>
+                <div class="runway-card-info">
+                  <span class="runway-look-title">The Void Overcoat</span>
+                  <span class="runway-look-spec">Heavy Melton Wool • Look 01</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Runway Look 02 -->
+          <div class="runway-card" data-product-id="look-02">
+            <div class="runway-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=1200&q=85" alt="Runway Look 02" class="runway-card-img" />
+              <div class="runway-card-overlay">
+                <span class="runway-look-number">02</span>
+                <div class="runway-card-info">
+                  <span class="runway-look-title">Obsidian Silk Column</span>
+                  <span class="runway-look-spec">Mulberry Charmeuse • Look 02</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Runway Look 03 -->
+          <div class="runway-card" data-product-id="look-03">
+            <div class="runway-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85" alt="Runway Look 03" class="runway-card-img" />
+              <div class="runway-card-overlay">
+                <span class="runway-look-number">03</span>
+                <div class="runway-card-info">
+                  <span class="runway-look-title">Monolithic Tailoring</span>
+                  <span class="runway-look-spec">Virgin Melton &amp; Silk • Look 03</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Runway Look 04 -->
+          <div class="runway-card" data-product-id="look-05">
+            <div class="runway-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1200&q=85" alt="Runway Look 04" class="runway-card-img" />
+              <div class="runway-card-overlay">
+                <span class="runway-look-number">04</span>
+                <div class="runway-card-info">
+                  <span class="runway-look-title">Kinetic Pleated Form</span>
+                  <span class="runway-look-spec">Japanese Triacetate • Look 05</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Runway Look 05 -->
+          <div class="runway-card" data-product-id="look-07">
+            <div class="runway-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=85" alt="Runway Look 05" class="runway-card-img" />
+              <div class="runway-card-overlay">
+                <span class="runway-look-number">05</span>
+                <div class="runway-card-info">
+                  <span class="runway-look-title">Celestial Cashmere Finale</span>
+                  <span class="runway-look-spec">Grade-A Cashmere Cocoon • Look 07</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Runway Scroll Progress Bar -->
+        <div class="runway-progress-strip">
+          <div class="runway-progress-track">
+            <div class="runway-progress-thumb" id="runway-progress-thumb"></div>
+          </div>
+          <span style="font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-gold);">DRAG TO NAVIGATE</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- EDITORIAL PRODUCT SHOWCASE SECTION (Asymmetric Architectural Grid) -->
+    <section class="collection-section" id="collection-section">
+      <div class="section-header-editorial" style="padding-left: 0; padding-right: 0;">
+        <span class="section-label">Sélection Automne / Hiver 2026</span>
+        <h2 class="section-title-huge">THE COLLECTION</h2>
+        <p class="section-subtitle">
+          Each piece is engineered in an edition of no more than 100 iterations. Hand-stitched horsehair canvases, unbleached mulberry silks, and monolithic selvedges.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="collection-filter-strip">
+        <button class="filter-btn active" data-filter="ALL">ALL LOOKS [8]</button>
+        <button class="filter-btn" data-filter="OUTERWEAR">OUTERWEAR</button>
+        <button class="filter-btn" data-filter="TAILORING">TAILORING</button>
+        <button class="filter-btn" data-filter="SILK &amp; DRAPE">SILK &amp; DRAPE</button>
+        <button class="filter-btn" data-filter="ACCESSORIES">ACCESSORIES</button>
+      </div>
+
+      <!-- Asymmetric Architectural Layout -->
+      <div class="editorial-product-grid" id="editorial-product-grid">
+
+        <!-- Card 1 (Look 01) -->
+        <article class="product-editorial-card" data-product-id="look-01" data-category="OUTERWEAR">
+          <div class="product-media-container">
+            <span class="product-badge-look">LOOK 01 / PARIS</span>
+            <img 
+              src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1400&q=85" 
+              alt="Architectural Trench 01" 
+              class="product-image" 
+              loading="lazy"
+            />
+            <span class="product-quick-view-badge">VIEW LOOK</span>
+          </div>
+          <div class="product-meta-block">
+            <div class="product-top-meta">
+              <h3 class="product-title">Architectural Trench 01</h3>
+              <span class="product-price">€2,450</span>
+            </div>
+            <div class="product-details-sub">
+              <span>Outerwear • Double Melton Wool</span>
+              <span>Limited 100</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 (Look 02) -->
+        <article class="product-editorial-card" data-product-id="look-02" data-category="SILK &amp; DRAPE">
+          <div class="product-media-container">
+            <span class="product-badge-look">LOOK 02 / KYOTO</span>
+            <img 
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=85" 
+              alt="Asymmetric Drape Column" 
+              class="product-image" 
+              loading="lazy"
+            />
+            <span class="product-quick-view-badge">VIEW LOOK</span>
+          </div>
+          <div class="product-meta-block">
+            <div class="product-top-meta">
+              <h3 class="product-title">Asymmetric Drape Column</h3>
+              <span class="product-price">€1,820</span>
+            </div>
+            <div class="product-details-sub">
+              <span>Silk &amp; Drape • Heavy Charmeuse</span>
+              <span>Limited 50</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 (Look 03) -->
+        <article class="product-editorial-card" data-product-id="look-03" data-category="OUTERWEAR">
+          <div class="product-media-container">
+            <span class="product-badge-look">LOOK 03 / PARIS</span>
+            <img 
+              src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1400&q=85" 
+              alt="Monolithic Overcoat" 
+              class="product-image" 
+              loading="lazy"
+            />
+            <span class="product-quick-view-badge">VIEW LOOK</span>
+          </div>
+          <div class="product-meta-block">
+            <div class="product-top-meta">
+              <h3 class="product-title">Monolithic Overcoat</h3>
+              <span class="product-price">€2,890</span>
+            </div>
+            <div class="product-details-sub">
+              <span>Outerwear • 820 GSM Melton</span>
+              <span>Limited 75</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 (Look 04) -->
+        <article class="product-editorial-card" data-product-id="look-04" data-category="TAILORING">
+          <div class="product-media-container">
+            <span class="product-badge-look">LOOK 04 / BIELLA</span>
+            <img 
+              src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=1400&q=85" 
+              alt="Sculpted Hourglass Blazer" 
+              class="product-image" 
+              loading="lazy"
+            />
+            <span class="product-quick-view-badge">VIEW LOOK</span>
+          </div>
+          <div class="product-meta-block">
+            <div class="product-top-meta">
+              <h3 class="product-title">Sculpted Hourglass Blazer</h3>
+              <span class="product-price">€1,650</span>
+            </div>
+            <div class="product-details-sub">
+              <span>Tailoring • High-Twist Wool</span>
+              <span>Limited 100</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 (Look 05) -->
+        <article class="product-editorial-card" data-product-id="look-05" data-category="TAILORING">
+          <div class="product-media-container">
+            <span class="product-badge-look">LOOK 05 / OSAKA</span>
+            <img 
+              src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=85" 
+              alt="Fluid Pleated Trouser" 
+              class="product-image" 
+              loading="lazy"
+            />
+            <span class="product-quick-view-badge">VIEW LOOK</span>
+          </div>
+          <div class="product-meta-block">
+            <div class="product-top-meta">
+              <h3 class="product-title">Fluid Pleated Trouser</h3>
+              <span class="product-price">€940</span>
+            </div>
+            <div class="product-details-sub">
+              <span>Tailoring • Japanese Triacetate</span>
+              <span>Limited 120</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 (Look 06) -->
+        <article class="product-editorial-card" data-product-id="look-06" data-category="ACCESSORIES">
+          <div class="product-media-container">
+            <span class="product-badge-look">LOOK 06 / TUSCANY</span>
+            <img 
+              src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1400&q=85" 
+              alt="Brutalist Leather Tote 01" 
+              class="product-image" 
+              loading="lazy"
+            />
+            <span class="product-quick-view-badge">VIEW LOOK</span>
+          </div>
+          <div class="product-meta-block">
+            <div class="product-top-meta">
+              <h3 class="product-title">Brutalist Leather Tote 01</h3>
+              <span class="product-price">€1,480</span>
+            </div>
+            <div class="product-details-sub">
+              <span>Accessories • Box Calfskin &amp; Palladium</span>
+              <span>Limited 60</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 (Look 07) -->
+        <article class="product-editorial-card" data-product-id="look-07" data-category="OUTERWEAR">
+          <div class="product-media-container">
+            <span class="product-badge-look">LOOK 07 / ULAANBAATAR</span>
+            <img 
+              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=85" 
+              alt="Cocoon Cashmere Wrap" 
+              class="product-image" 
+              loading="lazy"
+            />
+            <span class="product-quick-view-badge">VIEW LOOK</span>
+          </div>
+          <div class="product-meta-block">
+            <div class="product-top-meta">
+              <h3 class="product-title">Cocoon Cashmere Wrap</h3>
+              <span class="product-price">€1,950</span>
+            </div>
+            <div class="product-details-sub">
+              <span>Outerwear • Grade-A 7-Gauge Cashmere</span>
+              <span>Limited 45</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8 (Look 08) -->
+        <article class="product-editorial-card" data-product-id="look-08" data-category="TAILORING">
+          <div class="product-media-container">
+            <span class="product-badge-look">LOOK 08 / PARIS</span>
+            <img 
+              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1400&q=85" 
+              alt="Sculptural Obsidian Vest" 
+              class="product-image" 
+              loading="lazy"
+            />
+            <span class="product-quick-view-badge">VIEW LOOK</span>
+          </div>
+          <div class="product-meta-block">
+            <div class="product-top-meta">
+              <h3 class="product-title">Sculptural Obsidian Vest</h3>
+              <span class="product-price">€1,120</span>
+            </div>
+            <div class="product-details-sub">
+              <span>Tailoring • Bonded Cotton &amp; Silk</span>
+              <span>Limited 80</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EDITORIAL MAGAZINE STORY SECTION (Fashion Magazine Storytelling) -->
+    <div class="editorial-narrative-section" id="editorial-stories">
+      
+      <!-- Chapter 01: The Architecture of Silence (Dark Palette) -->
+      <section class="story-chapter-dark">
+        <div class="story-grid-layout-a">
+          
+          <!-- Image Left with Mask Reveal -->
+          <div class="story-media-mask-left">
+            <img 
+              src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&w=1400&q=85" 
+              alt="Textile Architecture" 
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Text Right with Staggered Motion -->
+          <div class="story-text-column">
+            <span class="story-counter">Chapitre I • Dialogue</span>
+            <h2 class="story-headline-giant">THE ARCHITECTURE OF SILENCE</h2>
+            
+            <p class="story-body-copy">
+              In an age of sensory overload, true luxury is the reduction of noise. We treat the drape of wool not merely as decoration, but as an architectural volume that occupies space with poise and intentional gravity.
+            </p>
+
+            <blockquote class="story-quote-callout">
+              “Form does not simply follow function—it defines emotional territory.”
+            </blockquote>
+
+            <p class="story-body-copy">
+              Our tailoring eliminates visible topstitching in favor of internal saddle bonds and floating horsehair interlinings. The silhouette remains pure from collar to floor.
+            </p>
+          </div>
+
+          <!-- Offset Secondary Image Moving with Parallax -->
+          <div class="story-offset-secondary-img">
+            <img 
+              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=85" 
+              alt="Architectural Tailoring Detail" 
+              loading="lazy"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Chapter 02: Tactile Brutalism (High-Contrast Bone White Spread) -->
+      <section class="story-chapter-light">
+        <div class="story-grid-layout-b">
+          
+          <!-- Text Left (Reversed Layout) -->
+          <div class="story-text-column">
+            <span class="story-counter">Chapitre II • Matière</span>
+            <h2 class="story-headline-giant">TACTILE BRUTALISM</h2>
+            
+            <p class="story-body-copy">
+              Raw, dense, and uncompromised. Sourced from sustainable small-scale heritage mills in the Scottish Highlands and northern Honshu, our textiles resist artificial flattening.
+            </p>
+
+            <blockquote class="story-quote-callout">
+              “Weight is dignity. The drape of honest fiber honors the body that carries it.”
+            </blockquote>
+
+            <p class="story-body-copy">
+              Every garment develops an intimate patina over decades of wear, deepening in character rather than degrading.
+            </p>
+          </div>
+
+          <!-- Image Right with Mask Reveal -->
+          <div class="story-media-mask-right">
+            <img 
+              src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1400&q=85" 
+              alt="Raw Fiber Weaving" 
+              loading="lazy"
+            />
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ATELIER CRAFTSMANSHIP & MANIFESTO (Sticky Pinned Experience) -->
+    <section class="craftsmanship-section" id="craftsmanship-section">
+      <div class="craftsmanship-split-container">
+        
+        <!-- Pinned Left Panel -->
+        <div class="craftsmanship-sticky-panel">
+          <span class="section-label">Manifeste d'Atelier</span>
+          <h2 class="craft-manifesto-quote">
+            WE DO NOT DESIGN CLOTHES FOR THE PASSING MOMENT. WE CONSTRUCT <em>VESSELS FOR TIME.</em>
+          </h2>
+          <span class="craft-signature">— Atelier Vael, Paris Rive Gauche</span>
+        </div>
+
+        <!-- Scrolling Stream Right -->
+        <div class="craftsmanship-stream">
+          
+          <!-- Craft 01 -->
+          <article class="craft-item-card">
+            <div class="craft-item-header">
+              <span class="craft-item-idx">01 / FIBRE</span>
+              <span style="font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted);">KYOTO WEAVING</span>
+            </div>
+            <h3 class="craft-item-title">Raw Unbleached Silk Charmeuse</h3>
+            <p class="craft-item-desc">
+              Cultivated in historical mulberry groves in Kyoto prefecture. Woven on narrow shuttle looms at 40 Momme density, yielding a drape that mimics liquid mercury.
+            </p>
+            <div class="craft-item-img-preview">
+              <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&w=1000&q=85" alt="Kyoto Silk Weave" loading="lazy" />
+            </div>
+          </article>
+
+          <!-- Craft 02 -->
+          <article class="craft-item-card">
+            <div class="craft-item-header">
+              <span class="craft-item-idx">02 / STRUCTURE</span>
+              <span style="font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted);">HAUTE TAILLEUR</span>
+            </div>
+            <h3 class="craft-item-title">Floating Horsehair Chest Canvas</h3>
+            <p class="craft-item-desc">
+              Zero synthetic fusing. Our coats utilize genuine natural horsehair canvases hand-padded into the lapels over 48 hours of meticulous atelier labor.
+            </p>
+            <div class="craft-item-img-preview">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=85" alt="Floating Canvas Tailoring" loading="lazy" />
+            </div>
+          </article>
+
+          <!-- Craft 03 -->
+          <article class="craft-item-card">
+            <div class="craft-item-header">
+              <span class="craft-item-idx">03 / FORGE</span>
+              <span style="font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted);">PALLADIUM ALLOY</span>
+            </div>
+            <h3 class="craft-item-title">Brushed Matte Gunmetal Hardware</h3>
+            <p class="craft-item-desc">
+              Custom-cast sculptural closures milled from solid titanium and brushed palladium bars. Cold to the touch, indestructible in endurance.
+            </p>
+            <div class="craft-item-img-preview">
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=85" alt="Palladium Hardware" loading="lazy" />
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LARGE EDITORIAL FOOTER -->
+    <footer class="site-footer" id="site-footer">
+      
+      <div class="footer-top-cluster">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-column">
+          <span class="footer-logo">VAEL</span>
+          <p class="footer-manifesto-snippet">
+            Haute Couture and Architectural Ready-to-Wear. Crafted across our private ateliers in Paris and Kyoto.
+          </p>
+          <div style="font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-gold);">
+            ÉDITION LIMITÉE • MONOLITH &amp; SILK
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-column-heading">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="#collection-section" class="footer-link">Collection 08</a></li>
+            <li><a href="#runway-section-wrapper" class="footer-link">Runway Archive</a></li>
+            <li><a href="#editorial-stories" class="footer-link">Editorial Narrative</a></li>
+            <li><a href="#craftsmanship-section" class="footer-link">Atelier Savoir-Faire</a></li>
+            <li><a href="#hero-section" class="footer-link">Lookbook 2026</a></li>
+          </ul>
+        </div>
+
+        <!-- Live World Clocks -->
+        <div>
+          <h4 class="footer-column-heading">Ateliers Mondiaux</h4>
+          <div class="world-clocks-list">
+            <div class="world-clock-item">
+              <span class="clock-city">Paris</span>
+              <span class="clock-time" id="clock-paris">--:--:-- CET</span>
+            </div>
+            <div class="world-clock-item">
+              <span class="clock-city">Tokyo</span>
+              <span class="clock-time" id="clock-tokyo">--:--:-- JST</span>
+            </div>
+            <div class="world-clock-item">
+              <span class="clock-city">New York</span>
+              <span class="clock-time" id="clock-nyc">--:--:-- EST</span>
+            </div>
+            <div class="world-clock-item">
+              <span class="clock-city">Milan</span>
+              <span class="clock-time" id="clock-milan">--:--:-- CET</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Private Roster Newsletter -->
+        <div>
+          <h4 class="footer-column-heading">Private Roster</h4>
+          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+            Receive invitations to private salon presentations and limited edition releases.
+          </p>
+          <form class="newsletter-form-editorial" id="newsletter-form">
+            <div class="newsletter-input-wrap">
+              <input type="email" placeholder="YOUR EMAIL ADDRESS" class="newsletter-input" required />
+              <button type="submit" class="newsletter-submit-btn">JOIN</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Monumental Brand Mark -->
+      <div class="footer-monument-wrap">
+        <div class="footer-monument-brand">VAEL</div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 VAEL ATELIER SAS. ALL RIGHTS RESERVED.</span>
+        <span>BEAUTY IN PURITY • TIMELESS FORM IN MOTION</span>
+        <button class="scroll-to-top-btn" id="scroll-top-btn">
+          <span>TOP</span>
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M5 9V1M5 1L1 5M5 1L9 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
     </footer>
 
-    <script src="script.js"></script>
+  </main>
+
+  <!-- CINEMATIC PRODUCT DETAIL MODAL / TRANSITION VIEW -->
+  <div class="product-modal-view" id="product-modal" role="dialog" aria-modal="true" aria-label="Product Details">
+    <button class="modal-close-trigger" id="modal-close">
+      <span>FERMER [ESC]</span>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+        <path d="M1 1L11 11M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <div class="product-modal-container">
+      
+      <!-- Stage Image -->
+      <div class="modal-media-stage">
+        <img src="" alt="Selected Product" class="modal-main-image" id="modal-main-img" />
+      </div>
+
+      <!-- Info Panel -->
+      <div class="modal-info-panel">
+        
+        <div class="modal-badge-row">
+          <span id="modal-category">COLLECTION 08 — LOOK 01</span>
+          <span style="opacity: 0.3;">/</span>
+          <span>HAUTE FAÇON</span>
+        </div>
+
+        <h2 class="modal-product-title" id="modal-title">Architectural Trench 01</h2>
+        <div class="modal-price-tag" id="modal-price">€2,450</div>
+
+        <p class="modal-description-copy" id="modal-desc">
+          A monument of minimalist architecture. Featuring dropped sculptural kimono shoulders, a cantilevered storm flap, and raw-finished hem lines.
+        </p>
+
+        <!-- Sizing Selector -->
+        <div class="modal-size-selector">
+          <span class="size-selector-label">SELECT COUTURE SIZE (FR)</span>
+          <div class="size-pill-group">
+            <button class="size-pill-btn" data-size="FR 36">36</button>
+            <button class="size-pill-btn active" data-size="FR 38">38</button>
+            <button class="size-pill-btn" data-size="FR 40">40</button>
+            <button class="size-pill-btn" data-size="FR 42">42</button>
+          </div>
+        </div>
+
+        <!-- Specs Accordion/List -->
+        <div class="modal-spec-block" id="modal-specs-container">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Add to Bag Action -->
+        <div class="modal-actions-bar">
+          <button class="btn-add-to-bag" id="modal-add-to-bag">
+            <span>ACQUIRE PIECE</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1"/>
+            <path d="M6 3V6L8 8" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          </svg>
+          <span>Complimentary White-Glove Global Courier Delivery</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SHOPPING BAG DRAWER -->
+  <div class="bag-backdrop" id="bag-backdrop" aria-hidden="true"></div>
+  <aside class="bag-drawer" id="bag-drawer" aria-label="Shopping Bag">
+    <div class="bag-drawer-header">
+      <h3 class="bag-drawer-title">VOTRE PANIER</h3>
+      <button class="bag-close-btn" id="bag-close-btn">FERMER [ESC]</button>
+    </div>
+
+    <!-- Items List (populated dynamically) -->
+    <div class="bag-items-list" id="bag-items-list">
+      <div class="bag-empty-state">
+        <p>Your shopping bag is empty.</p>
+        <span style="font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 0.5rem; display: inline-block;">Explore Collection 08</span>
+      </div>
+    </div>
+
+    <div class="bag-drawer-footer">
+      <div class="bag-subtotal-row">
+        <span class="bag-subtotal-label">SOUS-TOTAL</span>
+        <span class="bag-subtotal-amount" id="bag-subtotal">€0</span>
+      </div>
+      <button class="btn-checkout" id="btn-checkout">PROCEED TO ATELIER VAULT</button>
+      <span style="font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); text-align: center;">Taxes &amp; Insured Express Shipping Included</span>
+    </div>
+  </aside>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notice" id="toast-notice" role="status" aria-live="polite">
+    <svg class="toast-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="toast-message">Piece added to atelier bag</span>
+  </div>
+
+  <!-- CDN Script Dependencies: GSAP 3.12.5, ScrollTrigger, Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  <!-- Fashion Editorial Engine Script -->
+  <script src="js/fashion.js"></script>
 </body>
 </html>

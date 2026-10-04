@@ -3,171 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ultimate Puppy Care Guide | PetUnion Hub Stories</title>
-    <meta name="description" content="Read the heartwarming story of Max, a shelter dog who waited two years for his forever home. A story of resilience, trust, and the power of adoption.">
+    <title>${title} | PetUnion Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .post-header { max-width: 800px; margin: 0 auto; padding-bottom: 32px; text-align: center; }
-        .post-meta { display: flex; justify-content: center; align-items: center; gap: 16px; margin-bottom: 24px; color: var(--text-light); }
-        .post-category { background: rgba(212, 163, 115, 0.15); color: var(--accent-color); padding: 4px 12px; border-radius: 20px; font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
-        .post-title { font-size: 3rem; margin-bottom: 24px; color: var(--primary-color); }
-        .post-author { display: flex; align-items: center; gap: 12px; }
-        .author-img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
-        .author-info { text-align: left; }
-        .author-name { font-weight: 600; color: var(--text-color); }
-        .author-date { font-size: 0.875rem; color: var(--text-light); }
+        .article-hero { position: relative; height: 60vh; min-height: 400px; display: flex; align-items: flex-end; padding-bottom: 50px; }
+        .article-hero-bg { position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; z-index: -2; }
+        .article-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)); z-index: -1; }
+        .article-header { color: white; max-width: 800px; margin: 0 auto; width: 100%; padding: 0 24px; }
+        .article-category { display: inline-block; background: var(--soft-orange); padding: 5px 15px; border-radius: 50px; font-weight: 600; margin-bottom: 15px; font-size: 0.9rem; }
+        .article-title { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+        .article-meta { display: flex; gap: 20px; font-size: 1rem; color: rgba(255,255,255,0.8); flex-wrap: wrap; }
         
-        .post-featured-image { width: 100%; max-width: 1000px; margin: 0 auto 48px; border-radius: 30px; overflow: hidden; box-shadow: var(--shadow); position: relative; }
-        .post-featured-image img { width: 100%; height: auto; max-height: 550px; object-fit: cover; }
+        .article-body { max-width: 800px; margin: 60px auto; padding: 0 24px; font-size: 1.15rem; line-height: 1.8; color: #334155; }
+        .article-body h2 { font-size: 2rem; color: var(--text-dark); margin: 40px 0 20px; }
+        .article-body p { margin-bottom: 25px; }
+        .article-body img { width: 100%; border-radius: var(--radius-md); margin: 30px 0; box-shadow: var(--shadow-sm); }
         
-        .post-content { max-width: 800px; margin: 0 auto; font-size: 1.125rem; }
-        .post-content h2 { font-size: 2rem; margin: 48px 0 24px; color: var(--secondary-color); }
-        .post-content p { margin-bottom: 24px; line-height: 1.9; color: var(--text-color); }
-        .post-content blockquote { border-left: 4px solid var(--accent-color); padding: 10px 0 10px 30px; font-style: italic; color: var(--text-color); margin: 40px 0; font-size: 1.4rem; font-family: 'Outfit', sans-serif; background: rgba(160, 120, 85, 0.03); border-radius: 0 20px 20px 0; }
-        
-        .final-message-box { 
-            background: var(--primary-gradient); 
-            color: var(--white); 
-            padding: 40px; 
-            border-radius: 24px; 
-            margin-top: 60px; 
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(111, 78, 55, 0.2);
-        }
-        .final-message-box h3 { font-size: 1.8rem; margin-bottom: 15px; font-family: 'Outfit', sans-serif; color: var(--white); }
-        .final-message-box p { font-size: 1.2rem; line-height: 1.6; opacity: 0.95; margin-bottom: 0; color: var(--white); }
-        .final-message-box .heart-icon { font-size: 2.5rem; margin-bottom: 20px; display: block; }
-        
-        .share-bar { display: flex; gap: 12px; align-items: center; margin-top: 60px; padding-top: 32px; border-top: 1px solid rgba(0,0,0,0.1); }
-        .share-text { font-weight: 600; margin-right: 12px; font-family: 'Outfit', sans-serif;}
-        .share-btn { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--bg-color); border: 1px solid rgba(0,0,0,0.05); transition: var(--transition); color: var(--primary-color); cursor: pointer; }
-        .share-btn:hover { background: var(--primary-color); color: var(--white); border-color: var(--primary-color); }
-
-        @media (max-width: 768px) {
-            .post-title { font-size: 2.2rem; }
-            .post-content { font-size: 1.05rem; }
-        }
+        .social-share { display: flex; gap: 15px; margin: 40px 0; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.1); }
+        .social-share a { width: 40px; height: 40px; border-radius: 50%; background: var(--white); display: flex; align-items: center; justify-content: center; color: var(--text-dark); box-shadow: var(--shadow-sm); transition: 0.3s; }
+        .social-share a:hover { transform: translateY(-3px); color: var(--soft-orange); }
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="container nav">
+        <div class="nav">
             <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="blog.html" class="active">Blog</a>
-                <a href="about.html">About</a>
+                <a href="blog.html" class="active">Stories & Blogs</a>
+                <a href="about.html">About Us</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
         </div>
     </header>
 
     <main>
-        <section class="container section">
-            <div class="post-header">
-                <div class="post-meta">
-                    <span class="post-category">Dogs</span>
-                    <span>5 min read</span>
-                </div>
-                <h1 class="post-title">The Ultimate Puppy Care Guide</h1>
-                <div class="post-author" style="justify-content: center;">
-                    <img src="images/avatar.jpg" alt="Sarah Mitchell" class="author-img">
-                    <div class="author-info">
-                        <div class="author-name">Emma Wilson</div>
-                        <div class="author-date">March 15, 2026</div>
-                    </div>
+        <section class="article-hero">
+            <img src="${img}" class="article-hero-bg" alt="${title}">
+            <div class="article-overlay"></div>
+            <div class="article-header">
+                <div class="article-category">${category}</div>
+                <h1 class="article-title">${title}</h1>
+                <div class="article-meta">
+                    <span><i class="fas fa-user-circle"></i> By ${author}</span>
+                    <span><i class="fas fa-calendar-alt"></i> ${date}</span>
+                    <span><i class="fas fa-clock"></i> ${readTime} min read</span>
                 </div>
             </div>
+        </section>
 
-            <div class="post-featured-image">
-                <img src="images/puppy-care.jpg" alt="Puppies running">
+        <section class="article-body">
+            ${content}
+            
+            <div class="social-share">
+                <span style="font-weight: 600; line-height: 40px;">Share this story:</span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-link"></i></a>
             </div>
-
-            <article class="post-content">
-
-                <p>Bringing a new puppy home is one of the most exciting experiences, but it also comes with its fair share of challenges.</p>
-                <p>For the first 30 days, your puppy is learning about their new world, their new family, and the rules of the house. Establishing a routine early on is crucial for their development.</p>
-                
-                <h2>1. Set Up a Safe Space</h2>
-                <p>Before your puppy arrives, ensure you have a dedicated space for them. This should include a comfortable bed, water, and some safe chew toys. A crate can be an excellent tool for potty training and giving your puppy a secure place to rest.</p>
-                
-                <blockquote>"Consistency is the key to a well-behaved puppy. Set the rules from day one, but always enforce them with love."</blockquote>
-                
-                <h2>2. Establish a Routine</h2>
-                <p>Puppies thrive on routine. Try to feed, walk, and put them to bed at the same times every day. This predictability helps them feel secure and accelerates potty training.</p>
-                
-                <h2>3. The First Vet Visit</h2>
-                <p>Schedule a vet visit within the first week. Your vet will check for any underlying health issues and help you set up a vaccination schedule. It’s also a great time to ask questions about diet and behavior.</p>
-        
-
-                <div class="final-message-box">
-                    <i class="fas fa-dog heart-icon"></i>
-                    <h3>Final Tip</h3>
-                    <p>Patience is everything. The sleepless nights and chewed shoes will pass, leaving you with an incredible bond and a lifelong best friend.</p>
-                </div>
-
-                <div class="share-bar">
-                    <span class="share-text">Share this story:</span>
-                    <a href="#" class="share-btn"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="share-btn"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#" class="share-btn"><i class="fas fa-link"></i></a>
-                </div>
-            </article>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" style="margin-top: 0;">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-                    <p>Where every pet has a story. We believe in the power of storytelling and community to bring pet owners together in a loving, supportive space.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="index.html#submit-story">Submit Story</a>
-                        <a href="about.html">About Community</a>
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="terms-conditions.html">Terms & Conditions</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Story Topics</h4>
-                    <div class="footer-links">
-                        <a href="#">Rescue Stories</a>
-                        <a href="#">Funny Moments</a>
-                        <a href="#">Emotional Connections</a>
-                        <a href="#">Heroic Pets</a>
-                        <a href="#">Crossing the Rainbow Bridge</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Connect</h4>
-                    <div class="footer-links">
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--primary-color);"></i> stories@petunionhub.com</p>
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-users" style="margin-right: 10px; color: var(--primary-color);"></i> PetUnion Community Hub</p>
-                        <a href="contact.html" class="read-more" style="margin-top: 10px;">Reach Out <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 PetUnion Hub Community. All rights reserved.</p>
-            </div>
+            <div class="footer-bottom">&copy; 2026 PetUnion Hub. All rights reserved.</div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

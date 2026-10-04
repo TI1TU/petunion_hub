@@ -3,184 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | PetUnion Hub</title>
-    <meta name="description" content="Get in touch with PetUnion Hub for inquiries, collaborations, or to share your pet stories.">
+    <title>Contact & FAQ | PetUnion Hub</title>
+    <meta name="description" content="Let's Talk About Pets.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 40px; }
-        @media(max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
-        .contact-info { background: var(--white); padding: 40px; border-radius: 30px; box-shadow: var(--shadow); }
-        .contact-info h2 { margin-bottom: 24px; font-size: 2rem; }
-        .contact-info p { color: var(--text-light); margin-bottom: 32px; }
-        .info-item { display: flex; gap: 16px; margin-bottom: 24px; align-items: flex-start; }
-        .info-icon { width: 40px; height: 40px; min-width: 40px; background: rgba(139, 90, 43, 0.1); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
-        .info-item h4 { margin-bottom: 4px; font-size: 1.1rem; }
-        .info-item p { margin-bottom: 0; }
+        .contact-layout { display: flex; gap: 80px; align-items: center; margin: 150px 0 100px; }
+        .contact-form-wrap { flex: 1.5; background: var(--white); padding: 80px; border-radius: var(--radius-lg); box-shadow: var(--shadow-elevated); }
+        .contact-visual { flex: 1; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-3d); }
         
-        .contact-form { display: flex; flex-direction: column; gap: 20px; }
-        .form-group { display: flex; flex-direction: column; gap: 8px; }
-        .form-group label { font-weight: 600; font-size: 0.9rem; }
-        .form-control { padding: 16px; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 1rem; transition: var(--transition); background: var(--bg-color); }
-        .form-control:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 4px rgba(139, 90, 43, 0.1); background: var(--white); }
-        textarea.form-control { resize: vertical; min-height: 150px; }
+        .contact-form-wrap h1 { font-size: 4rem; margin-bottom: 20px; }
+        .contact-form-wrap p { font-size: 1.2rem; color: #555; margin-bottom: 40px; }
+        
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+        .form-group { margin-bottom: 20px; }
+        .form-label { display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 10px; color: var(--charcoal); letter-spacing: 1px; text-transform: uppercase; }
+        .form-input { width: 100%; padding: 18px 24px; border-radius: 12px; border: 1px solid #ddd; font-family: var(--font-body); font-size: 1rem; background: var(--warm-ivory); transition: all 0.3s; }
+        .form-input:focus { outline: none; border-color: var(--charcoal); background: var(--white); }
+        
+        .faq-section { max-width: 900px; margin: 100px auto; }
+        .faq-item { border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 30px 0; font-size: 1.5rem; font-family: var(--font-display); font-weight: 500; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--charcoal); }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; color: #555; font-size: 1.15rem; line-height: 1.8; }
+        .faq-item.active .faq-a { max-height: 300px; padding-bottom: 30px; }
+        .faq-icon { font-size: 1.5rem; font-weight: 300; transition: transform 0.4s ease; }
+        .faq-item.active .faq-icon { transform: rotate(45deg); }
+        
+        @media (max-width: 1024px) {
+            .contact-layout { flex-direction: column; }
+            .form-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="container nav">
-            <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-            <nav class="nav-links">
-                <a href="index.html" >Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="about.html">About</a>
-                <a href="contact.html" class="active">Contact</a>
-            </nav>
+        <a href="index.html" class="logo">PETUNION HUB 🐾</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Stories</a>
+            <a href="blog.html">Blogs</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-nav">Share Your Story</a>
+        </nav>
             <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
-        </div>
     </header>
 
-        <main>
-        <section class="container section">
-            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <span class="hero-badge">Get In Touch 🐾</span>
-                <h1 style="font-size: 3.5rem; margin-bottom: 16px;">We'd love to hear from you</h1>
-                <p style="font-size: 1.15rem; color: var(--text-light);">Have a question, feedback, or a story idea? Drop us a line below.</p>
-            </div>
-
-            <div class="contact-grid">
-                <div>
-                    <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Jane Doe" required>
+    <main>
+        <section class="container">
+            <div class="contact-layout">
+                <div class="contact-form-wrap">
+                    <h1>Let's Talk About Pets.</h1>
+                    <p>Have a question, a partnership idea, or a beautiful story to share? Reach out to us at <a href="mailto:contact@petunionhub.com" style="color: var(--golden-orange); font-weight: 600;">contact@petunionhub.com</a> or use the form below.</p>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Message sent. We will get back to you shortly.');">
+                        <div class="form-grid">
+                            <div>
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-input" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-input" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="jane@example.com" required>
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" class="form-control" placeholder="Type your message or question here..." required></textarea>
+                            <label class="form-label">Message Category</label>
+                            <select class="form-input" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="story">Submit a Story</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Send Message</button>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-input" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; border: none; font-family: var(--font-body); cursor: pointer;">Send Message</button>
                     </form>
-                    
-                    <div style="margin-top: 24px; padding: 20px; border-radius: 12px; background: rgba(163, 201, 168, 0.15); border: 1px solid rgba(163, 201, 168, 0.4);">
-                        <p style="margin: 0; font-size: 0.95rem; display: flex; align-items: flex-start; gap: 12px; color: var(--text-dark);">
-                            <i class="fas fa-info-circle" style="color: var(--primary-color); margin-top: 3px;"></i>
-                            <span><strong>Want to share your pet story?</strong> Use our <a href="#submit-story" style="color: var(--primary-color); font-weight: 600; text-decoration: underline;">Submit Story</a> page for faster publishing.</span>
-                        </p>
-                    </div>
                 </div>
-                
-                <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    <p>Fill out the form and our team will get back to you within 24 hours.</p>
-                    
-                    <div class="info-item">
-                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h4>Email Us</h4>
-                            <p>hello@petunionhub.com</p>
-                        </div>
-                    </div>
-                    
-                    <h4 style="margin-top: 32px; margin-bottom: 16px; font-size: 1.2rem;">Follow Our Community</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                    
-                    <div style="margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(0,0,0,0.05);">
-                        <h4 style="font-size: 1.2rem; margin-bottom: 20px;">Frequently Asked Questions</h4>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
-                                <span style="font-weight: 600; font-family: 'Outfit', sans-serif;">How to submit a story?</span>
-                                <i class="fas fa-chevron-down" style="font-size: 0.8rem; color: var(--accent-color);"></i>
-                            </div>
-                            <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
-                                <p style="color: var(--text-light); font-size: 0.95rem; padding: 15px 0 5px;">You can use our dedicated Submit Story portal. Provide us with your pet's name, a 300+ word story, and a clear photo!</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
-                                <span style="font-weight: 600; font-family: 'Outfit', sans-serif;">How long does approval take?</span>
-                                <i class="fas fa-chevron-down" style="font-size: 0.8rem; color: var(--accent-color);"></i>
-                            </div>
-                            <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
-                                <p style="color: var(--text-light); font-size: 0.95rem; padding: 15px 0 5px;">Our community team reviews submissions within 48 to 72 hours to ensure all stories meet our community guidelines.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contact-visual">
+                    <img src="images/dog-commands.jpg" alt="Friendly Dog">
                 </div>
             </div>
+        </section>
+
+        <section class="container faq-section">
+            <h2 style="font-size: 3.5rem; text-align: center; margin-bottom: 60px;">Frequently Asked Questions</h2>
             
-            <!-- Call to Action Section -->
-            <div style="height: 40px;"></div>
-            <section class="cta-section blog-cta" style="margin-bottom: 0;">
-                <div class="cta-content">
-                    <h2 class="cta-title">Join our pet-loving community</h2>
-                    <p class="cta-desc">Discover our comprehensive guides and share moments that matter with fellow pet lovers from all around the world.</p>
-                    <a href="index.html#submit-story" class="btn btn-secondary">Share Your Story</a>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+                        How do I submit a story? <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">Simply use the form on this page and select "Submit a Story" as the category. We'll guide you through the rest via email!</div>
                 </div>
-            </section>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+                        Is PetUnion Hub free? <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">Yes, absolutely. Our community and resources are completely free for all pet lovers.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+                        Can I edit my story? <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">If you need to make corrections to a published story, please email our editorial team and we will update it for you.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+                        Will my full name be shown? <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">We respect your privacy. We typically use your first name and last initial (e.g., Jane D.) unless you specifically request otherwise.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+                        How long does story approval take? <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">Our editorial team reviews submissions weekly. You can expect a response within 3 to 5 business days.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+                        Can I submit a rescue story? <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">Yes! Rescue stories are some of our most beloved and inspiring features.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+                        Can I submit a dog story? <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">Of course. We welcome stories about dogs of all breeds, ages, and backgrounds.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+                        Can I submit a cat story? <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">Absolutely. Feline stories are incredibly popular and deeply cherished by our community.</div>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
-                    <p>Where every pet has a story. We believe in the power of storytelling and community to bring pet owners together in a loving, supportive space.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="index.html#submit-story">Submit Story</a>
-                        <a href="about.html">About Community</a>
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="terms-conditions.html">Terms & Conditions</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Story Topics</h4>
-                    <div class="footer-links">
-                        <a href="#">Rescue Stories</a>
-                        <a href="#">Funny Moments</a>
-                        <a href="#">Emotional Connections</a>
-                        <a href="#">Heroic Pets</a>
-                        <a href="#">Crossing the Rainbow Bridge</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Connect</h4>
-                    <div class="footer-links">
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--primary-color);"></i> stories@petunionhub.com</p>
-                        <p style="color: var(--text-light); font-size: 1.05rem;"><i class="fas fa-users" style="margin-right: 10px; color: var(--primary-color);"></i> PetUnion Community Hub</p>
-                        <a href="contact.html" class="read-more" style="margin-top: 10px;">Reach Out <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>PETUNION HUB</h3>
+                <p>Every Pet Has a Story. 🐾</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 PetUnion Hub Community. All rights reserved.</p>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="blog.html">Stories</a>
+                <a href="blog.html">Blogs</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
             </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">X</a>
+                <a href="#">YouTube</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Disclaimer</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 PetUnion Hub. All rights reserved.
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
