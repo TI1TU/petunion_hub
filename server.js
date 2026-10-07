@@ -19,6 +19,9 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   let reqPath = req.url.split('?')[0];
+  if (reqPath === '/favicon.ico') {
+    reqPath = '/favicon.svg';
+  }
   let filePath = path.join(__dirname, reqPath === '/' ? 'index.html' : reqPath);
 
   fs.stat(filePath, (err, stats) => {

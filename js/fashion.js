@@ -546,14 +546,14 @@
     if (typeof ScrollTrigger === 'undefined') return;
 
     // Mask Clip-path Reveal on Editorial Images
-    const maskReveals = document.querySelectorAll('.story-media-mask-left, .story-media-mask-right');
+    const maskReveals = document.querySelectorAll('.story-media-mask');
     maskReveals.forEach((mask) => {
       gsap.fromTo(mask, 
-        { clipPath: 'inset(15% 0% 15% 0%)', opacity: 0.6 },
+        { clipPath: 'inset(10% 0% 10% 0%)', opacity: 0.7 },
         {
           clipPath: 'inset(0% 0% 0% 0%)',
           opacity: 1,
-          duration: 1.2,
+          duration: 1.1,
           ease: 'power3.out',
           scrollTrigger: {
             trigger: mask,
@@ -562,28 +562,32 @@
           }
         }
       );
-    });
 
-    // Parallax Speed Offset on Floating Secondary Images
-    const offsetImages = document.querySelectorAll('.story-offset-secondary-img');
-    offsetImages.forEach((imgWrap) => {
-      gsap.to(imgWrap, {
-        yPercent: -25,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: imgWrap,
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: 1
-        }
-      });
+      // Subtle inner image parallax (stays strictly within container boundaries)
+      const innerImg = mask.querySelector('img');
+      if (innerImg) {
+        gsap.fromTo(innerImg,
+          { scale: 1.12, yPercent: -5 },
+          {
+            scale: 1.0,
+            yPercent: 5,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: mask,
+              start: 'top bottom',
+              end: 'bottom top',
+              scrub: 1
+            }
+          }
+        );
+      }
     });
 
     // Headings Staggered Reveal
     const headings = document.querySelectorAll('.story-headline-giant, .section-title-huge');
     headings.forEach((h) => {
       gsap.fromTo(h,
-        { y: 50, opacity: 0 },
+        { y: 40, opacity: 0 },
         {
           y: 0,
           opacity: 1,

@@ -569,13 +569,21 @@ body.cursor-drag .custom-cursor-dot {
   justify-content: space-between;
   padding: clamp(2rem, 5vw, 5rem);
   transform: translateY(-100%);
-  transition: transform 0.75s var(--ease-luxury);
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
   pointer-events: none;
+  transition: transform 0.75s var(--ease-luxury), 
+              opacity 0.4s ease, 
+              visibility 0.4s ease;
 }
 
 .menu-drawer.open {
   transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
   pointer-events: auto;
+  overflow-y: auto;
 }
 
 .menu-drawer-top {
@@ -665,6 +673,21 @@ body.cursor-drag .custom-cursor-dot {
   }
   .menu-preview-box {
     display: none;
+  }
+}
+
+@media (max-height: 800px) {
+  .menu-drawer {
+    padding: 1.5rem var(--page-margin);
+  }
+  .menu-nav-anchor {
+    font-size: clamp(1.6rem, 3.8vw, 3.2rem);
+  }
+  .menu-nav-list {
+    gap: 0.65rem;
+  }
+  .menu-preview-box {
+    max-width: 260px;
   }
 }
 
@@ -1340,36 +1363,29 @@ body.cursor-drag .custom-cursor-dot {
   background-color: var(--bg-dark);
 }
 
-.story-grid-layout-a {
+/* Magazine Editorial Spreads (4-Quadrant Balanced Layout) */
+.story-magazine-spread {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: clamp(3rem, 6vw, 8rem);
+  gap: clamp(3rem, 6vw, 7rem) clamp(2.5rem, 5vw, 6rem);
+  align-items: start;
   position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.story-media-mask-left {
+.story-grid-item {
   position: relative;
-  aspect-ratio: 3/4;
-  overflow: hidden;
-  border-radius: 2px;
-  clip-path: inset(0% 0% 0% 0%);
-  will-change: clip-path;
-}
-
-.story-media-mask-left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 1.2s var(--ease-luxury);
-  will-change: transform;
-}
-
-.story-text-column {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  max-width: 560px;
+}
+
+.story-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+  padding-top: 1.5rem;
 }
 
 .story-counter {
@@ -1381,11 +1397,19 @@ body.cursor-drag .custom-cursor-dot {
 
 .story-headline-giant {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 5.5vw, 5.5rem);
+  font-size: clamp(2.6rem, 5.2vw, 5.2rem);
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+}
+
+.story-text-narrative {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 540px;
+  padding-top: 1rem;
 }
 
 .story-body-copy {
@@ -1406,26 +1430,38 @@ body.cursor-drag .custom-cursor-dot {
   margin: 1rem 0;
 }
 
-.story-offset-secondary-img {
-  position: absolute;
-  right: -5%;
-  bottom: -20%;
-  width: 38%;
+.story-media-mask {
+  position: relative;
+  width: 100%;
   aspect-ratio: 4/5;
   overflow: hidden;
-  border: 1px solid var(--border-subtle);
   border-radius: 2px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
-  z-index: 3;
+  background-color: var(--bg-dark-card);
+  border: 1px solid var(--border-subtle);
 }
 
-.story-offset-secondary-img img {
+.story-media-mask img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1.2s var(--ease-luxury);
+  will-change: transform;
 }
 
-/* Chapter 02: High-Contrast Bone White Spread (Editorial Print Feel) */
+.story-media-mask:hover img {
+  transform: scale(1.05);
+}
+
+.story-image-caption {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.85rem;
+  display: inline-block;
+}
+
+/* Chapter 02: High-Contrast Bone White Spread */
 .story-chapter-light {
   padding: clamp(6rem, 12vw, 14rem) var(--page-margin);
   background-color: var(--bg-light);
@@ -1434,58 +1470,39 @@ body.cursor-drag .custom-cursor-dot {
   transition: background-color 0.6s ease;
 }
 
-.story-grid-layout-b {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: clamp(3rem, 6vw, 8rem);
-  position: relative;
-}
-
-.story-grid-layout-b .story-headline-giant {
+.story-chapter-light .story-headline-giant {
   color: var(--text-dark);
 }
 
-.story-grid-layout-b .story-body-copy {
+.story-chapter-light .story-body-copy {
   color: var(--text-dark-muted);
 }
 
-.story-grid-layout-b .story-counter {
+.story-chapter-light .story-counter {
   color: #8c7143;
 }
 
-.story-grid-layout-b .story-quote-callout {
+.story-chapter-light .story-quote-callout {
   color: var(--text-dark);
   border-left-color: #8c7143;
 }
 
-.story-media-mask-right {
-  position: relative;
-  aspect-ratio: 3/4;
-  overflow: hidden;
-  border-radius: 2px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+.story-chapter-light .story-image-caption {
+  color: var(--text-dark-muted);
 }
 
-.story-media-mask-right img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 1.2s var(--ease-luxury);
+.story-chapter-light .story-media-mask {
+  border-color: rgba(14, 14, 16, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
 @media (max-width: 900px) {
-  .story-grid-layout-a,
-  .story-grid-layout-b {
+  .story-magazine-spread {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .story-offset-secondary-img {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    margin-top: 2rem;
+  .story-header-block {
+    padding-top: 0;
   }
 }
 
@@ -1876,11 +1893,19 @@ body.cursor-drag .custom-cursor-dot {
   justify-content: space-between;
   padding: 2.5rem;
   transform: translateX(100%);
-  transition: transform 0.65s var(--ease-luxury);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.65s var(--ease-luxury), 
+              opacity 0.4s ease, 
+              visibility 0.4s ease;
 }
 
 .bag-drawer.open {
   transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .bag-backdrop {
