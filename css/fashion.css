@@ -1768,15 +1768,16 @@ body.cursor-drag .custom-cursor-dot {
 
 .craft-manifesto-quote {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4.2vw, 4.2rem);
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.025em;
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--text-light);
 }
 
 .craft-manifesto-quote em {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-weight: 400;
   font-style: italic;
   color: var(--accent-gold);
@@ -1798,17 +1799,19 @@ body.cursor-drag .custom-cursor-dot {
 .craft-item-card {
   padding: 2.5rem;
   background-color: var(--bg-dark-card);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-gold);
   border-radius: 2px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  transition: border-color 0.3s ease, transform 0.4s var(--ease-luxury);
+  transition: border-color 0.4s ease, transform 0.4s var(--ease-luxury), box-shadow 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .craft-item-card:hover {
-  border-color: var(--border-hover);
+  border-color: var(--accent-gold);
   transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.15);
 }
 
 .craft-item-header {
@@ -1826,15 +1829,18 @@ body.cursor-drag .custom-cursor-dot {
 
 .craft-item-title {
   font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.65rem;
+  font-weight: 500;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
 }
 
 .craft-item-desc {
+  font-family: var(--font-sans);
   font-size: 0.95rem;
   line-height: 1.7;
-  color: var(--text-muted);
+  color: #b5ada3;
 }
 
 .craft-item-img-preview {
@@ -1984,24 +1990,27 @@ body.cursor-drag .custom-cursor-dot {
 
 .modal-product-title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
-  font-weight: 800;
-  line-height: 1.05;
+  font-size: clamp(2rem, 3.2vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.1;
   text-transform: uppercase;
-  letter-spacing: -0.02em;
-}
-
-.modal-price-tag {
-  font-family: var(--font-sans);
-  font-size: 1.6rem;
-  font-weight: 600;
+  letter-spacing: 0.05em;
   color: var(--text-light);
 }
 
+.modal-price-tag {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent-gold);
+}
+
 .modal-description-copy {
-  font-size: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
   line-height: 1.7;
-  color: var(--text-muted);
+  color: #b5ada3;
 }
 
 .modal-spec-block {
@@ -2009,20 +2018,25 @@ body.cursor-drag .custom-cursor-dot {
   flex-direction: column;
   gap: 0.75rem;
   padding: 1.25rem 0;
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--border-gold);
+  border-bottom: 1px solid var(--border-gold);
 }
 
 .modal-spec-row {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-family: var(--font-sans);
+  font-size: 11px;
   letter-spacing: 0.1em;
 }
 
 .modal-spec-row span:first-child {
   color: var(--text-muted);
   text-transform: uppercase;
+}
+
+.modal-spec-row span:last-child {
+  color: var(--accent-gold-light);
 }
 
 .modal-size-selector {
@@ -2032,10 +2046,11 @@ body.cursor-drag .custom-cursor-dot {
 }
 
 .size-selector-label {
-  font-size: 11px;
-  letter-spacing: 0.15em;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent-gold);
 }
 
 .size-pill-group {
@@ -2044,12 +2059,16 @@ body.cursor-drag .custom-cursor-dot {
 }
 
 .size-pill-btn {
-  width: 44px;
-  height: 44px;
-  border: 1px solid var(--border-subtle);
+  padding: 0 16px;
+  height: 42px;
+  border: 1px solid var(--border-gold);
   border-radius: 2px;
-  font-size: 12px;
+  font-family: var(--font-sans);
+  font-size: 11px;
   font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  background: rgba(14, 12, 13, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2057,13 +2076,15 @@ body.cursor-drag .custom-cursor-dot {
 }
 
 .size-pill-btn:hover {
-  border-color: var(--text-light);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold-light);
 }
 
 .size-pill-btn.active {
-  background-color: var(--text-light);
-  color: var(--text-dark);
-  border-color: var(--text-light);
+  background-color: var(--accent-gold);
+  color: #0c090a;
+  border-color: var(--accent-gold);
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
 }
 
 .modal-actions-bar {
@@ -2074,25 +2095,28 @@ body.cursor-drag .custom-cursor-dot {
 
 .btn-add-to-bag {
   flex: 1;
-  padding: 18px 32px;
-  background-color: var(--text-light);
-  color: var(--text-dark);
-  font-family: var(--font-display);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
+  padding: 18px 36px;
+  background: var(--accent-gold);
+  color: #0c090a;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  border-radius: 99px;
+  border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
 }
 
 .btn-add-to-bag:hover {
-  background-color: var(--accent-gold);
+  background-color: var(--accent-gold-light);
   color: #000;
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.45);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
