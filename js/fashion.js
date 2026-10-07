@@ -1,157 +1,157 @@
 /**
- * VAEL ATELIER — HIGH-FASHION EDITORIAL ENGINE
- * Premium Interaction, GSAP Motion Architecture & Web Audio Soundscape
+ * VĀRA ATELIER — INDIAN LUXURY HAUTE COUTURE ENGINE
+ * Royal Craftsmanship, GSAP Motion Architecture & Indian Ambient Soundscape
  */
 
 (function () {
   'use strict';
 
   /* ==========================================================================
-     PRODUCT CATALOG DATA (Avant-Garde Architectural Garments)
+     PRODUCT CATALOG DATA (Avant-Garde Indian Haute Couture & Artisanal Weaves)
      ========================================================================== */
   const PRODUCTS = [
     {
       id: 'look-01',
-      title: 'Architectural Trench 01',
-      category: 'OUTERWEAR',
-      price: '€2,450',
-      priceNum: 2450,
+      title: 'The Ayodhya Zardozi Lehenga',
+      category: 'BRIDAL COUTURE',
+      price: '₹4,85,000',
+      priceNum: 485000,
       season: 'COLLECTION 08 / LOOK 01',
-      image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1600&q=85',
-      material: 'Double-Faced Melton Wool & Bonded Silk Voile',
-      origin: 'Atelier Paris — 48 Hours Craft',
-      description: 'A monument of minimalist architecture. Featuring dropped sculptural kimono shoulders, a cantilevered storm flap, and raw-finished hem lines that drape with monolithic weight.',
+      image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1600&q=85',
+      material: 'Pure Crimson Mulberry Silk & Hand-Beaten 24K Gold Zari',
+      origin: 'Varanasi & New Delhi Atelier — 820 Karigar Hours',
+      description: 'A monument of royal Indian bridal architecture. Hand-embroidered over 820 artisan hours using antique Dabka and Marodi techniques with hand-beaten gold wire, framed by micro-pearl border edging.',
       specs: [
-        { label: 'Composition', val: '92% Virgin Wool, 8% Raw Silk' },
-        { label: 'Hardware', val: 'Hand-Carved Horn Buttons' },
-        { label: 'Silhouette', val: 'Oversized Sculptural Cocoon' },
-        { label: 'Lining', val: 'Cupro Twill Interior' }
+        { label: 'Craft', val: 'Hand-Couched Real Zardozi Wire & Marodi' },
+        { label: 'Textile', val: 'Pure Varanasi Katan Silk (420 GSM)' },
+        { label: 'Dupatta', val: 'Dual Organza Tissue with Scalloped Zari' },
+        { label: 'Lining', val: 'Pure Habotai Silk with Horsehair Can-Can' }
       ]
     },
     {
       id: 'look-02',
-      title: 'Asymmetric Drape Column',
-      category: 'SILK & DRAPE',
-      price: '€1,820',
-      priceNum: 1820,
+      title: 'Sculptural Kashi Katan Saree',
+      category: 'HERITAGE DRAPE',
+      price: '₹2,10,000',
+      priceNum: 210000,
       season: 'COLLECTION 08 / LOOK 02',
-      image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=85',
-      material: 'Heavy Silk Charmeuse & Washed Crepe',
-      origin: 'Atelier Kyoto — Master Weave',
-      description: 'An organic exploration of fluid gravity. Bias-cut to contour without constraint, punctuated by an asymmetric high-neck cowl secured by a concealed palladium magnetic bar.',
+      image: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=1600&q=85',
+      material: 'Organza Tissue & Handspun Kashi Silk',
+      origin: 'Kashi Heritage Weavers, Varanasi',
+      description: 'An organic exploration of liquid gold drape. Woven on generational wooden pit-looms in sacred Kashi, featuring antique dull gold Kadwa brocade motifs and a pallu edged with hand-knotted resham tassels.',
       specs: [
-        { label: 'Composition', val: '100% Mulberry Silk Charmeuse' },
-        { label: 'Weight', val: '40 Momme Extra-Heavy' },
-        { label: 'Closure', val: 'Concealed Magnetic Bar' },
-        { label: 'Hem', val: 'Floor-Length Asymmetric Godet' }
+        { label: 'Weave', val: 'Authentic Kadwa Handloom Technique' },
+        { label: 'Yarn', val: 'Twisted Katan Warp & Muga Gold Weft' },
+        { label: 'Border', val: 'Antique Meenakari Floral Border' },
+        { label: 'Length', val: '6.5 Metres with Unstitched Blouse Piece' }
       ]
     },
     {
       id: 'look-03',
-      title: 'Monolithic Overcoat',
-      category: 'OUTERWEAR',
-      price: '€2,890',
-      priceNum: 2890,
+      title: 'Royal Monolith Sherwani',
+      category: 'HAUTE TAILORING',
+      price: '₹3,40,000',
+      priceNum: 340000,
       season: 'COLLECTION 08 / LOOK 03',
-      image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1600&q=85',
-      material: '100% Heavy Virgin Melton Wool',
-      origin: 'Atelier Paris — Haute Façon',
-      description: 'Sharp, uncompromising volume. Engineered with internal horsehair canvas structuring for an unyielding silhouette that frames the body like brutalist stone sculpture.',
+      image: 'https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=85',
+      material: 'Raw Spun Matka Silk & Basra Pearl Buttons',
+      origin: 'Atelier New Delhi — Bespoke Tailoring',
+      description: 'Monumental architectural tailoring for the modern Indian royal. Built with floating horsehair chest canvas, high sculpted bandhgala collar, and solid gilded buttons set with natural Basra pearls.',
       specs: [
-        { label: 'Composition', val: '100% Virgin Wool (820 GSM)' },
-        { label: 'Internal', val: 'Floating Full Horsehair Canvas' },
-        { label: 'Collar', val: 'Extended Brutalist Peak Lapel' },
-        { label: 'Vents', val: 'Deep Back Vent with Hidden Snaps' }
+        { label: 'Fabric', val: 'Handwoven Raw Matka Silk (550 GSM)' },
+        { label: 'Buttons', val: 'Custom-Cast Brass with Natural Pearls' },
+        { label: 'Structure', val: 'Floating Full Horsehair Canvas Interior' },
+        { label: 'Ensemble', val: 'Includes Tonal Churidar & Silk Stole' }
       ]
     },
     {
       id: 'look-04',
-      title: 'Sculpted Hourglass Blazer',
-      category: 'TAILORING',
-      price: '€1,650',
-      priceNum: 1650,
+      title: 'Sculpted Chanderi Cape Ensemble',
+      category: 'BRIDAL COUTURE',
+      price: '₹1,85,000',
+      priceNum: 185000,
       season: 'COLLECTION 08 / LOOK 04',
-      image: 'https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=1600&q=85',
-      material: 'High-Twist Wool Gabardine',
-      origin: 'Biella Mill, Italy & Paris Atelier',
-      description: 'Precision darting creates an exaggerated wasp waist juxtaposed against broad architectural shoulders. A study in razor-sharp contrast and feminine power.',
+      image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1600&q=85',
+      material: 'Hand-Gilded Chanderi & Liquid Habotai Silk',
+      origin: 'Chanderi Loom Guild & Jaipur Atelier',
+      description: 'A contemporary Indian couture silhouette. Featuring a dramatic floor-grazing architectural cape in gilded Chanderi tissue, paired with a boned silk corset and micro-pleated flared sharara trousers.',
       specs: [
-        { label: 'Composition', val: '100% High-Twist Wool Gabardine' },
-        { label: 'Shoulders', val: 'Structured Pagoda Shoulder Pads' },
-        { label: 'Cuffs', val: 'Functional Surgeon’s Cuffs' },
-        { label: 'Fit', val: 'Extreme Architectural Cinch' }
+        { label: 'Cape', val: 'Floor-Length Gilded Tissue Chanderi' },
+        { label: 'Corset', val: 'Internal Steel-Boned Architecture' },
+        { label: 'Embroidery', val: 'Tonal Cut-Dana & Bugle Bead Wire' },
+        { label: 'Fit', val: 'Architectural Cinch with Fluid Drape' }
       ]
     },
     {
       id: 'look-05',
-      title: 'Fluid Pleated Trouser',
-      category: 'TAILORING',
-      price: '€940',
-      priceNum: 940,
+      title: 'Jaipur Meenakari Trouser Suit',
+      category: 'HAUTE TAILORING',
+      price: '₹1,45,000',
+      priceNum: 145000,
       season: 'COLLECTION 08 / LOOK 05',
-      image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=85',
-      material: 'Japanese Triacetate & Fine Wool',
-      origin: 'Osaka Textile Lab',
-      description: 'Double reverse inverted pleats create liquid drape in motion. High-waisted construction with an extended tab closure and unhemmed floor-grazing length.',
+      image: 'https://images.unsplash.com/photo-1546804784-896d0dca3805?auto=format&fit=crop&w=1600&q=85',
+      material: 'Tussar Georgette & Hand-Cast Brass Hardware',
+      origin: 'Atelier Jaipur — Royal Armory Craft',
+      description: 'Razor-sharp double-breasted tuxedo suit inspired by royal Rajasthani armory. Peak lapels hand-embroidered with micro-gold bullion thread, paired with fluid high-waisted cigarette trousers.',
       specs: [
-        { label: 'Composition', val: '64% Triacetate, 36% Virgin Wool' },
-        { label: 'Rise', val: 'High-Waist Extended Tab' },
-        { label: 'Pocketing', val: 'Deep Cotton Twill Pocket Bags' },
-        { label: 'Leg', val: 'Extreme Wide Silhouette' }
+        { label: 'Composition', val: '100% Wild Tussar Silk' },
+        { label: 'Lapels', val: 'Hand-Embroidered Bullion Wire' },
+        { label: 'Shoulders', val: 'Pagoda Sculptural Shoulder Architecture' },
+        { label: 'Trousers', val: 'High-Rise Extended Tab Waist' }
       ]
     },
     {
       id: 'look-06',
-      title: 'Brutalist Leather Tote 01',
+      title: 'Brutalist Polki Minaudière Clutch',
       category: 'ACCESSORIES',
-      price: '€1,480',
-      priceNum: 1480,
+      price: '₹95,000',
+      priceNum: 95000,
       season: 'COLLECTION 08 / LOOK 06',
       image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1600&q=85',
-      material: 'Full-Grain Box Calfskin & Palladium',
-      origin: 'Tuscany Tannery, Hand-Assembled Paris',
-      description: 'A hand-molded geometric sculpture disguised as an everyday carry. Seamless corner joins with multiple coats of matte graphite edge sealant.',
+      material: 'Hand-Hammered Brass, Raw Silk & Uncut Polki Quartz',
+      origin: 'Jaipur Goldsmith Guild & Mumbai Studio',
+      description: 'A hand-molded geometric sculpture for black-tie galas. Cast in solid brass with an antique oxidized gold wash, lined in crimson Banarasi raw silk with an uncut Polki quartz clasp.',
       specs: [
-        { label: 'Leather', val: 'Vegetable-Tanned French Calfskin' },
-        { label: 'Hardware', val: 'Solid Brushed Palladium' },
-        { label: 'Lining', val: 'Bonded Suede Interior' },
-        { label: 'Dimensions', val: '42cm x 34cm x 16cm' }
+        { label: 'Metal', val: 'Solid Hand-Hammered Brass' },
+        { label: 'Clasp', val: 'Bezel-Set Uncut Polki Quartz' },
+        { label: 'Lining', val: 'Pure Crimson Banarasi Raw Silk' },
+        { label: 'Chain', val: 'Detachable 24K Gilded Snake Chain' }
       ]
     },
     {
       id: 'look-07',
-      title: 'Cocoon Cashmere Wrap',
-      category: 'OUTERWEAR',
-      price: '€1,950',
-      priceNum: 1950,
+      title: 'Kashmiri Pashmina Monolith Wrap',
+      category: 'HERITAGE DRAPE',
+      price: '₹2,60,000',
+      priceNum: 260000,
       season: 'COLLECTION 08 / LOOK 07',
-      image: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=85',
-      material: 'Grade-A Mongolian Cashmere (7-Gauge)',
-      origin: 'Ulaanbaatar Fiber / Paris Finishing',
-      description: 'Weightless thermal sanctuary. Knitted with cloud-brushed Mongolian cashmere yarns in an enveloping organic cocoon silhouette.',
+      image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1600&q=85',
+      material: '100% Hand-Spun Changthangi Pashmina',
+      origin: 'Srinagar Valley & Ladakh Highland Guild',
+      description: 'Weightless heritage heirloom. Hand-spun from pure Ladakh Changthangi mountain goat fleece and hand-embroidered with delicate needle Sozni motifs over 180 artisan days in Srinagar.',
       specs: [
-        { label: 'Composition', val: '100% Grade-A Pure Cashmere' },
-        { label: 'Gauge', val: '7-Gauge Chunky Fisherman Rib' },
-        { label: 'Finish', val: 'Brushed Cloud Softness' },
-        { label: 'Care', val: 'Specialist Dry Clean Only' }
+        { label: 'Fiber', val: 'Grade-A 12-Micron Mountain Pashmina' },
+        { label: 'Needlework', val: 'Hand-Embroidered Sozni Paisley Motifs' },
+        { label: 'Dimensions', val: '100cm x 200cm Monolith Wrap' },
+        { label: 'Certification', val: 'Geographical Indication (GI) Certified' }
       ]
     },
     {
       id: 'look-08',
-      title: 'Sculptural Obsidian Vest',
-      category: 'TAILORING',
-      price: '€1,120',
-      priceNum: 1120,
+      title: 'The Royal Gilded Bandhgala',
+      category: 'HAUTE TAILORING',
+      price: '₹1,95,000',
+      priceNum: 195000,
       season: 'COLLECTION 08 / LOOK 08',
-      image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1600&q=85',
-      material: 'Bonded Technical Cotton & Silk Satin',
-      origin: 'Atelier Paris',
-      description: 'An avant-garde cuirass for the modern wardrobe. Clean geometric lines, subtle rear cutout, and asymmetric matte gunmetal clamp closures.',
+      image: 'https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1600&q=85',
+      material: 'Heavy Raw Silk & Hand-Polished Jade Closures',
+      origin: 'Atelier New Delhi',
+      description: 'An avant-garde interpretation of the Indian royal court jacket. Features a structured high bandhgala collar, hidden placket with hand-carved jade frog buttons, and deep dual riding vents.',
       specs: [
-        { label: 'Composition', val: '70% Bonded Cotton, 30% Silk' },
-        { label: 'Closure', val: 'Matte Gunmetal Side Clamps' },
-        { label: 'Back Detail', val: 'Architectural Geometric Cutout' },
-        { label: 'Finish', val: 'Water-Repellent Nano Coating' }
+        { label: 'Textile', val: '100% Heavy Handwoven Raw Silk' },
+        { label: 'Hardware', val: 'Hand-Carved Natural Green Jade Closures' },
+        { label: 'Vents', val: 'Traditional Royal Court Riding Vents' },
+        { label: 'Finish', val: 'Anti-Crease Silk Bonded Interlining' }
       ]
     }
   ];
@@ -162,7 +162,7 @@
     audioActive: false,
     currentFilter: 'ALL',
     activeProduct: null,
-    selectedSize: 'FR 38'
+    selectedSize: '38 (M)'
   };
 
   /* DOM Elements Cache */
@@ -273,7 +273,7 @@
       }
     });
 
-    // Elegant curtain lift
+    // Regal curtain lift
     tl.to(elements.preloader, {
       clipPath: 'inset(0% 0% 100% 0%)',
       duration: 0.9,
@@ -293,7 +293,7 @@
     // 2. Hero Background reveal & scale down
     heroTl.fromTo('.hero-bg-image',
       { scale: 1.25, filter: 'brightness(0.3) blur(8px)' },
-      { scale: 1.08, filter: 'brightness(0.7) blur(0px)', duration: 1.8, ease: 'power2.out' },
+      { scale: 1.08, filter: 'brightness(0.72) blur(0px)', duration: 1.8, ease: 'power2.out' },
       '-=0.6'
     );
 
@@ -339,7 +339,6 @@
       elements.cursorDot.style.top = `${mouseY}px`;
     });
 
-    // Lerp loop for fluid trailing outer ring
     function renderCursor() {
       ringX += (mouseX - ringX) * 0.16;
       ringY += (mouseY - ringY) * 0.16;
@@ -362,7 +361,7 @@
     productCards.forEach((card) => {
       card.addEventListener('mouseenter', () => {
         document.body.classList.add('cursor-view');
-        if (elements.cursorLabel) elements.cursorLabel.textContent = 'VIEW LOOK';
+        if (elements.cursorLabel) elements.cursorLabel.textContent = 'VIEW PIECE';
       });
       card.addEventListener('mouseleave', () => {
         document.body.classList.remove('cursor-view');
@@ -390,14 +389,12 @@
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
 
-      // Compact sticky transition
       if (currentScrollY > 80) {
         elements.siteNav?.classList.add('scrolled');
       } else {
         elements.siteNav?.classList.remove('scrolled');
       }
 
-      // Hide on scroll down, reveal on scroll up
       if (currentScrollY > 400 && currentScrollY > lastScrollY && !elements.menuDrawer?.classList.contains('open')) {
         elements.siteNav?.classList.add('nav-hidden');
       } else {
@@ -407,7 +404,6 @@
       lastScrollY = currentScrollY;
     }, { passive: true });
 
-    // Menu Drawer Toggle
     elements.menuTrigger?.addEventListener('click', toggleMenuDrawer);
     document.getElementById('menu-drawer-close')?.addEventListener('click', toggleMenuDrawer);
 
@@ -415,11 +411,11 @@
     const menuLinks = document.querySelectorAll('.menu-nav-anchor');
     const previewImg = document.getElementById('menu-preview-img');
     const previewImages = {
-      'COLLECTION': 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80',
-      'EDITORIAL': 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80',
-      'RUNWAY': 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80',
-      'ATELIER': 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&w=800&q=80',
-      'ARCHIVE': 'https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=800&q=80'
+      'COLLECTION': 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
+      'EDITORIAL': 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
+      'RUNWAY': 'https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80',
+      'ATELIER': 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80',
+      'ARCHIVE': 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=800&q=80'
     };
 
     menuLinks.forEach((link) => {
@@ -482,7 +478,6 @@
       });
     });
 
-    // Subtle 3D mouse tilt on hero container
     const heroSection = document.getElementById('hero-section');
     if (heroSection) {
       heroSection.addEventListener('mousemove', (e) => {
@@ -512,7 +507,6 @@
 
     if (!track || !container || typeof ScrollTrigger === 'undefined') return;
 
-    // Calculate total horizontal overflow distance
     function getScrollAmount() {
       const trackWidth = track.scrollWidth;
       return -(trackWidth - window.innerWidth + 80);
@@ -563,7 +557,6 @@
         }
       );
 
-      // Subtle inner image parallax (stays strictly within container boundaries)
       const innerImg = frame.querySelector('.story-portrait-img');
       if (innerImg) {
         gsap.fromTo(innerImg,
@@ -624,7 +617,6 @@
      CINEMATIC PRODUCT TRANSITIONS & INTERACTIVE MODAL
      ========================================================================== */
   function initProductInteractions() {
-    // Product Card Clicks
     const productCards = document.querySelectorAll('.product-editorial-card');
     productCards.forEach((card) => {
       card.addEventListener('click', () => {
@@ -633,13 +625,11 @@
       });
     });
 
-    // Modal Close
     elements.modalClose?.addEventListener('click', closeProductModal);
     elements.productModal?.addEventListener('click', (e) => {
       if (e.target === elements.productModal) closeProductModal();
     });
 
-    // ESC Key to Close
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         if (elements.productModal?.classList.contains('active')) closeProductModal();
@@ -648,7 +638,6 @@
       }
     });
 
-    // Category Filter Buttons
     const filterBtns = document.querySelectorAll('.filter-btn');
     filterBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -660,7 +649,6 @@
       });
     });
 
-    // Sizing Buttons in Modal
     const sizePills = document.querySelectorAll('.size-pill-btn');
     sizePills.forEach((pill) => {
       pill.addEventListener('click', () => {
@@ -670,13 +658,12 @@
       });
     });
 
-    // Add to Bag Button in Modal
     const addBagBtn = document.getElementById('modal-add-to-bag');
     addBagBtn?.addEventListener('click', () => {
       if (state.activeProduct) {
         addToCart(state.activeProduct, state.selectedSize);
         playHapticChime();
-        showToastNotice(`Ajouté au panier: ${state.activeProduct.title} (${state.selectedSize})`);
+        showToastNotice(`Added to Atelier Roster: ${state.activeProduct.title} (${state.selectedSize})`);
       }
     });
   }
@@ -686,7 +673,6 @@
     if (!product) return;
     state.activeProduct = product;
 
-    // Populate Modal Data
     const modalImg = document.getElementById('modal-main-img');
     const modalTitle = document.getElementById('modal-title');
     const modalCategory = document.getElementById('modal-category');
@@ -710,10 +696,7 @@
         `).join('');
     }
 
-    // Stop Lenis background scrolling
     if (lenisInstance) lenisInstance.stop();
-
-    // Cinematic Open
     elements.productModal?.classList.add('active');
   }
 
@@ -750,7 +733,6 @@
       }
     });
 
-    // Refresh ScrollTrigger layout calculations
     setTimeout(() => {
       ScrollTrigger.refresh();
     }, 450);
@@ -767,16 +749,16 @@
     const checkoutBtn = document.getElementById('btn-checkout');
     checkoutBtn?.addEventListener('click', () => {
       if (state.cart.length === 0) {
-        showToastNotice('Your atelier bag is currently empty.');
+        showToastNotice('Your couture bag is currently empty.');
         return;
       }
       playHapticChime();
-      showToastNotice('Order initiated: Redirecting to Private Atelier Vault...');
+      showToastNotice('Order initiated: Connecting to Royal Concierge Desk...');
       setTimeout(() => {
         state.cart = [];
         renderCart();
         closeCartDrawer();
-        showToastNotice('Merci. Atelier Concierge will contact you within 2 hours.');
+        showToastNotice('Dhanyavaad. Your Private Bespoke Stylist will connect within 2 hours.');
       }, 1600);
     });
   }
@@ -827,11 +809,11 @@
     if (state.cart.length === 0) {
       elements.bagItemsList.innerHTML = `
         <div class="bag-empty-state">
-          <p>Your shopping bag is empty.</p>
+          <p>Your couture bag is empty.</p>
           <span style="font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 0.5rem; display: inline-block;">Explore Collection 08</span>
         </div>
       `;
-      if (elements.bagSubtotal) elements.bagSubtotal.textContent = '€0';
+      if (elements.bagSubtotal) elements.bagSubtotal.textContent = '₹0';
       return;
     }
 
@@ -852,10 +834,9 @@
     }).join('');
 
     if (elements.bagSubtotal) {
-      elements.bagSubtotal.textContent = `€${subtotalNum.toLocaleString()}`;
+      elements.bagSubtotal.textContent = `₹${subtotalNum.toLocaleString('en-IN')}`;
     }
 
-    // Attach remove handlers
     elements.bagItemsList.querySelectorAll('.bag-item-remove-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         const idx = parseInt(btn.getAttribute('data-index'), 10);
@@ -877,7 +858,7 @@
   }
 
   /* ==========================================================================
-     WEB AUDIO SOUNDSCAPE & HAPTIC CHIMES
+     WEB AUDIO SOUNDSCAPE & HAPTIC CHIMES (Indian Ambient Palace Drone)
      ========================================================================== */
   let audioCtx = null;
   let ambientOsc1 = null;
@@ -892,7 +873,7 @@
         elements.soundToggle.classList.add('active');
         const textSpan = elements.soundToggle.querySelector('.sound-label');
         if (textSpan) textSpan.textContent = 'SOUND: ON';
-        showToastNotice('Ambiance Atelier Activée');
+        showToastNotice('Palace Soundscape Active');
       } else {
         stopSoundscape();
         state.audioActive = false;
@@ -909,22 +890,22 @@
       if (!audioCtx) audioCtx = new AudioContext();
       if (audioCtx.state === 'suspended') audioCtx.resume();
 
-      // Gentle warm sub-bass drone
+      // Meditative Tanpura palace resonance (D2 root: 73.4Hz + A2 fifth: 110.1Hz)
       ambientGain = audioCtx.createGain();
       ambientGain.gain.setValueAtTime(0.001, audioCtx.currentTime);
       ambientGain.gain.exponentialRampToValueAtTime(0.045, audioCtx.currentTime + 3);
 
       const filter = audioCtx.createBiquadFilter();
       filter.type = 'lowpass';
-      filter.frequency.setValueAtTime(220, audioCtx.currentTime);
+      filter.frequency.setValueAtTime(280, audioCtx.currentTime);
 
       ambientOsc1 = audioCtx.createOscillator();
       ambientOsc1.type = 'sine';
-      ambientOsc1.frequency.setValueAtTime(55, audioCtx.currentTime); // A1 note
+      ambientOsc1.frequency.setValueAtTime(73.4, audioCtx.currentTime);
 
       ambientOsc2 = audioCtx.createOscillator();
       ambientOsc2.type = 'sine';
-      ambientOsc2.frequency.setValueAtTime(110.5, audioCtx.currentTime); // Subtle binaural beat
+      ambientOsc2.frequency.setValueAtTime(110.1, audioCtx.currentTime);
 
       ambientOsc1.connect(filter);
       ambientOsc2.connect(filter);
@@ -934,7 +915,7 @@
       ambientOsc1.start();
       ambientOsc2.start();
     } catch (e) {
-      console.warn('Web Audio not allowed or unavailable:', e);
+      console.warn('Web Audio unavailable:', e);
     }
   }
 
@@ -961,8 +942,8 @@
     const gain = audioCtx.createGain();
 
     osc.type = 'sine';
-    osc.frequency.setValueAtTime(880, audioCtx.currentTime); // A5 high bell
-    osc.frequency.exponentialRampToValueAtTime(1760, audioCtx.currentTime + 0.12);
+    osc.frequency.setValueAtTime(987.77, audioCtx.currentTime); // B5 ghungroo sparkle bell
+    osc.frequency.exponentialRampToValueAtTime(1975.53, audioCtx.currentTime + 0.12);
 
     gain.gain.setValueAtTime(0.06, audioCtx.currentTime);
     gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.35);
@@ -975,26 +956,26 @@
   }
 
   /* ==========================================================================
-     LIVE ATELIER WORLD CLOCKS
+     LIVE ATELIER WORLD CLOCKS (New Delhi, Varanasi, Mumbai, London)
      ========================================================================== */
   function initWorldClocks() {
     function updateClocks() {
       const now = new Date();
 
-      const timeParis = now.toLocaleTimeString('en-GB', { timeZone: 'Europe/Paris', hour: '2-digit', minute: '2-digit', second: '2-digit' });
-      const timeTokyo = now.toLocaleTimeString('en-GB', { timeZone: 'Asia/Tokyo', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      const timeDelhi = now.toLocaleTimeString('en-GB', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      const timeVaranasi = now.toLocaleTimeString('en-GB', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      const timeLondon = now.toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', second: '2-digit' });
       const timeNYC = now.toLocaleTimeString('en-GB', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', second: '2-digit' });
-      const timeMilan = now.toLocaleTimeString('en-GB', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
-      const elParis = document.getElementById('clock-paris');
-      const elTokyo = document.getElementById('clock-tokyo');
+      const elDelhi = document.getElementById('clock-delhi');
+      const elVaranasi = document.getElementById('clock-varanasi');
+      const elLondon = document.getElementById('clock-london');
       const elNYC = document.getElementById('clock-nyc');
-      const elMilan = document.getElementById('clock-milan');
 
-      if (elParis) elParis.textContent = `${timeParis} CET`;
-      if (elTokyo) elTokyo.textContent = `${timeTokyo} JST`;
+      if (elDelhi) elDelhi.textContent = `${timeDelhi} IST`;
+      if (elVaranasi) elVaranasi.textContent = `${timeVaranasi} IST`;
+      if (elLondon) elLondon.textContent = `${timeLondon} GMT`;
       if (elNYC) elNYC.textContent = `${timeNYC} EST`;
-      if (elMilan) elMilan.textContent = `${timeMilan} CET`;
     }
 
     updateClocks();
@@ -1002,7 +983,7 @@
   }
 
   /* ==========================================================================
-     NEWSLETTER FORM
+     NEWSLETTER & SCROLL TO TOP
      ========================================================================== */
   function initNewsletter() {
     const form = document.getElementById('newsletter-form');
@@ -1011,12 +992,11 @@
       const input = form.querySelector('.newsletter-input');
       if (input && input.value) {
         playHapticChime();
-        showToastNotice('Bienvenue. You have been added to the Private Runway Roster.');
+        showToastNotice('Namaste. You have been added to the Royal Atelier Private Roster.');
         input.value = '';
       }
     });
 
-    // Scroll to Top Button
     const scrollTopBtn = document.getElementById('scroll-top-btn');
     scrollTopBtn?.addEventListener('click', () => {
       if (lenisInstance) {
