@@ -645,18 +645,18 @@ body.cursor-drag .custom-cursor-dot {
 
 .menu-nav-anchor {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5.5vw, 5.5rem);
-  font-weight: 800;
+  font-size: clamp(2rem, 4.5vw, 4.5rem);
+  font-weight: 400;
   text-transform: uppercase;
-  line-height: 0.95;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
   color: var(--text-light);
   transition: color 0.3s ease, transform 0.4s var(--ease-luxury);
   display: inline-block;
 }
 
 .menu-nav-anchor:hover {
-  color: var(--accent-gold);
+  color: var(--accent-gold-light);
   transform: translateX(1.5rem);
 }
 
@@ -667,7 +667,8 @@ body.cursor-drag .custom-cursor-dot {
   justify-self: end;
   overflow: hidden;
   border-radius: 2px;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
 }
 
 .menu-preview-img {
@@ -2390,23 +2391,27 @@ body.cursor-drag .custom-cursor-dot {
 }
 
 .footer-logo {
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
+  color: var(--text-light);
 }
 
 .footer-manifesto-snippet {
+  font-family: var(--font-sans);
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: #b5ada3;
   max-width: 320px;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-weight: 300;
 }
 
 .footer-column-heading {
-  font-size: 11px;
-  letter-spacing: 0.2em;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--accent-gold);
   margin-bottom: 1.5rem;
@@ -2419,15 +2424,16 @@ body.cursor-drag .custom-cursor-dot {
 }
 
 .footer-link {
-  font-size: 13px;
-  letter-spacing: 0.08em;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.1em;
   color: var(--text-muted);
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block;
 }
 
 .footer-link:hover {
-  color: var(--text-light);
+  color: var(--accent-gold-light);
   transform: translateX(4px);
 }
 
@@ -2451,9 +2457,10 @@ body.cursor-drag .custom-cursor-dot {
 }
 
 .clock-time {
-  font-family: var(--font-display);
-  font-weight: 600;
-  color: var(--text-light);
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--accent-gold-light);
 }
 
 /* Newsletter Input */
@@ -2467,12 +2474,12 @@ body.cursor-drag .custom-cursor-dot {
   position: relative;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-gold);
   transition: border-color 0.3s ease;
 }
 
 .newsletter-input-wrap:focus-within {
-  border-color: var(--text-light);
+  border-color: var(--accent-gold);
 }
 
 .newsletter-input {
@@ -2491,8 +2498,9 @@ body.cursor-drag .custom-cursor-dot {
 }
 
 .newsletter-submit-btn {
+  font-family: var(--font-heading);
   font-size: 11px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent-gold);
   padding: 8px 0;
@@ -2500,7 +2508,7 @@ body.cursor-drag .custom-cursor-dot {
 }
 
 .newsletter-submit-btn:hover {
-  color: var(--text-light);
+  color: var(--accent-gold-light);
 }
 
 /* Monumental Brand Typography in Footer */
@@ -2514,12 +2522,12 @@ body.cursor-drag .custom-cursor-dot {
 
 .footer-monument-brand {
   font-family: var(--font-display);
-  font-size: clamp(4rem, 16vw, 17rem);
-  font-weight: 800;
-  line-height: 0.75;
-  letter-spacing: -0.04em;
+  font-size: clamp(5rem, 18vw, 19rem);
+  font-weight: 300;
+  line-height: 0.8;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.05);
+  color: rgba(212, 175, 55, 0.05);
   user-select: none;
   pointer-events: none;
   transition: color 0.6s ease;
