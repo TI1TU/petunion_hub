@@ -545,18 +545,18 @@
   function initEditorialParallax() {
     if (typeof ScrollTrigger === 'undefined') return;
 
-    // Mask Clip-path Reveal on Editorial Images
-    const maskReveals = document.querySelectorAll('.story-media-mask');
-    maskReveals.forEach((mask) => {
-      gsap.fromTo(mask, 
+    // Mask Clip-path Reveal on Portrait Frames
+    const portraitFrames = document.querySelectorAll('.story-portrait-frame');
+    portraitFrames.forEach((frame) => {
+      gsap.fromTo(frame, 
         { clipPath: 'inset(10% 0% 10% 0%)', opacity: 0.7 },
         {
           clipPath: 'inset(0% 0% 0% 0%)',
           opacity: 1,
-          duration: 1.1,
+          duration: 1.2,
           ease: 'power3.out',
           scrollTrigger: {
-            trigger: mask,
+            trigger: frame,
             start: 'top 85%',
             toggleActions: 'play none none reverse'
           }
@@ -564,16 +564,16 @@
       );
 
       // Subtle inner image parallax (stays strictly within container boundaries)
-      const innerImg = mask.querySelector('img');
+      const innerImg = frame.querySelector('.story-portrait-img');
       if (innerImg) {
         gsap.fromTo(innerImg,
-          { scale: 1.12, yPercent: -5 },
+          { scale: 1.12, yPercent: -4 },
           {
-            scale: 1.0,
-            yPercent: 5,
+            scale: 1.02,
+            yPercent: 4,
             ease: 'none',
             scrollTrigger: {
-              trigger: mask,
+              trigger: frame,
               start: 'top bottom',
               end: 'bottom top',
               scrub: 1
@@ -581,6 +581,24 @@
           }
         );
       }
+    });
+
+    // Reveal for Specimen Inset Cards
+    const specimenCards = document.querySelectorAll('.story-specimen-card');
+    specimenCards.forEach((card) => {
+      gsap.fromTo(card,
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.9,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 90%'
+          }
+        }
+      );
     });
 
     // Headings Staggered Reveal
