@@ -77,7 +77,7 @@ class CDPClient {
 }
 
 async function runTestSuite() {
-  console.log('--- STARTING HIGH-FASHION AUTOMATED TEST SUITE ---');
+  console.log('--- STARTING VĀRA INDIAN LUXURY COUTURE TEST SUITE ---');
   
   // 1. Launch Headless Chrome with Remote Debugging
   const chromeProcess = spawn(CHROME_PATH, [
@@ -148,8 +148,8 @@ async function runTestSuite() {
       return t ? t.innerText.replace(/\\s+/g, ' ').trim() : null;
     `);
     console.log('Hero Title:', heroTitle);
-    if (heroTitle && heroTitle.includes('MONOLITH')) {
-      console.log('✅ Hero Title correctly rendered and staggered.');
+    if (heroTitle && heroTitle.includes('DHĀTU & RESHAM')) {
+      console.log('✅ Hero Title correctly rendered and staggered (DHĀTU & RESHAM).');
     } else {
       console.error('❌ Hero title mismatch:', heroTitle);
     }
@@ -161,7 +161,7 @@ async function runTestSuite() {
     `);
     console.log(`Product cards found in DOM: ${productCardCount}`);
     if (productCardCount === 8) {
-      console.log('✅ Exactly 8 bespoke architectural garments rendered.');
+      console.log('✅ Exactly 8 bespoke Indian couture pieces rendered.');
     } else {
       console.error(`❌ Expected 8 cards, found ${productCardCount}`);
     }
@@ -169,7 +169,7 @@ async function runTestSuite() {
     // TEST 4: Category Filtering
     console.log('\n[TEST 4] Testing Category Filtering...');
     await cdp.eval(`
-      const tailoringBtn = document.querySelector('.filter-btn[data-filter="TAILORING"]');
+      const tailoringBtn = document.querySelector('.filter-btn[data-filter="HAUTE TAILORING"]');
       tailoringBtn.click();
     `);
     await sleep(600);
@@ -179,9 +179,9 @@ async function runTestSuite() {
         return window.getComputedStyle(c).display !== 'none';
       }).length;
     `);
-    console.log(`Visible cards after selecting TAILORING: ${visibleCardsAfterFilter}`);
+    console.log(`Visible cards after selecting HAUTE TAILORING: ${visibleCardsAfterFilter}`);
     if (visibleCardsAfterFilter === 3) {
-      console.log('✅ Category filtering functions properly (3 tailoring pieces visible).');
+      console.log('✅ Category filtering functions properly (3 Haute Tailoring pieces visible).');
     } else {
       console.warn(`⚠️ Expected 3 tailoring pieces, found ${visibleCardsAfterFilter}`);
     }
@@ -211,8 +211,8 @@ async function runTestSuite() {
       return { isActive, opacity, title, price, specsCount };
     `);
     console.log('Modal State:', modalState);
-    if (modalState.isActive && modalState.title === 'Architectural Trench 01' && modalState.price === '€2,450') {
-      console.log('✅ Cinematic Product Transition successfully triggered with correct metadata.');
+    if (modalState.isActive && modalState.title === 'The Ayodhya Zardozi Lehenga' && modalState.price === '₹4,85,000') {
+      console.log('✅ Cinematic Product Transition successfully triggered with correct Indian Couture metadata.');
     } else {
       console.error('❌ Modal failed to open or populate correctly:', modalState);
     }
@@ -221,7 +221,7 @@ async function runTestSuite() {
     console.log('\n[TEST 6] Testing Sizing Selection and Add to Bag...');
     await cdp.eval(`
       const sizePills = document.querySelectorAll('.size-pill-btn');
-      sizePills[2].click(); // Select FR 40
+      sizePills[2].click(); // Select 40 (L)
       const addBtn = document.getElementById('modal-add-to-bag');
       addBtn.click();
     `);
@@ -236,8 +236,8 @@ async function runTestSuite() {
       return { isOpen, count, subtotal, itemsCount };
     `);
     console.log('Cart State after Add to Bag:', cartState);
-    if (cartState.isOpen && cartState.count === '(1)' && cartState.subtotal === '€2,450') {
-      console.log('✅ Sizing selected and piece added to shopping bag with correct subtotal.');
+    if (cartState.isOpen && cartState.count === '(1)' && cartState.subtotal === '₹4,85,000') {
+      console.log('✅ Sizing selected and Indian couture piece added to shopping bag with correct ₹ subtotal.');
     } else {
       console.error('❌ Bag drawer or item count mismatch:', cartState);
     }
@@ -260,7 +260,7 @@ async function runTestSuite() {
     }
 
     // TEST 8: Soundscape Web Audio Toggle
-    console.log('\n[TEST 8] Testing Atelier Soundscape Audio Engine...');
+    console.log('\n[TEST 8] Testing Atelier Drone Soundscape Audio Engine...');
     await cdp.eval(`
       const soundBtn = document.getElementById('sound-toggle');
       soundBtn.click();
@@ -276,7 +276,7 @@ async function runTestSuite() {
     `);
     console.log('Sound Engine State:', soundState);
     if (soundState.isActive && soundState.text === 'SOUND: ON') {
-      console.log('✅ Atelier Web Audio Soundscape toggled ON successfully.');
+      console.log('✅ Atelier Indian Tanpura & Ghungroo Soundscape toggled ON successfully.');
     } else {
       console.error('❌ Sound toggle state mismatch:', soundState);
     }
@@ -308,15 +308,15 @@ async function runTestSuite() {
     console.log('\n[TEST 10] Testing Live Atelier World Clocks in Footer...');
     const clocks = await cdp.eval(`
       return {
-        paris: document.getElementById('clock-paris')?.textContent,
-        tokyo: document.getElementById('clock-tokyo')?.textContent,
-        nyc: document.getElementById('clock-nyc')?.textContent,
-        milan: document.getElementById('clock-milan')?.textContent
+        delhi: document.getElementById('clock-delhi')?.textContent,
+        varanasi: document.getElementById('clock-varanasi')?.textContent,
+        london: document.getElementById('clock-london')?.textContent,
+        nyc: document.getElementById('clock-nyc')?.textContent
       };
     `);
     console.log('Live World Clocks:', clocks);
-    if (clocks.paris && clocks.tokyo && clocks.nyc && clocks.milan && !clocks.paris.includes('--:--:--')) {
-      console.log('✅ World Clocks are ticking live with correct time zones.');
+    if (clocks.delhi && clocks.varanasi && clocks.london && clocks.nyc && clocks.delhi.includes('IST')) {
+      console.log('✅ World Clocks are ticking live with New Delhi & Varanasi IST time zones.');
     } else {
       console.error('❌ World Clocks failed to initialize:', clocks);
     }
@@ -328,7 +328,7 @@ async function runTestSuite() {
     `);
     console.log(`Runway cards found: ${runwayCards}`);
     if (runwayCards === 5) {
-      console.log('✅ Pinned Runway Deck contains all 5 curated runway looks.');
+      console.log('✅ Pinned Runway Deck contains all 5 curated royal runway looks.');
     } else {
       console.error(`❌ Expected 5 runway looks, found ${runwayCards}`);
     }
