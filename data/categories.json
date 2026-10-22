@@ -1,0 +1,44 @@
+[
+  {
+    "id": "care",
+    "name": "Pet Care Tips",
+    "icon": "fas fa-heartbeat",
+    "description": "Daily wellness, home preparation, and loving advice for dogs, cats, and small pets."
+  },
+  {
+    "id": "training",
+    "name": "Dog Training",
+    "icon": "fas fa-bone",
+    "description": "Positive reinforcement techniques, obedience commands, and behavioral problem solving."
+  },
+  {
+    "id": "nutrition",
+    "name": "Pet Nutrition",
+    "icon": "fas fa-drumstick-bite",
+    "description": "Vet-approved diets, wholesome ingredients, superfoods, and toxic food warnings."
+  },
+  {
+    "id": "health",
+    "name": "Pet Health",
+    "icon": "fas fa-stethoscope",
+    "description": "Preventative medicine, symptom identification, senior care, and vet visit guides."
+  },
+  {
+    "id": "grooming",
+    "name": "Grooming Guide",
+    "icon": "fas fa-cut",
+    "description": "At-home coat maintenance, bathing routines, nail trimming, and hygiene essentials."
+  },
+  {
+    "id": "adoption",
+    "name": "Pet Adoption",
+    "icon": "fas fa-paw",
+    "description": "Rescue stories, shelter advice, foster care guides, and animal welfare advocacy."
+  },
+  {
+    "id": "cats",
+    "name": "Cat Care",
+    "icon": "fas fa-cat",
+    "description": "Feline behavior, body language decoding, indoor stimulation, and nutrition."
+  }
+]

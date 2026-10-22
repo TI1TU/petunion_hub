@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetUnion Hub — Content Management System &amp; Article Admin</title>
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Google Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: #F6F4EF;
+            min-height: 100vh;
+        }
+        .admin-nav {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border-light);
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .admin-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--primary-color);
+        }
+        .admin-badge {
+            background: rgba(160, 82, 45, 0.12);
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .admin-main {
+            max-width: 1300px;
+            margin: 32px auto;
+            padding: 0 24px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        .stat-card {
+            background: var(--surface);
+            padding: 24px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        .stat-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+        }
+        .stat-num {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.1;
+        }
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.88rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .card-table-wrap {
+            background: var(--surface);
+            border-radius: var(--radius);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+        .table-toolbar {
+            padding: 24px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-light);
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .search-filter-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .admin-input, .admin-select {
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(160, 82, 45, 0.2);
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            background: var(--bg-color);
+        }
+        .admin-input:focus, .admin-select:focus {
+            border-color: var(--primary-color);
+            background: var(--white);
+        }
+        .articles-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        .articles-table th {
+            background: #FDFBF8;
+            padding: 14px 24px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+        .articles-table td {
+            padding: 16px 24px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            font-size: 0.95rem;
+            vertical-align: middle;
+        }
+        .articles-table tr:hover {
+            background: rgba(160, 82, 45, 0.02);
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .status-published {
+            background: rgba(67, 170, 139, 0.15);
+            color: var(--secondary-color);
+        }
+        .status-draft {
+            background: rgba(248, 150, 30, 0.15);
+            color: var(--accent-color);
+        }
+        .action-btns {
+            display: flex;
+            gap: 8px;
+        }
+        .action-btn {
+            background: var(--bg-color);
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+        }
+        .action-btn:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        .action-btn.btn-delete:hover {
+            background: #e63946;
+            border-color: #e63946;
+            color: #fff;
+        }
+        
+        /* Modal Editor */
+        .admin-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 5000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .admin-modal.active {
+            display: flex;
+        }
+        .modal-box {
+            background: var(--white);
+            border-radius: var(--radius);
+            max-width: 1050px;
+            width: 100%;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+        }
+        .modal-header {
+            padding: 20px 30px;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FAF8F5;
+        }
+        .modal-body {
+            padding: 30px;
+            overflow-y: auto;
+            flex: 1;
+        }
+        .modal-footer {
+            padding: 18px 30px;
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FAF8F5;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .form-full {
+            grid-column: span 2;
+        }
+        .form-label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+        .editor-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            background: #F3EFEA;
+            padding: 8px 12px;
+            border-radius: 8px 8px 0 0;
+            border: 1px solid rgba(160, 82, 45, 0.2);
+            border-bottom: none;
+        }
+        .tool-btn {
+            background: var(--white);
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 4px;
+            padding: 6px 10px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .tool-btn:hover {
+            background: var(--primary-color);
+            color: #fff;
+        }
+        .article-textarea {
+            width: 100%;
+            min-height: 280px;
+            padding: 16px;
+            border: 1px solid rgba(160, 82, 45, 0.2);
+            border-radius: 0 0 8px 8px;
+            font-family: 'Inter', monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            outline: none;
+            resize: vertical;
+        }
+        .preview-pane {
+            display: none;
+            padding: 24px;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            background: var(--bg-color);
+            margin-top: 20px;
+        }
+        .preview-pane.active {
+            display: block;
+        }
+        
+        /* Auth Screen */
+        .auth-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+        .auth-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 40px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-light);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Admin Bar -->
+    <header class="admin-nav">
+        <div class="admin-brand">
+            <img src="logo.png" alt="PetUnion Hub" style="height: 38px;">
+            <span>PetUnion Hub CMS</span>
+            <span class="admin-badge">Admin Panel</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 16px;">
+            <a href="blog.html" target="_blank" class="action-btn" title="View Public Blog">
+                <i class="fas fa-external-link-alt"></i> View Live Site
+            </a>
+            <button id="logoutBtn" class="action-btn" style="display: none;" onclick="logoutAdmin()">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+    </header>
+
+    <!-- Authentication Screen (if not logged in) -->
+    <div id="authScreen" class="auth-container">
+        <div class="auth-card">
+            <div style="font-size: 3rem; color: var(--primary-color); margin-bottom: 12px;">
+                <i class="fas fa-user-shield"></i>
+            </div>
+            <h1 style="font-size: 1.8rem; margin-bottom: 8px;">Admin Login</h1>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 24px;">Manage PetUnion Hub articles, categories, and drafts.</p>
+
+            <form id="loginForm" onsubmit="handleLogin(event)" style="display: flex; flex-direction: column; gap: 16px; text-align: left;">
+                <div>
+                    <label class="form-label">Username</label>
+                    <input type="text" id="adminUser" class="admin-input" style="width: 100%;" required value="admin">
+                </div>
+                <div>
+                    <label class="form-label">Password</label>
+                    <input type="password" id="adminPass" class="admin-input" style="width: 100%;" required value="petunion2026!">
+                </div>
+                <div id="loginError" style="color: #e63946; font-size: 0.88rem; display: none;"></div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">
+                    <i class="fas fa-lock-open"></i> Sign In to CMS
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Dashboard Screen (When Authenticated) -->
+    <main id="dashboardScreen" class="admin-main" style="display: none;">
+        <!-- Quick Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon" style="background: rgba(67, 170, 139, 0.15); color: var(--secondary-color);">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div>
+                    <div id="statPublished" class="stat-num">0</div>
+                    <div class="stat-label">Published Articles</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon" style="background: rgba(248, 150, 30, 0.15); color: var(--accent-color);">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <div>
+                    <div id="statDrafts" class="stat-num">0</div>
+                    <div class="stat-label">Draft Articles</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon" style="background: rgba(160, 82, 45, 0.15); color: var(--primary-color);">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <div>
+                    <div id="statCategories" class="stat-num">7</div>
+                    <div class="stat-label">Active Topics</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon" style="background: rgba(43, 45, 66, 0.1); color: var(--text-color);">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <div>
+                    <div id="statSubscribers" class="stat-num">142</div>
+                    <div class="stat-label">Newsletter Readers</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles Management Table Card -->
+        <div class="card-table-wrap">
+            <div class="table-toolbar">
+                <div class="search-filter-row">
+                    <input type="text" id="adminSearch" placeholder="Filter articles by title or keyword..." class="admin-input" style="min-width: 280px;" oninput="renderArticlesTable()">
+                    <select id="adminStatusFilter" class="admin-select" onchange="renderArticlesTable()">
+                        <option value="all">All Statuses</option>
+                        <option value="published">Published Only</option>
+                        <option value="draft">Drafts Only</option>
+                    </select>
+                    <select id="adminCategoryFilter" class="admin-select" onchange="renderArticlesTable()">
+                        <option value="all">All Categories</option>
+                        <option value="care">Dog Care</option>
+                        <option value="training">Dog Training</option>
+                        <option value="nutrition">Pet Nutrition</option>
+                        <option value="health">Pet Health</option>
+                        <option value="grooming">Grooming Guide</option>
+                        <option value="adoption">Pet Adoption</option>
+                        <option value="cats">Cat Care</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-primary btn-sm" onclick="openNewArticleModal()">
+                    <i class="fas fa-plus"></i> Create New Article
+                </button>
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table class="articles-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">Image</th>
+                            <th>Title &amp; Slug</th>
+                            <th>Category</th>
+                            <th>Author</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th style="text-align: right;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="articlesTableBody">
+                        <!-- Loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Article Editor Modal -->
+    <div id="articleModal" class="admin-modal" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2 id="modalTitle" style="font-size: 1.4rem;">Create New Pet Article</h2>
+                <button type="button" class="tool-btn" onclick="closeArticleModal()"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <div class="modal-body">
+                <form id="articleForm" onsubmit="saveArticle(event)">
+                    <input type="hidden" id="editArticleId">
+
+                    <div class="form-grid">
+                        <div class="form-full">
+                            <label class="form-label">Article Title *</label>
+                            <input type="text" id="articleTitle" class="admin-input" style="width: 100%;" required placeholder="e.g., 7 Essential Tips for Keeping Senior Cats Active" oninput="autoGenerateSlug(this.value)">
+                        </div>
+
+                        <div>
+                            <label class="form-label">URL Slug (Unique Alphanumeric) *</label>
+                            <input type="text" id="articleSlug" class="admin-input" style="width: 100%;" required placeholder="e.g., senior-cats-active-tips">
+                        </div>
+
+                        <div>
+                            <label class="form-label">Pet Category *</label>
+                            <select id="articleCategory" class="admin-select" style="width: 100%;" required>
+                                <option value="Dog Care" data-slug="care">Dog Care</option>
+                                <option value="Dog Training" data-slug="training">Dog Training</option>
+                                <option value="Pet Nutrition" data-slug="nutrition">Pet Nutrition</option>
+                                <option value="Pet Health" data-slug="health">Pet Health</option>
+                                <option value="Grooming Guide" data-slug="grooming">Grooming Guide</option>
+                                <option value="Pet Adoption" data-slug="adoption">Pet Adoption &amp; Welfare</option>
+                                <option value="Cat Care" data-slug="cats">Cat Care</option>
+                                <option value="Small Pets" data-slug="care">Small Pets</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Author Name</label>
+                            <input type="text" id="articleAuthor" class="admin-input" style="width: 100%;" value="Emma Wilson">
+                        </div>
+
+                        <div>
+                            <label class="form-label">Author Role / Credentials</label>
+                            <input type="text" id="articleAuthorRole" class="admin-input" style="width: 100%;" value="Pet Care Specialist">
+                        </div>
+
+                        <div>
+                            <label class="form-label">Featured Image (Upload or Path)</label>
+                            <div style="display: flex; gap: 8px;">
+                                <input type="text" id="articleImage" class="admin-input" style="flex: 1;" value="images/hero-pets.jpg">
+                                <label class="action-btn" style="cursor: pointer;">
+                                    <i class="fas fa-upload"></i> Upload
+                                    <input type="file" accept="image/*" style="display: none;" onchange="handleImageUpload(event)">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Image Alt Text</label>
+                            <input type="text" id="articleImageAlt" class="admin-input" style="width: 100%;" placeholder="Descriptive description for screen readers">
+                        </div>
+
+                        <div class="form-full">
+                            <label class="form-label">Excerpt / Meta Description *</label>
+                            <textarea id="articleExcerpt" class="admin-input" style="width: 100%; height: 75px; resize: vertical;" required placeholder="Brief compelling summary (1-2 sentences)"></textarea>
+                        </div>
+
+                        <div class="form-full">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <label class="form-label" style="margin-bottom: 0;">Article Content *</label>
+                                <button type="button" class="tool-btn" onclick="togglePreviewPane()"><i class="fas fa-eye"></i> Toggle Split Preview</button>
+                            </div>
+                            
+                            <!-- Rich Editor Toolbar -->
+                            <div class="editor-toolbar">
+                                <button type="button" class="tool-btn" onclick="insertTag('<h2>', '</h2>')"><b>H2</b></button>
+                                <button type="button" class="tool-btn" onclick="insertTag('<h3>', '</h3>')"><b>H3</b></button>
+                                <button type="button" class="tool-btn" onclick="insertTag('<p>', '</p>')">P</button>
+                                <button type="button" class="tool-btn" onclick="insertTag('<strong>', '</strong>')"><i class="fas fa-bold"></i></button>
+                                <button type="button" class="tool-btn" onclick="insertTag('<em>', '</em>')"><i class="fas fa-italic"></i></button>
+                                <button type="button" class="tool-btn" onclick="insertTag('<ul>\n  <li>', '</li>\n</ul>')"><i class="fas fa-list-ul"></i></button>
+                                <button type="button" class="tool-btn" onclick="insertTag('<ol>\n  <li>', '</li>\n</ol>')"><i class="fas fa-list-ol"></i></button>
+                                <button type="button" class="tool-btn" onclick="insertTag('<blockquote>\"', '\"</blockquote>')"><i class="fas fa-quote-left"></i></button>
+                                <button type="button" class="tool-btn" onclick="insertProTip()"><i class="fas fa-lightbulb"></i> Pro Tip Box</button>
+                                <button type="button" class="tool-btn" onclick="insertTag('<a href=\"https://petunionhub.com/\">', '</a>')"><i class="fas fa-link"></i> Link</button>
+                            </div>
+
+                            <textarea id="articleContent" class="article-textarea" required placeholder="Write your rich pet guide here in HTML format..."></textarea>
+                            
+                            <div id="previewPane" class="preview-pane article-body-content"></div>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Tags (Comma-separated)</label>
+                            <input type="text" id="articleTags" class="admin-input" style="width: 100%;" placeholder="Puppy Care, Health, Nutrition">
+                        </div>
+
+                        <div>
+                            <label class="form-label">Publishing Options</label>
+                            <div style="display: flex; gap: 20px; align-items: center; padding-top: 8px;">
+                                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+                                    <input type="checkbox" id="articleIsPublished" checked>
+                                    <span style="font-weight: 600;">Publish Publicly</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+                                    <input type="checkbox" id="articleIsFeatured">
+                                    <span style="font-weight: 600;">Feature on Homepage</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline btn-sm" onclick="closeArticleModal()">Cancel</button>
+                        <div style="display: flex; gap: 12px;">
+                            <button type="button" class="action-btn" onclick="saveAsDraft()"><i class="fas fa-save"></i> Save Draft</button>
+                            <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-check"></i> Save &amp; Publish</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+    <script>
+        let allArticles = [];
+
+        // Check auth status on load
+        document.addEventListener('DOMContentLoaded', async () => {
+            await checkAuth();
+        });
+
+        async function checkAuth() {
+            try {
+                const res = await fetch('/api/auth/verify');
+                const data = await res.json();
+                if (data.authenticated) {
+                    showDashboard();
+                } else {
+                    showAuth();
+                }
+            } catch (err) {
+                showAuth();
+            }
+        }
+
+        function showAuth() {
+            document.getElementById('authScreen').style.display = 'flex';
+            document.getElementById('dashboardScreen').style.display = 'none';
+            document.getElementById('logoutBtn').style.display = 'none';
+        }
+
+        function showDashboard() {
+            document.getElementById('authScreen').style.display = 'none';
+            document.getElementById('dashboardScreen').style.display = 'block';
+            document.getElementById('logoutBtn').style.display = 'inline-flex';
+            loadArticles();
+        }
+
+        async function handleLogin(e) {
+            e.preventDefault();
+            const username = document.getElementById('adminUser').value;
+            const password = document.getElementById('adminPass').value;
+            const errEl = document.getElementById('loginError');
+
+            errEl.style.display = 'none';
+
+            try {
+                const res = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password })
+                });
+                const data = await res.json();
+                if (res.ok && data.success) {
+                    showToast('Welcome back, Administrator!', 'success');
+                    showDashboard();
+                } else {
+                    errEl.innerText = data.error || 'Authentication failed';
+                    errEl.style.display = 'block';
+                }
+            } catch (err) {
+                errEl.innerText = 'Unable to connect to server';
+                errEl.style.display = 'block';
+            }
+        }
+
+        async function logoutAdmin() {
+            await fetch('/api/auth/logout', { method: 'POST' });
+            showToast('Logged out successfully', 'info');
+            showAuth();
+        }
+
+        async function loadArticles() {
+            try {
+                const res = await fetch('/api/articles?status=all');
+                const data = await res.json();
+                if (data.success) {
+                    allArticles = data.articles;
+                    updateDashboardStats();
+                    renderArticlesTable();
+                }
+            } catch (err) {
+                showToast('Failed to load articles', 'error');
+            }
+        }
+
+        function updateDashboardStats() {
+            const published = allArticles.filter(a => a.isPublished).length;
+            const drafts = allArticles.filter(a => !a.isPublished).length;
+            document.getElementById('statPublished').innerText = published;
+            document.getElementById('statDrafts').innerText = drafts;
+        }
+
+        function renderArticlesTable() {
+            const tbody = document.getElementById('articlesTableBody');
+            const search = document.getElementById('adminSearch').value.toLowerCase().trim();
+            const status = document.getElementById('adminStatusFilter').value;
+            const category = document.getElementById('adminCategoryFilter').value;
+
+            const filtered = allArticles.filter(a => {
+                const matchesSearch = !search || a.title.toLowerCase().includes(search) || a.slug.toLowerCase().includes(search);
+                const matchesStatus = status === 'all' || (status === 'published' && a.isPublished) || (status === 'draft' && !a.isPublished);
+                const matchesCat = category === 'all' || a.categorySlug === category;
+                return matchesSearch && matchesStatus && matchesCat;
+            });
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; padding: 40px; color: var(--text-light);">No articles matching filters found.</td></tr>`;
+                return;
+            }
+
+            tbody.innerHTML = filtered.map(a => `
+                <tr>
+                    <td><img src="${a.image}" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover;"></td>
+                    <td>
+                        <strong style="color: var(--text-color);">${a.title}</strong>
+                        <div style="font-size: 0.8rem; color: var(--text-light); font-family: monospace;">/${a.file || a.slug}</div>
+                    </td>
+                    <td><span class="blog-category" style="font-size: 0.78rem;">${a.category}</span></td>
+                    <td>${a.author}</td>
+                    <td style="color: var(--text-light); font-size: 0.88rem;">${a.date}</td>
+                    <td>
+                        <span class="status-badge ${a.isPublished ? 'status-published' : 'status-draft'}">
+                            <i class="fas fa-circle" style="font-size: 0.5rem;"></i> ${a.isPublished ? 'Published' : 'Draft'}
+                        </span>
+                    </td>
+                    <td style="text-align: right;">
+                        <div class="action-btns" style="justify-content: flex-end;">
+                            <button class="action-btn" onclick="editArticle('${a.id}')" title="Edit Article"><i class="fas fa-edit"></i> Edit</button>
+                            <a href="${a.file}" target="_blank" class="action-btn" title="Public Preview"><i class="fas fa-eye"></i></a>
+                            <button class="action-btn" onclick="togglePublish('${a.id}')" title="Toggle Publish Status">
+                                <i class="fas ${a.isPublished ? 'fa-pause' : 'fa-play'}"></i>
+                            </button>
+                            <button class="action-btn btn-delete" onclick="deleteArticle('${a.id}', '${encodeURIComponent(a.title)}')" title="Delete Article"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function openNewArticleModal() {
+            document.getElementById('modalTitle').innerText = 'Create New Pet Article';
+            document.getElementById('articleForm').reset();
+            document.getElementById('editArticleId').value = '';
+            document.getElementById('articleIsPublished').checked = true;
+            document.getElementById('previewPane').classList.remove('active');
+            document.getElementById('articleModal').classList.add('active');
+        }
+
+        function closeArticleModal() {
+            document.getElementById('articleModal').classList.remove('active');
+        }
+
+        function autoGenerateSlug(title) {
+            const id = document.getElementById('editArticleId').value;
+            // Only auto-generate slug for new articles
+            if (!id) {
+                const slug = title.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
+                document.getElementById('articleSlug').value = slug;
+            }
+        }
+
+        function editArticle(id) {
+            const article = allArticles.find(a => a.id === id);
+            if (!article) return;
+
+            document.getElementById('modalTitle').innerText = `Edit: ${article.title}`;
+            document.getElementById('editArticleId').value = article.id;
+            document.getElementById('articleTitle').value = article.title;
+            document.getElementById('articleSlug').value = article.slug;
+            document.getElementById('articleCategory').value = article.category;
+            document.getElementById('articleAuthor').value = article.author || 'Emma Wilson';
+            document.getElementById('articleAuthorRole').value = article.authorRole || 'Pet Care Contributor';
+            document.getElementById('articleImage').value = article.image;
+            document.getElementById('articleImageAlt').value = article.imageAlt || '';
+            document.getElementById('articleExcerpt').value = article.excerpt;
+            document.getElementById('articleContent').value = article.content;
+            document.getElementById('articleTags').value = (article.tags || []).join(', ');
+            document.getElementById('articleIsPublished').checked = Boolean(article.isPublished);
+            document.getElementById('articleIsFeatured').checked = Boolean(article.isFeatured);
+
+            document.getElementById('previewPane').classList.remove('active');
+            document.getElementById('articleModal').classList.add('active');
+        }
+
+        async function saveArticle(e) {
+            if (e) e.preventDefault();
+            const id = document.getElementById('editArticleId').value;
+            const categorySelect = document.getElementById('articleCategory');
+            const selectedOption = categorySelect.options[categorySelect.selectedIndex];
+
+            const payload = {
+                title: document.getElementById('articleTitle').value.trim(),
+                slug: document.getElementById('articleSlug').value.trim(),
+                category: categorySelect.value,
+                categorySlug: selectedOption.getAttribute('data-slug') || 'care',
+                author: document.getElementById('articleAuthor').value.trim(),
+                authorRole: document.getElementById('articleAuthorRole').value.trim(),
+                image: document.getElementById('articleImage').value.trim(),
+                imageAlt: document.getElementById('articleImageAlt').value.trim(),
+                excerpt: document.getElementById('articleExcerpt').value.trim(),
+                content: document.getElementById('articleContent').value.trim(),
+                tags: document.getElementById('articleTags').value.split(',').map(t => t.trim()).filter(Boolean),
+                isPublished: document.getElementById('articleIsPublished').checked,
+                isFeatured: document.getElementById('articleIsFeatured').checked
+            };
+
+            const url = id ? `/api/articles/${id}` : '/api/articles';
+            const method = id ? 'PUT' : 'POST';
+
+            try {
+                const res = await fetch(url, {
+                    method: method,
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await res.json();
+                if (res.ok && result.success) {
+                    showToast(result.message || 'Article saved successfully!', 'success');
+                    closeArticleModal();
+                    await loadArticles();
+                } else {
+                    showToast(result.error || 'Failed to save article', 'error');
+                }
+            } catch (err) {
+                showToast('Network error saving article', 'error');
+            }
+        }
+
+        function saveAsDraft() {
+            document.getElementById('articleIsPublished').checked = false;
+            saveArticle(null);
+        }
+
+        async function togglePublish(id) {
+            const article = allArticles.find(a => a.id === id);
+            if (!article) return;
+            const newStatus = !article.isPublished;
+
+            try {
+                const res = await fetch(`/api/articles/${id}`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ isPublished: newStatus })
+                });
+                const data = await res.json();
+                if (res.ok && data.success) {
+                    showToast(`Article is now ${newStatus ? 'Published' : 'Draft'}`, 'success');
+                    await loadArticles();
+                }
+            } catch (err) {
+                showToast('Failed to update status', 'error');
+            }
+        }
+
+        async function deleteArticle(id, title) {
+            if (!confirm(`Are you sure you want to delete "${decodeURIComponent(title)}"? This action cannot be undone.`)) {
+                return;
+            }
+
+            try {
+                const res = await fetch(`/api/articles/${id}`, { method: 'DELETE' });
+                const data = await res.json();
+                if (res.ok && data.success) {
+                    showToast('Article deleted successfully', 'success');
+                    await loadArticles();
+                } else {
+                    showToast(data.error || 'Failed to delete article', 'error');
+                }
+            } catch (err) {
+                showToast('Network error deleting article', 'error');
+            }
+        }
+
+        async function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const formData = new FormData();
+            formData.append('image', file);
+
+            showToast('Uploading image...', 'info');
+
+            try {
+                const res = await fetch('/api/upload', {
+                    method: 'POST',
+                    headers: { 'Content-Type': file.type },
+                    body: file
+                });
+                const data = await res.json();
+                if (res.ok && data.success) {
+                    document.getElementById('articleImage').value = data.url;
+                    showToast('Image uploaded successfully!', 'success');
+                } else {
+                    showToast(data.error || 'Upload failed', 'error');
+                }
+            } catch (err) {
+                showToast('Image upload failed', 'error');
+            }
+        }
+
+        function insertTag(open, close) {
+            const textarea = document.getElementById('articleContent');
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            const text = textarea.value;
+            const selected = text.substring(start, end) || 'Text here';
+            const replacement = open + selected + close;
+            textarea.value = text.substring(0, start) + replacement + text.substring(end);
+            textarea.focus();
+            textarea.setSelectionRange(start + open.length, start + open.length + selected.length);
+        }
+
+        function insertProTip() {
+            const block = `\n<div class="pro-tip-box">\n  <div class="pro-tip-title"><i class="fas fa-lightbulb"></i> Pro Tip</div>\n  <p>Practical veterinary tip for pet owners here...</p>\n</div>\n`;
+            insertTag(block, '');
+        }
+
+        function togglePreviewPane() {
+            const pane = document.getElementById('previewPane');
+            const content = document.getElementById('articleContent').value;
+            pane.innerHTML = content || '<p style="color: #999;">Start typing article content above to see live preview...</p>';
+            pane.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

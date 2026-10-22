@@ -1,0 +1,46 @@
+[
+  {
+    "code": "FIRST10",
+    "discountPercent": 10,
+    "minOrderValue": 0,
+    "maxDiscount": 1000,
+    "active": true,
+    "description": "10% off your first SHARMAZONE order",
+    "usageLimit": 500,
+    "usedCount": 17,
+    "expiresAt": "2027-12-31T23:59:59Z"
+  },
+  {
+    "code": "SHARMA10",
+    "discountPercent": 10,
+    "minOrderValue": 0,
+    "maxDiscount": 1000,
+    "active": true,
+    "description": "10% off storewide",
+    "usageLimit": 1000,
+    "usedCount": 28,
+    "expiresAt": "2027-12-31T23:59:59Z"
+  },
+  {
+    "code": "DELHINCR",
+    "discountPercent": 15,
+    "minOrderValue": 1499,
+    "maxDiscount": 1500,
+    "active": true,
+    "description": "15% exclusive discount for Delhi NCR orders above ₹1,499",
+    "usageLimit": 300,
+    "usedCount": 42,
+    "expiresAt": "2027-12-31T23:59:59Z"
+  },
+  {
+    "code": "WELCOME200",
+    "flatDiscount": 200,
+    "minOrderValue": 999,
+    "maxDiscount": 200,
+    "active": true,
+    "description": "Flat ₹200 off on orders above ₹999",
+    "usageLimit": 200,
+    "usedCount": 19,
+    "expiresAt": "2027-12-31T23:59:59Z"
+  }
+]

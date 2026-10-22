@@ -3,85 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | PetUnion Hub</title>
-    <meta name="description" content="Every Pet Has a Story.">
+    <title>About Us — Our Pet Mission &amp; Editorial Team | PetUnion Hub</title>
+    <meta name="description" content="Learn about PetUnion Hub's mission to empower pet parents with evidence-based pet care guides, positive dog training tips, and inspiring adoption stories.">
+    <link rel="canonical" href="https://petunionhub.com/about.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PetUnion Hub">
+    <meta property="og:url" content="https://petunionhub.com/about.html">
+    <meta property="og:title" content="About PetUnion Hub | Where Pets Bring Us Together">
+    <meta property="og:description" content="Learn about our mission, our veterinary contributors, and our passion for pet wellness and animal welfare.">
+    <meta property="og:image" content="https://petunionhub.com/images/hero-pets.jpg">
+
+    <!-- Google Fonts & Stylesheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .about-hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 100px; }
-        .about-hero h1 { font-size: 6rem; line-height: 1; margin-bottom: 30px; }
-        .about-hero p { font-size: 1.5rem; max-width: 800px; margin: 0 auto; color: #555; }
-        
-        .timeline { display: flex; flex-direction: column; gap: 100px; margin: 150px 0; }
-        .timeline-item { display: flex; gap: 80px; align-items: center; }
-        .timeline-item:nth-child(even) { flex-direction: row-reverse; }
-        .timeline-img { flex: 1; position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-3d); }
-        .timeline-content { flex: 1; }
-        .timeline-label { font-size: 0.9rem; font-weight: 600; letter-spacing: 2px; color: var(--golden-orange); margin-bottom: 20px; }
-        .timeline-content h2 { font-size: 3.5rem; margin-bottom: 30px; }
-        .timeline-content p { font-size: 1.25rem; color: #444; line-height: 1.8; }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
-        <a href="index.html" class="logo">PETUNION HUB 🐾</a>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="blog.html">Stories</a>
-            <a href="blog.html">Blogs</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="contact.html" class="btn-nav">Share Your Story</a>
-        </nav>
-            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="PetUnion Hub Logo">
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
-    <main>
-        <section class="container about-hero">
-            <div>
-                <h1>Every Pet Has a Story.</h1>
-                <p>PetUnion Hub is a community-driven platform created to celebrate the relationship between pets and people. We bring together real pet stories, rescue journeys, pet-care information, helpful guides, and community experiences.</p>
+    <main id="mainContent">
+        <!-- Hero -->
+        <section class="container section">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
+                <span class="hero-badge">Our Story &amp; Purpose</span>
+                <h1 style="font-size: 3.6rem; margin: 12px 0 18px;">Helping Pet Owners, One Guide at a Time</h1>
+                <p style="font-size: 1.25rem; color: var(--text-light); line-height: 1.7;">PetUnion Hub was founded by a collective of veterinary technicians, certified animal behaviorists, and devoted pet owners united by a simple belief: every animal deserves informed, compassionate care.</p>
             </div>
-        </section>
 
-        <section class="container">
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-img"><img src="images/max-story.png" alt="Rescue Dog"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-label">WHY WE EXIST</div>
-                        <h2>To give every pet a voice.</h2>
-                        <p>We believe that every animal has a unique perspective and a story worth sharing. From the quietest rescues to the most energetic puppies, their experiences shape our lives and deserve to be celebrated on a premium platform.</p>
+            <!-- Content Grid -->
+            <div class="newsletter-content" style="background: var(--surface); padding: 50px 40px; border-radius: var(--radius-lg); border: 1px solid var(--border-light); margin-bottom: 60px;">
+                <div style="flex: 1;">
+                    <img src="images/about-original-style.jpg" alt="PetUnion Hub founder bonding with puppy" style="border-radius: var(--radius-md); box-shadow: var(--shadow); width: 100%; max-height: 400px; object-fit: cover;">
+                </div>
+                <div style="flex: 1.2;">
+                    <h2 style="font-size: 2.4rem; margin-bottom: 16px;">Our Core Philosophy</h2>
+                    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.7; margin-bottom: 20px;">The internet is overflowing with conflicting pet advice, outdated dominance training myths, and sponsored marketing disguised as nutritional wisdom. PetUnion Hub exists to be your trustworthy, calm source of clear, vet-approved knowledge.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <div style="display: flex; gap: 14px; align-items: flex-start;">
+                            <div style="width: 44px; height: 44px; min-width: 44px; background: rgba(67, 170, 139, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary-color); font-size: 1.1rem;">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Evidence-Based &amp; Vet-Reviewed</h4>
+                                <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 0;">Our guides are cross-referenced with modern veterinary science and feline/canine behavioral guidelines.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 14px; align-items: flex-start;">
+                            <div style="width: 44px; height: 44px; min-width: 44px; background: rgba(248, 150, 30, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.1rem;">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Force-Free, Positive Reinforcement</h4>
+                                <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 0;">We advocate strictly for humane, fear-free training methodologies that build mutual trust rather than intimidation.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 14px; align-items: flex-start;">
+                            <div style="width: 44px; height: 44px; min-width: 44px; background: rgba(160, 82, 45, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.1rem;">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Animal Welfare &amp; Adoption Champions</h4>
+                                <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 0;">We partner with local shelters, champion foster parents, and share authentic rescue journeys to inspire adoption.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-img"><img src="images/dog-commands.jpg" alt="Dog Training"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-label">WHAT WE BELIEVE</div>
-                        <h2>Information should be accessible and beautiful.</h2>
-                        <p>Finding accurate, helpful information about pet care shouldn't feel like reading a medical textbook. We believe in providing expert-backed guides wrapped in a beautiful, readable, and emotional experience.</p>
-                    </div>
+            <!-- Meet Our Editorial Contributors -->
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+                <h2 class="section-title">Meet Our Editorial Contributors</h2>
+                <p style="color: var(--text-light); margin-top: 14px; font-size: 1.1rem;">Experienced professionals who write and vet our pet care content.</p>
+            </div>
+
+            <div class="grid-3" style="margin-bottom: 60px;">
+                <div class="category-card" style="text-align: center; padding: 36px 24px;">
+                    <img src="images/avatar.jpg" alt="Emma Wilson" style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px; border: 3px solid var(--primary-color);">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 4px;">Emma Wilson</h3>
+                    <p style="color: var(--secondary-color); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 12px;">Canine Behavior Specialist</p>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">Over 10 years of experience helping puppy parents navigate foundational obedience, socialization, and separation anxiety.</p>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-img"><img src="images/cat-body-language.jpg" alt="Cat Connection"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-label">WHAT WE DO</div>
-                        <h2>We build emotional connections.</h2>
-                        <p>By sharing stories of triumph, comedy, and love, we connect pet parents across the globe. We aren't just a blog; we are a community that understands the irreplaceable bond between a human and their pet.</p>
-                    </div>
+                <div class="category-card" style="text-align: center; padding: 36px 24px;">
+                    <img src="images/avatar.jpg" alt="Dr. Emily White" style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px; border: 3px solid var(--accent-color);">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 4px;">Dr. Emily White</h3>
+                    <p style="color: var(--secondary-color); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 12px;">Veterinary Surgeon (DVM)</p>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">Passionate feline practitioner focused on early preventative diagnostics, low-stress cat handling, and senior pet comfort.</p>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-img"><img src="images/hero-pets.jpg" alt="Future of PetUnion"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-label">WHERE WE ARE GOING</div>
-                        <h2>A global standard for pet communities.</h2>
-                        <p>Our vision is to become the world's most trusted, beautiful, and engaging platform for pet owners. A place where every milestone, every challenge, and every memory is preserved forever.</p>
-                    </div>
+                <div class="category-card" style="text-align: center; padding: 36px 24px;">
+                    <img src="images/avatar.jpg" alt="David Miller" style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px; border: 3px solid var(--secondary-color);">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 4px;">David Miller</h3>
+                    <p style="color: var(--secondary-color); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 12px;">Pet Nutrition &amp; Grooming Expert</p>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">Advocate for wholesome, biologically appropriate pet diets and fear-free home grooming routines.</p>
                 </div>
             </div>
         </section>
@@ -89,47 +126,59 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h3>PETUNION HUB</h3>
-                <p>Every Pet Has a Story. 🐾</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo"><img src="logo.png" alt="PetUnion Hub"></a>
+                    <p>We believe every pet deserves a happy, healthy life. Our mission is to empower pet owners with expert advice, actionable guides, and a loving community.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-link" title="Pinterest" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="sitemap.xml">XML Sitemap</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Categories</h4>
+                    <div class="footer-links">
+                        <a href="blog.html?category=care">Pet Care Tips</a>
+                        <a href="blog.html?category=training">Dog Training</a>
+                        <a href="blog.html?category=nutrition">Pet Food &amp; Nutrition</a>
+                        <a href="blog.html?category=health">Pet Health</a>
+                        <a href="blog.html?category=grooming">Grooming Guide</a>
+                        <a href="blog.html?category=adoption">Pet Adoption</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Legal &amp; Contact</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+                        <p style="color: var(--text-light); font-size: 0.95rem; margin-top: 10px;">
+                            <i class="fas fa-envelope" style="margin-right: 8px; color: var(--primary-color);"></i> hello@petunionhub.com
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="footer-col">
-                <h4>Explore</h4>
-                <a href="index.html">Home</a>
-                <a href="blog.html">Stories</a>
-                <a href="blog.html">Blogs</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PetUnion Hub. All rights reserved. Where Pets Bring Us Together.</p>
             </div>
-            <div class="footer-col">
-                <h4>Social</h4>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">X</a>
-                <a href="#">YouTube</a>
-            </div>
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms-conditions.html">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
-                <a href="#">Disclaimer</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2026 PetUnion Hub. All rights reserved.
         </div>
     </footer>
 
-    <script>
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        if (mobileMenuBtn && navLinks) {
-            mobileMenuBtn.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        }
-    </script>
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>

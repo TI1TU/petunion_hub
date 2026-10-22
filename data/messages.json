@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1792663773496",
+    "name": "Sarah Jenkins",
+    "email": "sarah@example.com",
+    "subject": "Question on Dog Nutrition",
+    "message": "Can dogs safely eat pumpkin puree?",
+    "receivedAt": "2026-10-22T10:09:33.496Z"
+  },
+  {
+    "id": "1792663966556",
+    "name": "Sarah Jenkins",
+    "email": "sarah@example.com",
+    "subject": "Question on Dog Nutrition",
+    "message": "Can dogs safely eat pumpkin puree?",
+    "receivedAt": "2026-10-22T10:12:46.556Z"
+  },
+  {
+    "id": "1792664381415",
+    "name": "Sarah Jenkins",
+    "email": "sarah@example.com",
+    "subject": "Question on Dog Nutrition",
+    "message": "Can dogs safely eat pumpkin puree?",
+    "receivedAt": "2026-10-22T10:19:41.415Z"
+  }
+]

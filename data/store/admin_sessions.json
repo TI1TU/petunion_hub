@@ -1,0 +1,26 @@
+{
+  "sz_adm_4417031a52621e7b2c3c72c577c695a4d1c882867984919c": {
+    "email": "admin@sharmazone.com",
+    "role": "superadmin",
+    "createdAt": 1792653456997,
+    "expiresAt": 1792739856997
+  },
+  "sz_adm_6594995332b11c04e584929dbf8d1998613ddcd2978b1832": {
+    "email": "admin@sharmazone.com",
+    "role": "superadmin",
+    "createdAt": 1792653549950,
+    "expiresAt": 1792739949950
+  },
+  "sz_adm_19486377cf9430af198d46e34fb92071af8b3f61d0fdd9a7": {
+    "email": "admin@sharmazone.com",
+    "role": "superadmin",
+    "createdAt": 1792653622759,
+    "expiresAt": 1792740022759
+  },
+  "sz_adm_5d0c8dd252a17f3ad8738b8a8804b83ea865cc501aa41cf7": {
+    "email": "admin@sharmazone.com",
+    "role": "superadmin",
+    "createdAt": 1792653912163,
+    "expiresAt": 1792740312163
+  }
+}

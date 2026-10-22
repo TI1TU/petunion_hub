@@ -1,0 +1,243 @@
+[
+  {
+    "id": "SZ-MVJ7UR7M-1991",
+    "trackingId": "SZDLH29694274",
+    "idempotencyKey": null,
+    "createdAt": "2026-10-22T07:25:12.130Z",
+    "status": "Confirmed",
+    "paymentStatus": "Paid",
+    "paymentMethod": "UPI",
+    "paymentDetails": {},
+    "items": [
+      {
+        "productId": "sz-01-acid-wash-tee",
+        "slug": "heavyweight-acid-wash-oversized-tee",
+        "name": "Heavyweight Acid Wash Oversized Tee",
+        "size": "L",
+        "color": "Washed Charcoal",
+        "quantity": 2,
+        "unitPrice": 999,
+        "mrp": 1999,
+        "image": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "customer": {
+      "name": "Vishal Sharma",
+      "email": "vishal.20031203@gmail.com",
+      "phone": "9811223344"
+    },
+    "shippingAddress": {
+      "address": "B-42 Connaught Place",
+      "city": "Delhi",
+      "pincode": "110001",
+      "state": "Delhi",
+      "region": "Delhi NCR"
+    },
+    "pricing": {
+      "subtotal": 1998,
+      "discountAmount": 200,
+      "appliedCoupon": {
+        "code": "FIRST10",
+        "discountPercent": 10,
+        "flatDiscount": null,
+        "discountAmount": 200,
+        "description": "10% off your first SHARMAZONE order"
+      },
+      "shippingFee": 0,
+      "giftWrapFee": 0,
+      "finalTotal": 1798
+    },
+    "delivery": {
+      "carrier": "SHARMAZONE Priority Delhi Courier",
+      "estimate": "Next Day Delivery (24 Hours)",
+      "timeline": [
+        {
+          "step": "Order Placed",
+          "time": "2026-10-22T07:25:12.130Z",
+          "completed": true,
+          "desc": "Order details received and verified by SHARMAZONE server."
+        },
+        {
+          "step": "Processing at Delhi Hub",
+          "time": null,
+          "completed": false,
+          "desc": "Garment inspection, bespoke steam press, and dispatch packaging."
+        },
+        {
+          "step": "Dispatched for Delivery",
+          "time": null,
+          "completed": false,
+          "desc": "SHARMAZONE Priority Delhi Courier courier assigned for final delivery run."
+        },
+        {
+          "step": "Delivered",
+          "time": null,
+          "completed": false,
+          "desc": "Delivered to your doorstep in Delhi NCR."
+        }
+      ]
+    },
+    "transactionId": "TXN_1792653912139",
+    "paidAt": "2026-10-22T07:25:12.144Z"
+  },
+  {
+    "id": "SZ-MVJ7OJWJ-7654",
+    "trackingId": "SZDLH24445537",
+    "idempotencyKey": null,
+    "createdAt": "2026-10-22T07:20:22.723Z",
+    "status": "Confirmed",
+    "paymentStatus": "Paid",
+    "paymentMethod": "UPI",
+    "paymentDetails": {},
+    "items": [
+      {
+        "productId": "sz-01-acid-wash-tee",
+        "slug": "heavyweight-acid-wash-oversized-tee",
+        "name": "Heavyweight Acid Wash Oversized Tee",
+        "size": "L",
+        "color": "Washed Charcoal",
+        "quantity": 2,
+        "unitPrice": 999,
+        "mrp": 1999,
+        "image": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "customer": {
+      "name": "Vishal Sharma",
+      "email": "vishal.20031203@gmail.com",
+      "phone": "9811223344"
+    },
+    "shippingAddress": {
+      "address": "B-42 Connaught Place",
+      "city": "Delhi",
+      "pincode": "110001",
+      "state": "Delhi",
+      "region": "Delhi NCR"
+    },
+    "pricing": {
+      "subtotal": 1998,
+      "discountAmount": 200,
+      "appliedCoupon": {
+        "code": "FIRST10",
+        "discountPercent": 10,
+        "flatDiscount": null,
+        "discountAmount": 200,
+        "description": "10% off your first SHARMAZONE order"
+      },
+      "shippingFee": 0,
+      "giftWrapFee": 0,
+      "finalTotal": 1798
+    },
+    "delivery": {
+      "carrier": "SHARMAZONE Priority Delhi Courier",
+      "estimate": "Next Day Delivery (24 Hours)",
+      "timeline": [
+        {
+          "step": "Order Placed",
+          "time": "2026-10-22T07:20:22.723Z",
+          "completed": true,
+          "desc": "Order details received and verified by SHARMAZONE server."
+        },
+        {
+          "step": "Processing at Delhi Hub",
+          "time": null,
+          "completed": false,
+          "desc": "Garment inspection, bespoke steam press, and dispatch packaging."
+        },
+        {
+          "step": "Dispatched for Delivery",
+          "time": null,
+          "completed": false,
+          "desc": "SHARMAZONE Priority Delhi Courier courier assigned for final delivery run."
+        },
+        {
+          "step": "Delivered",
+          "time": null,
+          "completed": false,
+          "desc": "Delivered to your doorstep in Delhi NCR."
+        }
+      ]
+    },
+    "transactionId": "TXN_1792653622733",
+    "paidAt": "2026-10-22T07:20:22.737Z"
+  },
+  {
+    "id": "SZ-MVJ7MZQ9-8689",
+    "trackingId": "SZDLH68174193",
+    "idempotencyKey": null,
+    "createdAt": "2026-10-22T07:19:09.921Z",
+    "status": "Pending",
+    "paymentStatus": "Pending",
+    "paymentMethod": "UPI",
+    "paymentDetails": {},
+    "items": [
+      {
+        "productId": "sz-01-acid-wash-tee",
+        "slug": "heavyweight-acid-wash-oversized-tee",
+        "name": "Heavyweight Acid Wash Oversized Tee",
+        "size": "L",
+        "color": "Washed Charcoal",
+        "quantity": 2,
+        "unitPrice": 999,
+        "mrp": 1999,
+        "image": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "customer": {
+      "name": "Vishal Sharma",
+      "email": "vishal.20031203@gmail.com",
+      "phone": "9811223344"
+    },
+    "shippingAddress": {
+      "address": "B-42 Connaught Place",
+      "city": "Delhi",
+      "pincode": "110001",
+      "state": "Delhi",
+      "region": "Delhi NCR"
+    },
+    "pricing": {
+      "subtotal": 1998,
+      "discountAmount": 200,
+      "appliedCoupon": {
+        "code": "FIRST10",
+        "discountPercent": 10,
+        "flatDiscount": null,
+        "discountAmount": 200,
+        "description": "10% off your first SHARMAZONE order"
+      },
+      "shippingFee": 0,
+      "giftWrapFee": 0,
+      "finalTotal": 1798
+    },
+    "delivery": {
+      "carrier": "SHARMAZONE Priority Delhi Courier",
+      "estimate": "Next Day Delivery (24 Hours)",
+      "timeline": [
+        {
+          "step": "Order Placed",
+          "time": "2026-10-22T07:19:09.921Z",
+          "completed": true,
+          "desc": "Order details received and verified by SHARMAZONE server."
+        },
+        {
+          "step": "Processing at Delhi Hub",
+          "time": null,
+          "completed": false,
+          "desc": "Garment inspection, bespoke steam press, and dispatch packaging."
+        },
+        {
+          "step": "Dispatched for Delivery",
+          "time": null,
+          "completed": false,
+          "desc": "SHARMAZONE Priority Delhi Courier courier assigned for final delivery run."
+        },
+        {
+          "step": "Delivered",
+          "time": null,
+          "completed": false,
+          "desc": "Delivered to your doorstep in Delhi NCR."
+        }
+      ]
+    }
+  }
+]

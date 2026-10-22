@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "headline": "EVERYDAY. ELEVATED.",
+    "subheadline": "COLLECTION 01 / NEW DELHI METROPOLIS",
+    "description": "Contemporary fashion essentials engineered for the Delhi NCR aesthetic. Premium silhouettes, refined tailoring, and modern everyday essentials.",
+    "buttonPrimaryText": "SHOP THE COLLECTION",
+    "buttonPrimaryUrl": "/shop",
+    "buttonSecondaryText": "DISCOVER FIT GUIDE",
+    "buttonSecondaryUrl": "/find-your-fit",
+    "backgroundImage": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=2000&q=85",
+    "active": true
+  },
+  "announcementBar": {
+    "enabled": true,
+    "text": "EXPRESS DELIVERY ACROSS DELHI NCR (DELHI, NOIDA, GURUGRAM & GHAZIABAD) • COMPLIMENTARY SHIPPING ON ORDERS ₹999+",
+    "link": "/shipping"
+  },
+  "campaignBanner": {
+    "enabled": true,
+    "badge": "DELHI NCR EXCLUSIVE",
+    "title": "YOUR STYLE. YOUR CAPITAL.",
+    "subtitle": "Limited edition curated drop available with same-day and next-day priority dispatch.",
+    "buttonText": "SHOP EXCLUSIVE DROPS",
+    "buttonUrl": "/shop?filter=new",
+    "backgroundImage": "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=1600&q=80"
+  },
+  "sections": {
+    "hero": {
+      "visible": true,
+      "order": 1
+    },
+    "uspStrip": {
+      "visible": true,
+      "order": 2
+    },
+    "newArrivals": {
+      "visible": true,
+      "order": 3
+    },
+    "marqueeTicker": {
+      "visible": true,
+      "order": 4
+    },
+    "lookbook": {
+      "visible": true,
+      "order": 5
+    },
+    "categories": {
+      "visible": true,
+      "order": 6
+    },
+    "editorialManifesto": {
+      "visible": true,
+      "order": 7
+    },
+    "fitConfigurator": {
+      "visible": true,
+      "order": 8
+    },
+    "bestSellers": {
+      "visible": true,
+      "order": 9
+    },
+    "campaignPromo": {
+      "visible": true,
+      "order": 10
+    },
+    "reviews": {
+      "visible": true,
+      "order": 11
+    },
+    "delhiNcrServiceStrip": {
+      "visible": true,
+      "order": 12
+    }
+  },
+  "seo": {
+    "defaultTitle": "SHARMAZONE | Premium Fashion E-Commerce — Delhi NCR",
+    "defaultDescription": "SHARMAZONE is the premier fashion destination serving Delhi, Noida, Gurugram, and Ghaziabad. Curated modern silhouettes, rapid express delivery, and cash on delivery.",
+    "ogImage": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1200&q=80"
+  },
+  "publishedAt": "2026-10-22T07:12:44.894Z",
+  "version": 1,
+  "archivedAt": "2026-10-22T07:25:12.176Z"
+}

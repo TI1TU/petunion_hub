@@ -1,0 +1,2527 @@
+[
+  {
+    "id": "sz-01-acid-wash-tee",
+    "name": "Heavyweight Acid Wash Oversized Tee",
+    "slug": "heavyweight-acid-wash-oversized-tee",
+    "sku": "SZ-TEE-001",
+    "category": "Oversized T-shirts",
+    "categorySlug": "oversized-t-shirts",
+    "fit": "Oversized",
+    "gender": "Unisex",
+    "price": 999,
+    "mrp": 1999,
+    "discountPercent": 50,
+    "rating": 4.9,
+    "reviewCount": 184,
+    "badge": "BEST SELLER",
+    "isNew": true,
+    "isBestSeller": true,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 2,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Washed Charcoal",
+        "hex": "#2B2B2B"
+      },
+      {
+        "name": "Vintage Slate",
+        "hex": "#4A5568"
+      },
+      {
+        "name": "Bone White",
+        "hex": "#EFECE6"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "100% Combed Heavy Cotton",
+    "care": "Machine wash cold inside out, gentle cycle. Hang dry in shade. Do not iron directly on print.",
+    "modelInfo": "Model is 6'1\" wearing size L (Chest 38\", Waist 30\")",
+    "description": "Engineered for the Indian climate with custom custom-milled premium French terry cotton. Features dropped shoulders, a reinforced 1.25-inch high-ribbed collar that never sags, and an artisanal enzyme mineral wash delivering a one-of-a-kind vintage fade. Designed for everyday streetwear rotation.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [
+      {
+        "id": "rev-1",
+        "author": "Aarav Sharma",
+        "city": "South Delhi",
+        "rating": 5,
+        "date": "3 days ago",
+        "fitFeedback": "True to size",
+        "title": "Insane Fabric quality for ₹999",
+        "comment": "Honestly didn't expect this fabric weight. Compares easily with brands charging ₹2,500+. The collar stays tight even after 3 washes."
+      },
+      {
+        "id": "rev-2",
+        "author": "Rohan Deshmukh",
+        "city": "Mumbai",
+        "rating": 5,
+        "date": "1 week ago",
+        "fitFeedback": "True to size",
+        "title": "Perfect boxy drop shoulder fit",
+        "comment": "Got size M (I am 5'10). Fits exactly like the photos. Acid wash looks super clean in daylight."
+      }
+    ],
+    "tags": [
+      "NEW",
+      "BEST SELLER"
+    ],
+    "soldOutSizes": [
+      "XXL"
+    ],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Combed Heavy Cotton ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-02-arch-logo-tee",
+    "name": "SHARMAZONE Arch Logo Regular Tee",
+    "slug": "sharmazone-arch-logo-regular-tee",
+    "sku": "SZ-TEE-002",
+    "category": "T-shirts",
+    "categorySlug": "t-shirts",
+    "fit": "Regular",
+    "gender": "Men",
+    "price": 699,
+    "mrp": 1499,
+    "discountPercent": 53,
+    "rating": 4.8,
+    "reviewCount": 92,
+    "badge": "NEW DROP",
+    "isNew": true,
+    "isBestSeller": false,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 14,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Jet Black",
+        "hex": "#0A0A0A"
+      },
+      {
+        "name": "Off-White",
+        "hex": "#F5F3EF"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "100% Super Combed Bio-Washed Cotton",
+    "care": "Machine wash cold. Do not bleach. Warm iron inside out.",
+    "modelInfo": "Model is 5'11\" wearing size M",
+    "description": "Our core everyday essential. Cut in a tailored regular silhouette with premium high-density puff print branding across the back arch and subtle chest branding. Ultra-soft pre-shrunk cotton that breathes through long metro commutes.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [
+      {
+        "id": "rev-3",
+        "author": "Karan Verma",
+        "city": "Bengaluru",
+        "rating": 5,
+        "date": "2 weeks ago",
+        "fitFeedback": "True to size",
+        "title": "Daily driver tee",
+        "comment": "Smooth cotton, looks super sharp. Great for casual office and college wear."
+      }
+    ],
+    "tags": [
+      "NEW",
+      "BACK IN STOCK"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Super Combed Bio-Washed Cotton ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-03-stealth-tactical-cargo",
+    "name": "Stealth Multi-Pocket Baggy Cargo Pants",
+    "slug": "stealth-multi-pocket-baggy-cargo-pants",
+    "sku": "SZ-PNT-001",
+    "category": "Cargo Pants",
+    "categorySlug": "cargo-pants",
+    "fit": "Baggy",
+    "gender": "Unisex",
+    "price": 1699,
+    "mrp": 3499,
+    "discountPercent": 51,
+    "rating": 4.9,
+    "reviewCount": 240,
+    "badge": "TOP RATED",
+    "isNew": true,
+    "isBestSeller": true,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 5,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1546804784-896d0dca3805?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Tactical Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Military Olive",
+        "hex": "#4B5320"
+      },
+      {
+        "name": "Desert Khaki",
+        "hex": "#C2B280"
+      }
+    ],
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "fabric": "100% Cotton Heavy Duty Canvas Twill",
+    "care": "Machine wash cold with like colors. Tumble dry low or air dry.",
+    "modelInfo": "Model is 6'0\" wearing waist 32 (31\" natural waist)",
+    "description": "Constructed with 8 functional pockets including ergonomic 3D bellows pockets, reinforced knee darts, and adjustable ankle toggle bungees allowing you to toggle between a stackable wide-leg fit and an athletic tapered cuff.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [
+      {
+        "id": "rev-4",
+        "author": "Vikram Singh",
+        "city": "Chandigarh",
+        "rating": 5,
+        "date": "4 days ago",
+        "fitFeedback": "True to size",
+        "title": "Best cargos under 2k in India",
+        "comment": "The fabric is heavy and solid. The ankle adjusters are clutch for pairing with Jordan 1s or chunky Sambas."
+      }
+    ],
+    "tags": [
+      "NEW",
+      "BEST SELLER"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Cotton Heavy Duty Canvas Twill ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-04-skater-wide-denim",
+    "name": "90s Relaxed Wide-Leg Skater Jeans",
+    "slug": "90s-relaxed-wide-leg-skater-jeans",
+    "sku": "SZ-JNS-001",
+    "category": "Jeans",
+    "categorySlug": "jeans",
+    "fit": "Baggy",
+    "gender": "Men",
+    "price": 1899,
+    "mrp": 3999,
+    "discountPercent": 53,
+    "rating": 4.8,
+    "reviewCount": 115,
+    "badge": "TRENDING",
+    "isNew": false,
+    "isBestSeller": true,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 9,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1546804784-896d0dca3805?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Vintage Medium Wash",
+        "hex": "#4C6B8B"
+      },
+      {
+        "name": "Washed Faded Black",
+        "hex": "#2E2E2E"
+      }
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "fabric": "100% Rigid Slub Cotton Denim (13.5 oz)",
+    "care": "Turn inside out. Wash sparingly in cold water. Air dry.",
+    "modelInfo": "Model is 6'1\" wearing waist 32",
+    "description": "Authentic 1990s skate aesthetic. Cut from 13.5 oz rigid natural cotton denim with a relaxed rise and clean straight drop to create effortless sneaker stacking. Hand-sanded whiskering for an organic broken-in feel.",
+    "pincodeDeliveryDays": 4,
+    "codAvailable": true,
+    "reviews": [
+      {
+        "id": "rev-5",
+        "author": "Ayush Mehta",
+        "city": "Pune",
+        "rating": 5,
+        "date": "1 week ago",
+        "fitFeedback": "Runs slightly large",
+        "title": "Finally proper baggy jeans that don't look ridiculous",
+        "comment": "Nice weight to the denim, stacks cleanly over high-tops. Quality beats Zara hands down."
+      }
+    ],
+    "tags": [
+      "BEST SELLER"
+    ],
+    "soldOutSizes": [
+      "XXL"
+    ],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Rigid Slub Cotton Denim (13.5 oz)",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-05-heavyweight-boxy-hoodie",
+    "name": "Boxy Heavyweight Hoodie",
+    "slug": "380-gsm-boxy-heavyweight-hoodie",
+    "sku": "SZ-HD-001",
+    "category": "Hoodies",
+    "categorySlug": "hoodies",
+    "fit": "Oversized",
+    "gender": "Unisex",
+    "price": 1999,
+    "mrp": 3999,
+    "discountPercent": 50,
+    "rating": 5,
+    "reviewCount": 310,
+    "badge": "WINTER FAVORITE",
+    "isNew": false,
+    "isBestSeller": true,
+    "isWinter": true,
+    "inStock": true,
+    "stockCount": 4,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Forest Emerald",
+        "hex": "#1B3B2B"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#121212"
+      },
+      {
+        "name": "Sand Dune",
+        "hex": "#D2B48C"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "80% Combed Cotton, 20% Recycled Poly Fleece",
+    "care": "Machine wash cold inside out. Flat dry recommended.",
+    "modelInfo": "Model is 6'0\" wearing size L",
+    "description": "The definitive winter staple. Crafted from ultra-dense brushed fleece with double-lined hood architecture that holds its shape with zero drawstrings. Hidden kangaroo pocket stitching and heavy 2x2 ribbed cuffs.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [
+      {
+        "id": "rev-6",
+        "author": "Kabir Gill",
+        "city": "Amritsar",
+        "rating": 5,
+        "date": "2 days ago",
+        "fitFeedback": "True to size",
+        "title": "Warm enough for Punjab winters!",
+        "comment": "The hood structure is phenomenal. Stays upright, super cosy interior fleece."
+      }
+    ],
+    "tags": [
+      "BEST SELLER"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "80% Combed Cotton, 20% Recycled Poly Fleece ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-06-delhi-metro-grid-tee",
+    "name": "Delhi Metro Grid Oversized Graphic Tee",
+    "slug": "delhi-metro-grid-oversized-graphic-tee",
+    "sku": "SZ-TEE-003",
+    "category": "Oversized T-shirts",
+    "categorySlug": "oversized-t-shirts",
+    "fit": "Oversized",
+    "gender": "Unisex",
+    "price": 899,
+    "mrp": 1799,
+    "discountPercent": 50,
+    "rating": 4.8,
+    "reviewCount": 78,
+    "badge": "LIMITED DROP",
+    "isNew": true,
+    "isBestSeller": false,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 11,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Off-White Chalk",
+        "hex": "#F4F1EA"
+      },
+      {
+        "name": "Washed Charcoal",
+        "hex": "#2C2C2C"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "100% Combed Cotton",
+    "care": "Machine wash cold. Do not iron directly over graphic.",
+    "modelInfo": "Model is 5'10\" wearing size M",
+    "description": "An homage to modern Indian transit architecture. Custom typographic back print inspired by the brutalist signage of metro stations across Delhi and NCR. Heavy single jersey with drop-shoulder cut.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [
+      {
+        "id": "rev-7",
+        "author": "Nikhil Rao",
+        "city": "Gurugram",
+        "rating": 5,
+        "date": "1 week ago",
+        "fitFeedback": "True to size",
+        "title": "Subtle and sophisticated graphics",
+        "comment": "Screen print is soft, doesn't feel like rubber stuck to the back. Very breathable."
+      }
+    ],
+    "tags": [
+      "NEW",
+      "BACK IN STOCK"
+    ],
+    "soldOutSizes": [
+      "S",
+      "XXL"
+    ],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Combed Cotton ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-07-bungee-parachute-pants",
+    "name": "Bungee Drawcord Parachute Pants",
+    "slug": "bungee-drawcord-parachute-pants",
+    "sku": "SZ-PNT-002",
+    "category": "Baggy/Relaxed Pants",
+    "categorySlug": "baggy-relaxed-pants",
+    "fit": "Relaxed",
+    "gender": "Unisex",
+    "price": 1499,
+    "mrp": 2999,
+    "discountPercent": 50,
+    "rating": 4.7,
+    "reviewCount": 63,
+    "badge": "",
+    "isNew": true,
+    "isBestSeller": false,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 16,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1546804784-896d0dca3805?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Shadow Black",
+        "hex": "#151515"
+      },
+      {
+        "name": "Moon Grey",
+        "hex": "#707372"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "fabric": "70% Cotton, 30% Ripstop Nylon",
+    "care": "Gentle machine wash cold. Do not tumble dry.",
+    "modelInfo": "Model is 5'11\" wearing size M",
+    "description": "Ultra-lightweight yet tear-resistant cotton ripstop. Features pleated knee pleats for maximum knee articulation and dual bungee cinch cords at both the elastic waist and bottom hems.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [],
+    "tags": [
+      "NEW"
+    ],
+    "soldOutSizes": [
+      "XXL"
+    ],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "70% Cotton, 30% Ripstop Nylon ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-08-minimal-crewneck-sweatshirt",
+    "name": "Core Minimalist  Sweatshirt",
+    "slug": "core-minimalist-340-gsm-sweatshirt",
+    "sku": "SZ-SWT-001",
+    "category": "Sweatshirts",
+    "categorySlug": "sweatshirts",
+    "fit": "Relaxed",
+    "gender": "Unisex",
+    "price": 1499,
+    "mrp": 2999,
+    "discountPercent": 50,
+    "rating": 4.9,
+    "reviewCount": 142,
+    "badge": "ESSENTIAL",
+    "isNew": false,
+    "isBestSeller": true,
+    "isWinter": true,
+    "inStock": true,
+    "stockCount": 7,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Heather Grey Melange",
+        "hex": "#9E9E9E"
+      },
+      {
+        "name": "Pitch Black",
+        "hex": "#0F0F0F"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "100% French Terry Cotton",
+    "care": "Machine wash cold. Reshape whilst damp.",
+    "modelInfo": "Model is 6'0\" wearing size L",
+    "description": "An uncompromisingly clean crewneck with zero outer branding. Constructed from diagonal loopback French terry with heavy ribbed collar and split-needle coverstitching on all seams.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [
+      {
+        "id": "rev-8",
+        "author": "Divyansh Kohli",
+        "city": "Noida",
+        "rating": 5,
+        "date": "1 week ago",
+        "fitFeedback": "True to size",
+        "title": "Minimalist perfection",
+        "comment": "No loud branding, just heavyweight fabric that drapes like an international designer piece."
+      }
+    ],
+    "tags": [
+      "BEST SELLER"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% French Terry Cotton ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-09-subzero-puffer-jacket",
+    "name": "Sub-Zero Matte Thermal Puffer Jacket",
+    "slug": "subzero-matte-thermal-puffer-jacket",
+    "sku": "SZ-JKT-001",
+    "category": "Jackets",
+    "categorySlug": "jackets",
+    "fit": "Regular",
+    "gender": "Men",
+    "price": 3499,
+    "mrp": 6999,
+    "discountPercent": 50,
+    "rating": 4.9,
+    "reviewCount": 89,
+    "badge": "WINTER / 26",
+    "isNew": true,
+    "isBestSeller": false,
+    "isWinter": true,
+    "inStock": true,
+    "stockCount": 3,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Matte Jet Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Deep Midnight Navy",
+        "hex": "#1A2238"
+      }
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "Water-Repellent Polyurethane Coated Nylon Shell, Hypoallergenic Micro-Down Fill",
+    "care": "Wipe with damp cloth or professional dry clean only.",
+    "modelInfo": "Model is 6'2\" wearing size L",
+    "description": "Engineered for harsh North Indian winter spells. High stand-up wind collar, YKK two-way reversible vislon zipper, fleece-lined welt pockets for hand warmth, and internal zip chest compartment for passport/phone.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [
+      {
+        "id": "rev-9",
+        "author": "Tanmay Bhatia",
+        "city": "Chandigarh",
+        "rating": 5,
+        "date": "5 days ago",
+        "fitFeedback": "True to size",
+        "title": "Saved me in Shimla trip",
+        "comment": "Warm down to 4 degrees. Matte outer texture looks very high-end, not shiny like cheap polyester."
+      }
+    ],
+    "tags": [
+      "NEW"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "Water-Repellent Polyurethane Coated Nylon Shell, Hypoallergenic Micro-Down Fill",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-10-retro-varsity-bomber",
+    "name": "Heritage Wool-Blend Varsity Bomber Jacket",
+    "slug": "heritage-wool-blend-varsity-bomber-jacket",
+    "sku": "SZ-JKT-002",
+    "category": "Jackets",
+    "categorySlug": "jackets",
+    "fit": "Relaxed",
+    "gender": "Unisex",
+    "price": 3299,
+    "mrp": 6499,
+    "discountPercent": 49,
+    "rating": 4.8,
+    "reviewCount": 54,
+    "badge": "LIMITED RUN",
+    "isNew": true,
+    "isBestSeller": false,
+    "isWinter": true,
+    "inStock": true,
+    "stockCount": 6,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Forest Green & Cream",
+        "hex": "#18382B"
+      },
+      {
+        "name": "Monochrome Black",
+        "hex": "#101010"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "fabric": "60% Melton Wool, 40% Viscose Shell with Vegan Leather Sleeves",
+    "care": "Dry clean only.",
+    "modelInfo": "Model is 6'0\" wearing size M",
+    "description": "Collegiate streetwear reconstructed. Heavyweight wool melton torso with vegan leather contrast sleeves, chenille embroidery RD patch on chest, custom snap buttons, and diamond-quilted insulated satin lining.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [],
+    "tags": [
+      "NEW",
+      "BACK IN STOCK"
+    ],
+    "soldOutSizes": [
+      "XXL"
+    ],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "60% Melton Wool, 40% Viscose Shell with Vegan Leather Sleeves",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-11-pleated-relaxed-chino",
+    "name": "Relaxed Front-Pleated Chino Trousers",
+    "slug": "relaxed-front-pleated-chino-trousers",
+    "sku": "SZ-PNT-003",
+    "category": "Baggy/Relaxed Pants",
+    "categorySlug": "baggy-relaxed-pants",
+    "fit": "Relaxed",
+    "gender": "Men",
+    "price": 1399,
+    "mrp": 2799,
+    "discountPercent": 50,
+    "rating": 4.7,
+    "reviewCount": 42,
+    "badge": "",
+    "isNew": false,
+    "isBestSeller": false,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 12,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1546804784-896d0dca3805?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Bone White",
+        "hex": "#EAE7DF"
+      },
+      {
+        "name": "Dark Olive",
+        "hex": "#3E4438"
+      }
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "fabric": "98% Cotton Twill, 2% Elastane",
+    "care": "Machine wash cold. Warm iron.",
+    "modelInfo": "Model is 6'1\" wearing waist 32",
+    "description": "The smart-streetwear bridge pant. Double front knife pleats creating a fluid drape through the thigh, slightly tapering at the shoe line. Can be dressed up with an oxford shirt or down with an oversized graphic tee.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [],
+    "tags": [
+      "CORE ESSENTIAL"
+    ],
+    "soldOutSizes": [
+      "S",
+      "XXL"
+    ],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "98% Cotton Twill, 2% Elastane",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-12-carpenter-denim-raw",
+    "name": "Double-Knee Raw Carpenter Jeans",
+    "slug": "double-knee-raw-carpenter-jeans",
+    "sku": "SZ-JNS-002",
+    "category": "Jeans",
+    "categorySlug": "jeans",
+    "fit": "Baggy",
+    "gender": "Men",
+    "price": 1999,
+    "mrp": 3999,
+    "discountPercent": 50,
+    "rating": 4.9,
+    "reviewCount": 97,
+    "badge": "WORKWEAR",
+    "isNew": true,
+    "isBestSeller": true,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 8,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1546804784-896d0dca3805?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Deep Indigo Wash",
+        "hex": "#1F2C46"
+      },
+      {
+        "name": "Washed Dirty Sand",
+        "hex": "#8C7D6B"
+      }
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "fabric": "100% Rigid Heavy Cotton Denim (14 oz)",
+    "care": "Cold wash inside out. Line dry in shade.",
+    "modelInfo": "Model is 6'0\" wearing waist 32",
+    "description": "Raw workwear silhouette detailed with double-layered knee panels, hammer loop, utility tool pockets, and triple-needle chain-stitched outseams for indefinite durability.",
+    "pincodeDeliveryDays": 4,
+    "codAvailable": true,
+    "reviews": [],
+    "tags": [
+      "NEW",
+      "BEST SELLER"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Rigid Heavy Cotton Denim (14 oz)",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-13-all-weather-windbreaker",
+    "name": "Technical All-Weather Tactical Windbreaker",
+    "slug": "technical-all-weather-tactical-windbreaker",
+    "sku": "SZ-JKT-003",
+    "category": "Jackets",
+    "categorySlug": "jackets",
+    "fit": "Relaxed",
+    "gender": "Unisex",
+    "price": 2699,
+    "mrp": 5499,
+    "discountPercent": 51,
+    "rating": 4.8,
+    "reviewCount": 68,
+    "badge": "WEATHERPROOF",
+    "isNew": false,
+    "isBestSeller": false,
+    "isWinter": true,
+    "inStock": true,
+    "stockCount": 10,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Stealth Steel Grey",
+        "hex": "#434B54"
+      },
+      {
+        "name": "Matte Black",
+        "hex": "#121212"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "fabric": "100% Water-repellent Micro-Ripstop with Breathable Mesh Lining",
+    "care": "Machine wash cold gentle. Do not tumble dry.",
+    "modelInfo": "Model is 6'0\" wearing size L",
+    "description": "Engineered for rainy downpours and breezy bike rides. Lightweight packable hood with concealed storm visor, taped seam zips, and underarm aeration eyelets.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [],
+    "tags": [
+      "CORE ESSENTIAL"
+    ],
+    "soldOutSizes": [
+      "XXL"
+    ],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Water-repellent Micro-Ripstop with Breathable Mesh Lining",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-14-heavy-knit-sweater",
+    "name": "Heavy Gauge Ribbed Winter Knit",
+    "slug": "heavy-gauge-ribbed-winter-knit",
+    "sku": "SZ-WNT-001",
+    "category": "Winter wear",
+    "categorySlug": "winter-wear",
+    "fit": "Oversized",
+    "gender": "Unisex",
+    "price": 2199,
+    "mrp": 4499,
+    "discountPercent": 51,
+    "rating": 4.9,
+    "reviewCount": 81,
+    "badge": "WINTER / 26",
+    "isNew": true,
+    "isBestSeller": false,
+    "isWinter": true,
+    "inStock": true,
+    "stockCount": 7,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Oatmeal Melange",
+        "hex": "#D7D2C8"
+      },
+      {
+        "name": "Dark Forest Olive",
+        "hex": "#253325"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "fabric": "Soft Cashmere-Feel Spun Acrylic Wool Blend",
+    "care": "Hand wash cold. Lay flat to dry.",
+    "modelInfo": "Model is 5'11\" wearing size M",
+    "description": "Chunky 5-gauge fisherman rib knit designed for effortless cold-weather layering. Raglan shoulder slope, rolled collar hem, and substantial thermal insulation without itchiness.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [],
+    "tags": [
+      "NEW",
+      "BACK IN STOCK"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "Soft Cashmere-Feel Spun Acrylic Wool Blend ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-15-archive-drop-tee",
+    "name": "SHARMAZONE Archive Drop Typo Tee",
+    "slug": "sharmazone-archive-drop-typo-tee",
+    "sku": "SZ-TEE-004",
+    "category": "T-shirts",
+    "categorySlug": "t-shirts",
+    "fit": "Relaxed",
+    "gender": "Men",
+    "price": 799,
+    "mrp": 1599,
+    "discountPercent": 50,
+    "rating": 4.8,
+    "reviewCount": 39,
+    "badge": "",
+    "isNew": true,
+    "isBestSeller": false,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 18,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Burnt Rust Orange",
+        "hex": "#C84B31"
+      },
+      {
+        "name": "Off-White",
+        "hex": "#F5F3EF"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "100% Super Combed Cotton",
+    "care": "Machine wash cold.",
+    "modelInfo": "Model is 6'0\" wearing size L",
+    "description": "Featuring minimal industrial serial typography inspired by Indian manufacturing crates and warehouse marks. Premium silkscreen ink with zero cracking over 50+ wash cycles.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [],
+    "tags": [
+      "NEW"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Super Combed Cotton ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-16-dual-zip-hoodie",
+    "name": "Dual-Zip Minimalist  Heavy Hoodie",
+    "slug": "dual-zip-minimalist-400-gsm-heavy-hoodie",
+    "sku": "SZ-HD-002",
+    "category": "Hoodies",
+    "categorySlug": "hoodies",
+    "fit": "Oversized",
+    "gender": "Unisex",
+    "price": 2299,
+    "mrp": 4599,
+    "discountPercent": 50,
+    "rating": 4.9,
+    "reviewCount": 112,
+    "badge": "HEAVYWEIGHT",
+    "isNew": false,
+    "isBestSeller": true,
+    "isWinter": true,
+    "inStock": true,
+    "stockCount": 6,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Washed Black",
+        "hex": "#1E1E1E"
+      },
+      {
+        "name": "Earth Muted Brown",
+        "hex": "#4A3B32"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "100% French Terry Cotton ( Heavyweight)",
+    "care": "Machine wash cold. Line dry.",
+    "modelInfo": "Model is 6'1\" wearing size L",
+    "description": "Our heaviest fleece creation yet. Custom silver antique two-way dual zipper allowing directional styling from top or bottom. High drop-shoulder boxy cut engineered for dramatic silhouette.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [],
+    "tags": [
+      "BEST SELLER"
+    ],
+    "soldOutSizes": [
+      "XXL"
+    ],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% French Terry Cotton ( Heavyweight)",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-17-relaxed-cargo-jorts",
+    "name": "Tactical Relaxed Cargo Bermuda Shorts",
+    "slug": "tactical-relaxed-cargo-bermuda-shorts",
+    "sku": "SZ-SHT-001",
+    "category": "Baggy/Relaxed Pants",
+    "categorySlug": "baggy-relaxed-pants",
+    "fit": "Baggy",
+    "gender": "Men",
+    "price": 1199,
+    "mrp": 2399,
+    "discountPercent": 50,
+    "rating": 4.6,
+    "reviewCount": 31,
+    "badge": "SUMMER DROP",
+    "isNew": false,
+    "isBestSeller": false,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 15,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1546804784-896d0dca3805?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Washed Black",
+        "hex": "#1E1E1E"
+      },
+      {
+        "name": "Military Green",
+        "hex": "#3D4836"
+      }
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "fabric": "100% Cotton Canvas",
+    "care": "Machine wash cold.",
+    "modelInfo": "Model is 6'0\" wearing waist 32",
+    "description": "Baggy knee-length bermuda cargos with deep bellow side pockets and d-ring key attachments. Essential casual streetwear for hot Indian summers.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [],
+    "tags": [
+      "CORE ESSENTIAL"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Cotton Canvas ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-18-corduroy-overshirt",
+    "name": "Wide-Wale Corduroy Overshirt Jacket",
+    "slug": "wide-wale-corduroy-overshirt-jacket",
+    "sku": "SZ-JKT-004",
+    "category": "Jackets",
+    "categorySlug": "jackets",
+    "fit": "Relaxed",
+    "gender": "Unisex",
+    "price": 2499,
+    "mrp": 4999,
+    "discountPercent": 50,
+    "rating": 4.9,
+    "reviewCount": 76,
+    "badge": "WINTER / 26",
+    "isNew": true,
+    "isBestSeller": true,
+    "isWinter": true,
+    "inStock": true,
+    "stockCount": 4,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Rust Brown",
+        "hex": "#7B3F23"
+      },
+      {
+        "name": "Forest Night",
+        "hex": "#202A22"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "100% Cotton 8-Wale Heavy Corduroy",
+    "care": "Machine wash cold inside out. Warm iron on reverse.",
+    "modelInfo": "Model is 6'1\" wearing size L",
+    "description": "Rich chunky 8-wale corduroy designed for open layering over tees or buttoned up as an outerwear piece. Twin chest patch pockets with flap closures, dropped shoulder, and horn buttons.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "reviews": [
+      {
+        "id": "rev-10",
+        "author": "Pranav Nair",
+        "city": "Kochi",
+        "rating": 5,
+        "date": "1 week ago",
+        "fitFeedback": "True to size",
+        "title": "Sublime texture and drape",
+        "comment": "The corduroy ridges are thick and plush. Looks incredible layered with a black tee."
+      }
+    ],
+    "tags": [
+      "NEW",
+      "BEST SELLER",
+      "BACK IN STOCK"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Cotton 8-Wale Heavy Corduroy ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "fitFeedbackBreakdown": {
+      "runsSmall": 4,
+      "trueToSize": 92,
+      "runsLarge": 4
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 1,
+      "3": 3,
+      "4": 12,
+      "5": 84
+    },
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.942Z"
+  },
+  {
+    "id": "sz-19-distressed-graphic-tee",
+    "name": "Distressed Underground Graphic Oversized Tee",
+    "slug": "distressed-underground-graphic-oversized-tee",
+    "sku": "SZ-TEE-019",
+    "category": "Oversized T-shirts",
+    "categorySlug": "oversized-t-shirts",
+    "fit": "Oversized",
+    "gender": "Unisex",
+    "price": 899,
+    "mrp": 1799,
+    "discountPercent": 50,
+    "rating": 4.8,
+    "reviewCount": 96,
+    "badge": "NEW DROP",
+    "isNew": true,
+    "isBestSeller": false,
+    "isWinter": false,
+    "inStock": true,
+    "stockCount": 14,
+    "featured": true,
+    "tags": [
+      "NEW",
+      "LIMITED DROP"
+    ],
+    "soldOutSizes": [
+      "XXL"
+    ],
+    "origin": "Crafted & Milled in India",
+    "images": [
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Faded Black",
+        "hex": "#1C1C1C"
+      },
+      {
+        "name": "Concrete Grey",
+        "hex": "#63666A"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "100% Combed Heavy Cotton ( French Terry)",
+    "care": "Machine wash cold inside out. Hang dry in shade. Do not iron directly on print.",
+    "modelInfo": "Model is 6'0\" wearing size L (Chest 38\", Waist 30\")",
+    "description": "Featuring hand-screened water-based typographic graphics inspired by brutalist New Delhi metro infrastructure. Heavyweight French terry cotton with dropped shoulders.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "fitFeedbackBreakdown": {
+      "runsSmall": 5,
+      "trueToSize": 90,
+      "runsLarge": 5
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 0,
+      "3": 5,
+      "4": 15,
+      "5": 80
+    },
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Combed Heavy Cotton ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-19-1",
+        "author": "Devendra Rao",
+        "city": "Bengaluru",
+        "rating": 5,
+        "date": "2 days ago",
+        "fitFeedback": "True to size",
+        "title": "Screen print quality is top tier",
+        "comment": "Soft hand feel, not that cheap plastisol rubber feel. The fabric breathes well even in 30°C weather."
+      }
+    ],
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.943Z"
+  },
+  {
+    "id": "sz-20-minimalist-heavyweight-zip-hoodie",
+    "name": "Sub-Zero  Heavyweight Zip Hoodie",
+    "slug": "sub-zero-400-gsm-heavyweight-zip-hoodie",
+    "sku": "SZ-HOD-020",
+    "category": "Hoodies",
+    "categorySlug": "hoodies",
+    "fit": "Oversized",
+    "gender": "Unisex",
+    "price": 2199,
+    "mrp": 3999,
+    "discountPercent": 45,
+    "rating": 4.9,
+    "reviewCount": 142,
+    "badge": "WINTER / 26",
+    "isNew": true,
+    "isBestSeller": true,
+    "isWinter": true,
+    "inStock": true,
+    "stockCount": 7,
+    "featured": true,
+    "tags": [
+      "NEW",
+      "BEST SELLER"
+    ],
+    "soldOutSizes": [],
+    "origin": "Crafted & Milled in India",
+    "images": [
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Onyx Black",
+        "hex": "#0A0A0A"
+      },
+      {
+        "name": "Heather Charcoal",
+        "hex": "#2F3542"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "fabric": "100% Ultra-Heavyweight Brushed Fleece  [CLAIM TO VERIFY]",
+    "care": "Machine wash cold inside out, gentle cycle. Lay flat to dry.",
+    "modelInfo": "Model is 6'1\" wearing size XL (Chest 40\", Waist 31\")",
+    "description": "Engineered for freezing North Indian winter temperatures. Custom double-brushed cotton fleece with two-way gunmetal YKK zipper, double-layered rigid hood, and deep hidden kangaroo pockets.",
+    "pincodeDeliveryDays": 3,
+    "codAvailable": true,
+    "fitFeedbackBreakdown": {
+      "runsSmall": 2,
+      "trueToSize": 95,
+      "runsLarge": 3
+    },
+    "ratingBreakdown": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 9,
+      "5": 89
+    },
+    "anatomy": [
+      {
+        "id": 1,
+        "title": "Milled Fabric Cotton Weight",
+        "desc": "100% Combed Heavy Cotton ()",
+        "x": 52,
+        "y": 40
+      },
+      {
+        "id": 2,
+        "title": "Anti-Sag Collar Rib",
+        "desc": "1.25\" high-density 1x1 rib with lycra core to prevent neck sagging across 50+ wash cycles.",
+        "x": 50,
+        "y": 18
+      },
+      {
+        "id": 3,
+        "title": "Architectural Drop Shoulder",
+        "desc": "2.5\" dropped shoulder seam engineered with forward-pitch drape for signature boxy profile.",
+        "x": 28,
+        "y": 28
+      },
+      {
+        "id": 4,
+        "title": "Reinforced Twin-Needle Seams",
+        "desc": "High-tensile Japanese thread topstitching across high-stress tension points.",
+        "x": 74,
+        "y": 38
+      },
+      {
+        "id": 5,
+        "title": "Artisanal Mineral Enzyme Wash",
+        "desc": "Enzyme bio-washed for velvety hand-feel. Pre-shrunk to less than 1.5% residual shrinkage.",
+        "x": 48,
+        "y": 65
+      },
+      {
+        "id": 6,
+        "title": "Clean Structural Hem",
+        "desc": "Blind stitched lower hem designed to sit flush over baggy skate denim or cargo stacks.",
+        "x": 50,
+        "y": 88
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-20-1",
+        "author": "Manpreet Singh",
+        "city": "Amritsar",
+        "rating": 5,
+        "date": "5 days ago",
+        "fitFeedback": "True to size",
+        "title": "Actual heavyweight winter shield",
+        "comment": "Wore this in 6°C Punjab morning with just a tee underneath. Zero wind chills. The two-way zip is super clean."
+      }
+    ],
+    "published": true,
+    "isDraft": false,
+    "deliveryArea": "Delhi NCR (Delhi, Noida, Gurugram, Ghaziabad)",
+    "updatedAt": "2026-10-22T07:12:44.943Z"
+  }
+]
